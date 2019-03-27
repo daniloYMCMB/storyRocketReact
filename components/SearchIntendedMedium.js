@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import arrowUp from '.././assets/img/arrowUp.svg'
-import  './SearchIntendedMedium.css';
 import Title from './SearchTitle'
 
 class SearchIntendedMedium extends Component {
@@ -18,7 +16,7 @@ class SearchIntendedMedium extends Component {
         <Title title="Intended Medium"></Title>
 
         <div onClick={this.handleIntended} className="searchIntendedMenu">
-          <img src={arrowUp} alt=""/>
+          <img src="/static/img/arrowUp.svg" alt=""/>
         </div>
 
         <ul className="SearchIntendedMedium-items" id="SearchIntendedMedium-items">
@@ -125,6 +123,105 @@ class SearchIntendedMedium extends Component {
                 </a>
             </li>
         </ul>
+
+        <style>{`
+            .SearchIntendedMedium {
+              background: white;
+              padding: 10px;
+              box-sizing: border-box;
+              font-family: sans-serif;
+              border-radius: 5px;
+              margin-bottom: 10px;
+              position: relative;
+            }
+
+            .searchIntendedMenu {
+              position: absolute;
+              top: 23px;
+              right: 20px;
+              cursor: pointer;
+            }
+
+            .searchIntendedMenu img {
+              width: 15px;
+            }
+
+            .SearchIntendedMedium-items {
+              display: flex;
+              justify-content: space-evenly;
+              align-items: center;
+              flex-wrap: wrap;
+              display: none;
+            }
+
+            .SearchIntendedMedium-items.active {
+              display: flex;
+            }
+
+            .SearchIntendedMedium-item a {
+              text-decoration: none;
+            }
+
+            .SearchIntendedMedium-item {
+              margin: 10px 10px 20px 10px;
+            }
+
+            .SearchIntendedMedium-item:hover h4:before{
+              width: 100%;
+            }
+
+            .SearchIntendedMedium-item:hover .icon{
+              border: 2px solid #ffa603;
+              background: #1c2d4c;
+            }
+
+            .SearchIntendedMedium-item:hover svg{
+              fill: #ffa603;
+            }
+
+
+            .SearchIntendedMedium-item h4 {
+              margin-top: 10px;
+              color: #1c2d4c;
+              border-bottom: 2px solid transparent;
+              transition: .25s linear;
+              position: relative;
+              display: inline-block;
+            }
+
+            .SearchIntendedMedium-item h4:before {
+              content: "";
+              position: absolute;
+              bottom: -5px;
+              left: 0;
+              height: 2px;
+              width: 0;
+              background: #1c2d4c;
+              transition: .15s linear;
+            }
+
+            .SearchIntendedMedium-item svg{
+              fill: #1c2d4c;
+              margin: 0 auto;
+              width: 70px;
+              height: 70px;
+              background: transparent;
+              border-radius: 50%;
+              transition: .25s linear;
+            }
+
+            .icon {
+              width: 70px;
+              height: 65px;
+              background: transparent;
+              padding-top: 5px;
+              border-radius: 50%;
+              transition: .25s linear;
+              border: 2px solid #1c2d4c;
+              margin: auto;
+            }
+          `}</style>
+
       </div>
     );
   }

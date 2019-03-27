@@ -1,7 +1,4 @@
 import React, { Component } from 'react';
-import search from '.././assets/img/search.svg'
-import arrowUp from '.././assets/img/arrowUp.svg'
-import  './SearchLocation.css';
 import Title from './SearchTitle'
 
 import { WithContext as ReactTags } from 'react-tag-input';
@@ -65,7 +62,7 @@ class SearchLocation extends Component {
           <Title title="Location"></Title>
 
           <div onClick={this.handleMenuLocation} className="searchLocationMenu">
-            <img src={arrowUp} alt=""/>
+            <img src="/static/img/arrowUp.svg" alt=""/>
           </div>
 
           <div className="SearchLocation-input" id="SearchLocation-input">
@@ -77,8 +74,92 @@ class SearchLocation extends Component {
               handleDrag={this.handleDrag}
               delimiters={delimiters} 
               placeholder="Search Location"/>
-            <img className="SearchLocation-image" src={search} alt=""/>
+            <img className="SearchLocation-image" src="/static/img/search.svg" alt=""/>
           </div>
+
+          <style>{`
+            .SearchLocation {
+              background: white;
+              padding: 10px;
+              box-sizing: border-box;
+              font-family: sans-serif;
+              border-radius: 5px;
+              margin-bottom: 10px;
+              position: relative;
+            }
+
+            .SearchLocation-title {
+              text-align: left;
+              font-size: 18px;
+              font-weight: bold;
+              margin-bottom: 15px;
+            }
+
+            .searchLocationMenu {
+              position: absolute;
+              top: 23px;
+              right: 20px;
+              cursor: pointer;
+            }
+
+            .searchLocationMenu img {
+              width: 15px;
+            }
+
+            .SearchLocation-input {
+              position: relative;
+              display: none;
+            }
+
+            .SearchLocation-input.active {
+              display: block;
+            }
+
+            .SearchLocation-input .ReactTags__tags{
+              position: relative;
+            }
+
+            .SearchLocation-image {
+              position: absolute;
+              top: -37px;
+              right: 27px;
+              width: 20px;
+              height: 20px;
+            }
+
+            .SearchLocation-input .ReactTags__tagInput{
+              position: absolute;
+              top: -45px;
+              left: 15px;
+              width: 90%;
+              margin: auto;
+            }
+
+            .SearchLocation-input .ReactTags__tagInput input{
+              width: 100%;
+              height: 30px;
+              box-sizing: border-box;
+              padding-left: 10px;
+            }
+
+            .ReactTags__selected {
+              margin-top: 70px;
+              text-align: left;
+              padding-left: 17px;
+            }
+
+            .tag-wrapper {
+              background: #1c2d4c;
+              margin: 5px;
+              color: #ff8f17;
+              padding: 5px 10px;
+              font-size: 15px;
+              border-radius: 15px;
+              display: inline-block;
+              
+            }
+          `}</style>
+
     </div>
   );
   }

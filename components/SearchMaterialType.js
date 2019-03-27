@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import arrowUp from '.././assets/img/arrowUp.svg'
-import  './SearchMaterialType.css';
 import Title from './SearchTitle'
 
 class SearchMaterialType extends Component {
@@ -18,7 +16,7 @@ class SearchMaterialType extends Component {
         <Title title="Material Type"></Title>
 
         <div onClick={this.handleMenuMaterial} className="searchMaterialsMenu">
-          <img src={arrowUp} alt=""/>
+          <img src="/static/img/arrowUp.svg" alt=""/>
         </div>
 
         <ul className="SearchMaterialType-items" id="SearchMaterialType">
@@ -108,6 +106,107 @@ class SearchMaterialType extends Component {
                 </a>
             </li>
         </ul>
+
+        <style>{`
+            .SearchMaterialType {
+              background: #e1e2e4;
+              padding: 10px;
+              box-sizing: border-box;
+              font-family: sans-serif;
+              border-radius: 5px;
+              margin-bottom: 10px;
+              background: white;
+              position: relative;
+            }
+
+            .searchMaterialsMenu {
+              position: absolute;
+              top: 23px;
+              right: 20px;
+              cursor: pointer;
+            }
+
+            .searchMaterialsMenu img {
+              width: 15px;
+            }
+
+
+            .SearchMaterialType-items {
+              display: flex;
+              justify-content: space-evenly;
+              align-items: center;
+              flex-wrap: wrap;
+              display: none;
+            }
+
+            .SearchMaterialType-items.active {
+              display: flex;
+            }
+
+            .SearchMaterialType-item a {
+              text-decoration: none;
+            }
+
+            .SearchMaterialType-item {
+              margin: 10px 10px 20px 10px;
+            }
+
+            .SearchMaterialType-item:hover h4:before{
+              width: 100%;
+            }
+
+            .SearchMaterialType-item:hover .icon{
+              border: 2px solid #ffa603;
+              background: #1c2d4c;
+            }
+
+            .SearchMaterialType-item:hover svg{
+              fill: #ffa603;
+            }
+
+
+            .SearchMaterialType-item h4 {
+              margin-top: 10px;
+              color: #1c2d4c;
+              border-bottom: 2px solid transparent;
+              transition: .25s linear;
+              position: relative;
+              display: inline-block;
+            }
+
+            .SearchMaterialType-item h4:before {
+              content: "";
+              position: absolute;
+              bottom: -5px;
+              left: 0;
+              height: 2px;
+              width: 0;
+              background: #1c2d4c;
+              transition: .15s linear;
+            }
+
+            .SearchMaterialType-item svg{
+              fill: #1c2d4c;
+              margin: 0 auto;
+              width: 70px;
+              height: 70px;
+              background: transparent;
+              border-radius: 50%;
+              transition: .25s linear;
+            }
+
+            .icon {
+              width: 70px;
+              height: 65px;
+              background: transparent;
+              padding-top: 5px;
+              border-radius: 50%;
+              transition: .25s linear;
+              border: 2px solid #1c2d4c;
+            }
+
+          `}</style>
+
       </div>
     );
   }

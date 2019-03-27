@@ -3,6 +3,13 @@ import Layout from '../components/Layout'
 
 import SearchInput from '../components/SearchInput'
 import SearchViews from '../components/SearchViews'
+import SearchGenres from '../components/SearchGenres'
+import SearchMaterialType from '../components/SearchMaterialType'
+import SearchIntendedMedium from '../components/SearchIntendedMedium'
+import SearchTags from '../components/SearchTags'
+import SearchLanguages from '../components/SearchLanguages'
+import SearchLocation from '../components/SearchLocation'
+import SearchEra from '../components/SearchEra'
 
 export default class Search extends React.Component {
 
@@ -15,6 +22,13 @@ export default class Search extends React.Component {
 						sidebar
 						<SearchInput></SearchInput>
 						<SearchViews></SearchViews>
+						<SearchGenres></SearchGenres>
+						<SearchMaterialType></SearchMaterialType>
+						<SearchIntendedMedium></SearchIntendedMedium>
+						<SearchTags></SearchTags>
+						<SearchLanguages></SearchLanguages>
+						<SearchLocation></SearchLocation>
+						<SearchEra></SearchEra>
 					</div>
 
 					<div className="searchContent">
@@ -35,11 +49,11 @@ export default class Search extends React.Component {
 							display: flex;
 							justify-content: center;
 							align-items: center;
+							flex-direction: column;
 						}
 
 						.searchSidebar {
-							width: 28%;
-							background: purple;
+							width: 58%;
 							margin-right: 2%;
 							color: #1c2d4c;
 						}

@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import arrowUp from '.././assets/img/arrowUp.svg'
-import  './SearchTags.css';
 import Title from './SearchTitle'
 
 import { WithContext as ReactTags } from 'react-tag-input';
@@ -64,7 +62,7 @@ class SearchTags extends Component {
         <Title title="Tags"></Title>
 
         <div onClick={this.handleTagMenu} className="searchTagMenu">
-          <img src={arrowUp} alt=""/>
+          <img src="/static/img/arrowUp.svg" alt=""/>
         </div>
 
           <div className="SearchTags-input" id="SearchTags-input">
@@ -77,6 +75,84 @@ class SearchTags extends Component {
               delimiters={delimiters} 
               placeholder="Search Tag"/>
           </div>
+
+          <style>{`
+            .SearchTags {
+              background: white;
+              padding: 10px;
+              box-sizing: border-box;
+              font-family: sans-serif;
+              border-radius: 5px;
+              margin-bottom: 10px;
+              position: relative;
+            }
+
+            .SearchTags-input {
+              position: relative;
+              display: none;
+            }
+            .SearchTags-input.active {
+              display: block;
+            }
+
+            .searchTagMenu {
+              position: absolute;
+              top: 23px;
+              right: 20px;
+              cursor: pointer;
+            }
+
+            .searchTagMenu img {
+              width: 15px;
+            }
+
+            .searchTagMenu {
+              position: absolute;
+              top: 23px;
+              right: 20px;
+              cursor: pointer;
+            }
+
+            .SearchTags-input .ReactTags__tagInput{
+              position: absolute;
+              top: -45px;
+              left: 20px;
+              width: 80%;
+              margin: auto;
+            }
+
+            .SearchTags-input .ReactTags__tagInput input{
+              width: 100%;
+              height: 30px;
+              box-sizing: border-box;
+              padding-left: 10px;
+              border: 1px solid #80808038;
+              border-radius: 4px;
+            }
+
+            .SearchTags-input .ReactTags__remove {
+              margin-left: 10px;
+            }
+
+            .ReactTags__selected {
+              margin-top: 70px;
+              text-align: left;
+              padding-left: 17px;
+            }
+
+            .tag-wrapper {
+              background: #1c2d4c;
+              margin: 5px;
+              color: #ff8f17;
+              padding: 5px 10px;
+              font-size: 15px;
+              border-radius: 4px !important;
+              display: inline-block;
+              
+            }
+          `}</style>
+
+
     </div>
   );
   }
