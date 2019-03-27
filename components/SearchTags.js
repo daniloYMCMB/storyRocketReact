@@ -17,8 +17,8 @@ class SearchTags extends Component {
  
         this.state = {
             tags: [
-                { id: "Thailand", text: "Thailand" },
-                { id: "India", text: "India" }
+                // { id: "Thailand", text: "Thailand" },
+                // { id: "India", text: "India" }
              ]
         };
         this.handleDelete = this.handleDelete.bind(this);
@@ -35,6 +35,16 @@ class SearchTags extends Component {
  
     handleAddition(tag) {
         this.setState(state => ({ tags: [...state.tags, tag] }));
+        console.log(this.state.tags)
+        
+        const ReactTags__selected = document.getElementById("SearchTags-input")
+
+        if(ReactTags__selected.hasChildNodes()) {
+
+          let clear = document.getElementById("clearTag")
+          clear.classList.add('active')
+        }
+    
     }
  
     handleDrag(tag, currPos, newPos) {
@@ -53,6 +63,18 @@ class SearchTags extends Component {
       material.classList.toggle("active")
     }
 
+    handleClear = e => {
+
+      this.setState({
+        tags: []
+      })
+
+      const clear = document.getElementById("clearTag")
+      clear.classList.remove('active')
+
+
+    }
+
   render() {
 
     const { tags, suggestions } = this.state;
@@ -66,7 +88,7 @@ class SearchTags extends Component {
         </div>
 
           <div className="SearchTags-input" id="SearchTags-input">
-            <ReactTags 
+            <ReactTags
               tags={tags}
               suggestions={suggestions}
               handleDelete={this.handleDelete}
@@ -75,6 +97,9 @@ class SearchTags extends Component {
               delimiters={delimiters} 
               placeholder="Search Tag"/>
           </div>
+
+          <span className="clearTag" id="clearTag" onClick={this.handleClear}><i>X </i> Clear selection </span>
+
 
           <style>{`
             .SearchTags {
@@ -85,6 +110,7 @@ class SearchTags extends Component {
               border-radius: 5px;
               margin-bottom: 10px;
               position: relative;
+              text-align: center;
             }
 
             .SearchTags-input {
@@ -123,7 +149,7 @@ class SearchTags extends Component {
 
             .SearchTags-input .ReactTags__tagInput input{
               width: 100%;
-              height: 30px;
+              height: 40px;
               box-sizing: border-box;
               padding-left: 10px;
               border: 1px solid #80808038;
@@ -149,6 +175,17 @@ class SearchTags extends Component {
               border-radius: 4px !important;
               display: inline-block;
               
+            }
+
+            .clearTag {
+              margin-top: 20px;
+              display: none;
+              text-align: center;
+              cursor: pointer;
+            }
+
+            .clearTag.active {
+              display: block;
             }
           `}</style>
 

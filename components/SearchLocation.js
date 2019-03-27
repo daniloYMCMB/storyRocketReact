@@ -140,6 +140,8 @@ class SearchLocation extends Component {
               height: 30px;
               box-sizing: border-box;
               padding-left: 10px;
+              border:1px solid #0000000f;
+              height: 40px;
             }
 
             .ReactTags__selected {

@@ -9,6 +9,65 @@ class SearchMaterialType extends Component {
     material.classList.toggle("active")
   }
 
+  handleClear = e => {
+
+    const materialTypeItem = document.getElementsByClassName("SearchMaterialType-item")
+
+    for(var i=0; i<materialTypeItem.length; i++) {
+      console.log(materialTypeItem)
+      if(materialTypeItem[i].classList.contains('active')) {
+        materialTypeItem[i].classList.remove('active')
+      }
+    }
+
+    const clear = document.getElementById("clearMaterialType")
+    clear.classList.remove('active')
+
+    
+
+  }
+
+  handleMaterialActive = (e) => {
+    const materialTypeItem = document.getElementById("item")
+    materialTypeItem.classList.toggle('active')
+
+    const clear = document.getElementById("clearMaterialType")
+
+    clear.classList.add('active')
+  }
+  handleMaterialActive2 = (e) => {
+    const materialTypeItem = document.getElementById("item2")
+    materialTypeItem.classList.toggle('active')
+
+    const clear = document.getElementById("clearMaterialType")
+
+    clear.classList.add('active')
+  }
+  handleMaterialActive3 = (e) => {
+    const materialTypeItem = document.getElementById("item3")
+    materialTypeItem.classList.toggle('active')
+
+    const clear = document.getElementById("clearMaterialType")
+
+    clear.classList.add('active')
+  }
+  handleMaterialActive4 = (e) => {
+    const materialTypeItem = document.getElementById("item4")
+    materialTypeItem.classList.toggle('active')
+
+    const clear = document.getElementById("clearMaterialType")
+
+    clear.classList.add('active')
+  }
+  handleMaterialActive5 = (e) => {
+    const materialTypeItem = document.getElementById("item5")
+    materialTypeItem.classList.toggle('active')
+
+    const clear = document.getElementById("clearMaterialType")
+
+    clear.classList.add('active')
+  }
+
   render() {
 
     return (
@@ -20,8 +79,8 @@ class SearchMaterialType extends Component {
         </div>
 
         <ul className="SearchMaterialType-items" id="SearchMaterialType">
-            <li className="SearchMaterialType-item">
-                <a href="">
+            <li className="SearchMaterialType-item" id="item" onClick={this.handleMaterialActive}>
+                <a >
                   <div className="icon">
                     <svg version="1.1"  viewBox="0 0 512 640">
                       <g>
@@ -37,8 +96,8 @@ class SearchMaterialType extends Component {
                   <h4>Book</h4>
                 </a>
             </li>
-            <li className="SearchMaterialType-item">
-                <a href="">
+            <li className="SearchMaterialType-item" id="item2" onClick={this.handleMaterialActive2}>
+                <a >
                   <div className="icon">
                     <svg version="1.1"  viewBox="0 0 512 640">
                       <g>
@@ -54,8 +113,8 @@ class SearchMaterialType extends Component {
                   <h4>Manuscript</h4>
                 </a>
             </li>
-            <li className="SearchMaterialType-item">
-                <a href="">
+            <li className="SearchMaterialType-item" id="item3" onClick={this.handleMaterialActive3}>
+                <a >
                   <div className="icon">
                     <svg version="1.1"  viewBox="0 0 512 640">
                       <g>
@@ -71,8 +130,8 @@ class SearchMaterialType extends Component {
                   <h4>Play</h4>
                 </a>
             </li>
-            <li className="SearchMaterialType-item">
-                <a href="">
+            <li className="SearchMaterialType-item active" id="item4" onClick={this.handleMaterialActive4}>
+                <a >
                   <div className="icon">
                     <svg version="1.1"  viewBox="0 0 512 640">
                       <g>
@@ -88,8 +147,8 @@ class SearchMaterialType extends Component {
                   <h4>Script</h4>
                 </a>
             </li>
-            <li className="SearchMaterialType-item">
-                <a href="">
+            <li className="SearchMaterialType-item" id="item5" onClick={this.handleMaterialActive5}>
+                <a >
                   <div className="icon">
                     <svg version="1.1"  viewBox="0 0 512 640">
                       <g>
@@ -106,6 +165,9 @@ class SearchMaterialType extends Component {
                 </a>
             </li>
         </ul>
+
+        <span className="clearMaterialType" id="clearMaterialType" onClick={this.handleClear}><i>X </i> Clear selection </span>
+      
 
         <style>{`
             .SearchMaterialType {
@@ -137,6 +199,7 @@ class SearchMaterialType extends Component {
               align-items: center;
               flex-wrap: wrap;
               display: none;
+              text-align: center;
             }
 
             .SearchMaterialType-items.active {
@@ -149,18 +212,22 @@ class SearchMaterialType extends Component {
 
             .SearchMaterialType-item {
               margin: 10px 10px 20px 10px;
+              cursor: pointer;
             }
 
-            .SearchMaterialType-item:hover h4:before{
+            .SearchMaterialType-item:hover h4:before,
+            .SearchMaterialType-item.active h4:before {
               width: 100%;
             }
 
-            .SearchMaterialType-item:hover .icon{
+            .SearchMaterialType-item:hover .icon,
+            .SearchMaterialType-item.active .icon {
               border: 2px solid #ffa603;
               background: #1c2d4c;
             }
 
-            .SearchMaterialType-item:hover svg{
+            .SearchMaterialType-item:hover svg, 
+            .SearchMaterialType-item.active svg {
               fill: #ffa603;
             }
 
@@ -203,6 +270,17 @@ class SearchMaterialType extends Component {
               border-radius: 50%;
               transition: .25s linear;
               border: 2px solid #1c2d4c;
+            }
+
+            .clearMaterialType {
+              margin-top: 20px;
+              display: none;
+              text-align: center;
+              cursor: pointer;
+            }
+
+            .clearMaterialType.active {
+              display: block;
             }
 
           `}</style>

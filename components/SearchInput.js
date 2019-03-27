@@ -19,12 +19,12 @@ class SearchInput extends Component {
 						background: white;
 						color: gray;
 						position: relative;
-						margin: 10px 0;
+						margin: 0 0 10px 0;
 					}
 
 					.searchInput input {
 						width: 100%;
-						height: 30px;
+						height: 40px;
 						padding-left: 10px;
 						border: 1px solid #0000000f;
 						box-sizing: border-box;

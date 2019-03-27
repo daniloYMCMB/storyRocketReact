@@ -13,13 +13,24 @@ import SearchEra from '../components/SearchEra'
 
 export default class Search extends React.Component {
 
+
+	handleMenu () {
+		const menu = document.getElementById("btnMenu")
+		menu.classList.toggle('active')
+
+		const sidebar = document.getElementById("searchSidebar")
+		sidebar.classList.toggle('active')
+
+	}
+
 	render() {
 		return (
 			<Layout title="Search">
 			
 				<div className="searchContainer df">
-					<div className="searchSidebar">
-						sidebar
+					<div className="searchSidebar" id="searchSidebar">
+						<div className="btnMenu" id="btnMenu" onClick={this.handleMenu}>
+						</div>
 						<SearchInput></SearchInput>
 						<SearchViews></SearchViews>
 						<SearchGenres></SearchGenres>
@@ -37,30 +48,87 @@ export default class Search extends React.Component {
 
 					<style>{`
 						.searchContainer {
-							background: blue;
 							padding: 10px;
 							color: white;
 							max-width: 1200px;
 							width: 95%;
 							margin: auto;
+							position: relative;
 						}
 
 						.df {
 							display: flex;
 							justify-content: center;
-							align-items: center;
-							flex-direction: column;
+							align-items: stretch;
 						}
 
 						.searchSidebar {
-							width: 58%;
+							width: 35%;
 							margin-right: 2%;
 							color: #1c2d4c;
+							background: #f3f3f3;
 						}
 
 						.searchContent {
 							width: 70%;
 							background: orange;
+							height: 1000vh;
+
+						}
+
+						@media screen and (max-width: 1000px) {
+							.searchSidebar {
+								width: 50%;
+							}
+						}
+
+						@media screen and (max-width: 768px) {
+							.searchSidebar {
+								width: 290px;
+								position: absolute;
+								top: 0;
+								left: -300px;
+								transition: .5s linear;
+							}
+							.searchSidebar.active {
+								left: 0;
+							}
+
+							.searchContent {
+								width: 100%;
+								background: orange;
+							}
+
+							.btnMenu {
+								position: absolute;
+								top: 5px;
+								left: 304px;
+								background: #1b2d4c;
+								height: 30px;
+								width: 30px;
+								transition: .5s linear;
+								cursor: pointer;
+							}
+
+							.btnMenu:before {
+								content: "";
+								width: 20px;
+								height: 3px;
+								background: #f3f3f3;
+								position: absolute;
+								top: 9px;
+								left: 5px;
+							}
+
+							.btnMenu:after {
+								content: "";
+								width: 20px;
+								height: 3px;
+								background: #f3f3f3;
+								position: absolute;
+								top: 17px;
+								left: 5px;
+							}
 						}
 					`}</style>
 

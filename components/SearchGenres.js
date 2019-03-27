@@ -29,7 +29,6 @@ class SearchGenres extends Component {
 
     const clear = document.getElementById("clearGenre")
 
-
   	if(e.target.value){
 		clear.classList.add('active')
   	} else {
@@ -100,6 +99,8 @@ class SearchGenres extends Component {
 				    	<label for="box13">Mafia</label>
 					</li>
 				</ul>
+
+	        
 	        </div>
 
 			<span className="clearGenre" id="clearGenre" onClick={this.handleClear}><i>X </i> Clear selection </span>
@@ -189,13 +190,14 @@ class SearchGenres extends Component {
 				  width: 2px;
 				  height: 2px;
 				  box-shadow: 2px 0 0 orange, 4px 0 0 orange, 4px -2px 0 orange, 4px -4px 0 orange, 4px -6px 0 orange, 4px -8px 0 orange;
-				  -webkit-transform: rotate(45deg);
-				          transform: rotate(45deg);
+				  transform: rotate(45deg);
 				}
 
 				.clearGenre {
 				  margin-top: 20px;
 				  display: none;
+				  text-align: center;
+				  cursor: pointer;
 				}
 
 				.clearGenre.active {

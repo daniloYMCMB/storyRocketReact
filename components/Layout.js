@@ -23,11 +23,9 @@ export default class Layout extends React.Component {
 
 					</Head>
 
-					<Header></Header>
 					
 					{this.props.children}
 
-					<Footer></Footer>
 					
 					<style jsx global="true">{`
 
@@ -89,6 +87,10 @@ export default class Layout extends React.Component {
 						}
 						:focus {
 							outline: inherit;
+						}
+
+						body {
+							background: #f3f3f3;
 						}
 					
 							

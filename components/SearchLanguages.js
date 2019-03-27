@@ -9,6 +9,35 @@ class SearchLanguages extends Component {
     language.classList.toggle("active")
   }
 
+	
+	handleClear = e => {
+
+		const genre = document.getElementsByClassName("styled-checkboxLanguages")
+
+		for(var i=0; i<genre.length; i++) {
+			if(genre[i].checked) {
+				genre[i].checked = false 
+			}
+		}
+
+		const clear = document.getElementById("clearLanguage")
+		clear.classList.remove('active')
+
+
+	}
+
+	handleChangeGenre = e => {
+
+	    const clear = document.getElementById("clearLanguage")
+
+	  	if(e.target.value){
+			clear.classList.add('active')
+	  	} else {
+			clear.classList.remove('active')
+	  	}
+
+	}
+
   render() {
 
 
@@ -24,41 +53,44 @@ class SearchLanguages extends Component {
 	        <div className="searchLanguages-list" id="searchLanguages-list">
 				<ul>
 					<li>
-						<input className="styled-checkbox" id="caja1" type="checkbox" value="value1"/>
+						<input onChange={this.handleChangeGenre}  className="styled-checkboxLanguages" id="caja1" type="checkbox" value="value1"/>
 				    	<label for="caja1">English</label>
 					</li>
 					<li>
-						<input className="styled-checkbox" id="caja2" type="checkbox" value="value1"/>
+						<input onChange={this.handleChangeGenre}  className="styled-checkboxLanguages" id="caja2" type="checkbox" value="value1"/>
 				    	<label for="caja2">Spanish</label>
 					</li>
 					<li>
-						<input className="styled-checkbox" id="caja3" type="checkbox" value="value1"/>
+						<input onChange={this.handleChangeGenre}  className="styled-checkboxLanguages" id="caja3" type="checkbox" value="value1"/>
 				    	<label for="caja3">French</label>
 					</li>
 					<li>
-						<input className="styled-checkbox" id="caja8" type="checkbox" value="value1"/>
+						<input onChange={this.handleChangeGenre}  className="styled-checkboxLanguages" id="caja8" type="checkbox" value="value1"/>
 				    	<label for="caja8">Arabic</label>
 					</li>
 				</ul>
 				<ul>
 					<li>
-						<input className="styled-checkbox" id="caja4" type="checkbox" value="value"/>
+						<input onChange={this.handleChangeGenre}  className="styled-checkboxLanguages" id="caja4" type="checkbox" value="value"/>
 				    	<label for="caja4">Icelandinc</label>
 					</li>
 					<li>
-						<input className="styled-checkbox" id="caja5" type="checkbox" value="value"/>
+						<input onChange={this.handleChangeGenre}  className="styled-checkboxLanguages" id="caja5" type="checkbox" value="value"/>
 				    	<label for="caja5">Portuguese</label>
 					</li>
 					<li>
-						<input className="styled-checkbox" id="caja6" type="checkbox" value="value1"/>
+						<input onChange={this.handleChangeGenre}  className="styled-checkboxLanguages" id="caja6" type="checkbox" value="value1"/>
 				    	<label for="caja6">Chinese</label>
 					</li>
 					<li>
-						<input className="styled-checkbox" id="caja11" type="checkbox" value="value"/>
+						<input onChange={this.handleChangeGenre}  className="styled-checkboxLanguages" id="caja11" type="checkbox" value="value"/>
 				    	<label for="caja11">Dutch</label>
 					</li>
 				</ul>
+
 	        </div>
+
+			<span className="clearLanguage" id="clearLanguage" onClick={this.handleClear}><i>X </i> Clear selection </span>
 
 	        <style>{`
 				.searchLanguages {
@@ -66,8 +98,8 @@ class SearchLanguages extends Component {
 					background: white;
 					padding: 10px;
 					border-radius: 5px;
-				  margin-bottom: 10px;
-				  position: relative;
+					margin-bottom: 10px;
+					position: relative;
 				}
 
 				.searchLanguages-title {
@@ -106,16 +138,16 @@ class SearchLanguages extends Component {
 				  margin-bottom: 10px;
 				}
 
-				.styled-checkbox {
+				.styled-checkboxLanguages {
 				  position: absolute;
 				  opacity: 0;
 				}
-				.styled-checkbox + label {
+				.styled-checkboxLanguages + label {
 				  position: relative;
 				  cursor: pointer;
 				  padding: 0;
 				}
-				.styled-checkbox + label:before {
+				.styled-checkboxLanguages + label:before {
 				  content: '';
 				  margin-right: 10px;
 				  display: inline-block;
@@ -126,24 +158,24 @@ class SearchLanguages extends Component {
 				  border: 2px solid #160e26;
 				  border-radius: 4px;
 				}
-				.styled-checkbox:hover + label:before {
+				.styled-checkboxLanguages:hover + label:before {
 				  background: white;
 				}
-				.styled-checkbox:focus + label:before {
+				.styled-checkboxLanguages:focus + label:before {
 				  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
 				}
-				.styled-checkbox:checked + label:before {
+				.styled-checkboxLanguages:checked + label:before {
 				  background: #1c2d4c;
 				}
-				.styled-checkbox:disabled + label {
+				.styled-checkboxLanguages:disabled + label {
 				  color: #b8b8b8;
 				  cursor: auto;
 				}
-				.styled-checkbox:disabled + label:before {
+				.styled-checkboxLanguages:disabled + label:before {
 				  box-shadow: none;
 				  background: #ddd;
 				}
-				.styled-checkbox:checked + label:after {
+				.styled-checkboxLanguages:checked + label:after {
 				  content: '';
 				  position: absolute;
 				  left: 4px;
@@ -154,6 +186,17 @@ class SearchLanguages extends Component {
 				  box-shadow: 2px 0 0 orange, 4px 0 0 orange, 4px -2px 0 orange, 4px -4px 0 orange, 4px -6px 0 orange, 4px -8px 0 orange;
 				  -webkit-transform: rotate(45deg);
 				          transform: rotate(45deg);
+				}
+
+				.clearLanguage {
+				  margin-top: 20px;
+				  display: none;
+				  text-align: center;
+				  cursor: pointer;
+				}
+
+				.clearLanguage.active {
+				  display: block;
 				}
 
 			`}</style>

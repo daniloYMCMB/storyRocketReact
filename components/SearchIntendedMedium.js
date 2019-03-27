@@ -9,6 +9,73 @@ class SearchIntendedMedium extends Component {
     intended.classList.toggle("active")
   }
 
+  handleMaterialActive = (e) => {
+    const materialTypeItem = document.getElementById("intended")
+    materialTypeItem.classList.toggle('active')
+
+    const clear = document.getElementById("clearMaterialType")
+
+    clear.classList.add('active')
+  }
+
+  handleMaterialActive2 = (e) => {
+    const materialTypeItem = document.getElementById("intended2")
+    materialTypeItem.classList.toggle('active')
+
+    const clear = document.getElementById("clearIntended")
+
+    clear.classList.add('active')
+  }
+  handleMaterialActive3 = (e) => {
+    const materialTypeItem = document.getElementById("intended3")
+    materialTypeItem.classList.toggle('active')
+
+    const clear = document.getElementById("clearIntended")
+
+    clear.classList.add('active')
+  }
+  handleMaterialActive4 = (e) => {
+    const materialTypeItem = document.getElementById("intended4")
+    materialTypeItem.classList.toggle('active')
+
+    const clear = document.getElementById("clearIntended")
+
+    clear.classList.add('active')
+  }
+  handleMaterialActive5 = (e) => {
+    const materialTypeItem = document.getElementById("intended5")
+    materialTypeItem.classList.toggle('active')
+
+    const clear = document.getElementById("clearIntended")
+
+    clear.classList.add('active')
+  }
+  handleMaterialActive6 = (e) => {
+    const materialTypeItem = document.getElementById("intended6")
+    materialTypeItem.classList.toggle('active')
+
+    const clear = document.getElementById("clearIntended")
+
+    clear.classList.add('active')
+  }
+
+  handleClear = e => {
+
+    const materialTypeItem = document.getElementsByClassName("SearchIntendedMedium-item")
+
+    for(var i=0; i<materialTypeItem.length; i++) {
+      console.log(materialTypeItem)
+      if(materialTypeItem[i].classList.contains('active')) {
+        materialTypeItem[i].classList.remove('active')
+      }
+    }
+
+    const clear = document.getElementById("clearIntended")
+    clear.classList.remove('active')
+
+    
+  }
+
   render() {
 
     return (
@@ -20,8 +87,8 @@ class SearchIntendedMedium extends Component {
         </div>
 
         <ul className="SearchIntendedMedium-items" id="SearchIntendedMedium-items">
-            <li className="SearchIntendedMedium-item">
-                <a href="">
+            <li className="SearchIntendedMedium-item active" id="intended" onClick={this.handleMaterialActive}>
+                <a>
                   <div className="icon">
                     <svg version="1.1"  viewBox="0 0 512 640">
                       <g>
@@ -37,8 +104,8 @@ class SearchIntendedMedium extends Component {
                   <h4>Movie/Film</h4>
                 </a>
             </li>
-            <li className="SearchIntendedMedium-item">
-                <a href="">
+            <li className="SearchIntendedMedium-item" id="intended2" onClick={this.handleMaterialActive2}>
+                <a>
                   <div className="icon">
                     <svg version="1.1"  viewBox="0 0 512 640">
                       <g>
@@ -54,8 +121,8 @@ class SearchIntendedMedium extends Component {
                   <h4>Web</h4>
                 </a>
             </li>
-            <li className="SearchIntendedMedium-item">
-                <a href="">
+            <li className="SearchIntendedMedium-item" id="intended3" onClick={this.handleMaterialActive3}>
+                <a>
                   <div className="icon">
                     <svg version="1.1"  viewBox="0 0 512 640">
                       <g>
@@ -71,8 +138,8 @@ class SearchIntendedMedium extends Component {
                   <h4>Television</h4>
                 </a>
             </li>
-            <li className="SearchIntendedMedium-item">
-                <a href="">
+            <li className="SearchIntendedMedium-item" id="intended4" onClick={this.handleMaterialActive4}>
+                <a>
                   <div className="icon">
                     <svg version="1.1"  viewBox="0 0 512 640">
                       <g>
@@ -88,8 +155,8 @@ class SearchIntendedMedium extends Component {
                   <h4>Stage-Theatre</h4>
                 </a>
             </li>
-            <li className="SearchIntendedMedium-item">
-                <a href="">
+            <li className="SearchIntendedMedium-item" id="intended5" onClick={this.handleMaterialActive5}>
+                <a>
                   <div className="icon">
                     <svg version="1.1"  viewBox="0 0 512 640">
                       <g>
@@ -105,8 +172,8 @@ class SearchIntendedMedium extends Component {
                   <h4>Literary</h4>
                 </a>
             </li>
-            <li className="SearchIntendedMedium-item">
-                <a href="">
+            <li className="SearchIntendedMedium-item" id="intended6" onClick={this.handleMaterialActive6}>
+                <a>
                   <div className="icon">
                     <svg version="1.1"  viewBox="0 0 512 640">
                       <g>
@@ -123,6 +190,8 @@ class SearchIntendedMedium extends Component {
                 </a>
             </li>
         </ul>
+
+        <span className="clearIntended" id="clearIntended" onClick={this.handleClear}><i>X </i> Clear selection </span>
 
         <style>{`
             .SearchIntendedMedium {
@@ -152,6 +221,8 @@ class SearchIntendedMedium extends Component {
               align-items: center;
               flex-wrap: wrap;
               display: none;
+              text-align: center;
+              cursor: pointer;
             }
 
             .SearchIntendedMedium-items.active {
@@ -166,16 +237,19 @@ class SearchIntendedMedium extends Component {
               margin: 10px 10px 20px 10px;
             }
 
-            .SearchIntendedMedium-item:hover h4:before{
+            .SearchIntendedMedium-item:hover h4:before,
+            .SearchIntendedMedium-item.active h4:before{
               width: 100%;
             }
 
-            .SearchIntendedMedium-item:hover .icon{
+            .SearchIntendedMedium-item:hover .icon,
+            .SearchIntendedMedium-item.active .icon{
               border: 2px solid #ffa603;
               background: #1c2d4c;
             }
 
-            .SearchIntendedMedium-item:hover svg{
+            .SearchIntendedMedium-item:hover svg,
+            .SearchIntendedMedium-item.active svg{
               fill: #ffa603;
             }
 
@@ -219,6 +293,17 @@ class SearchIntendedMedium extends Component {
               transition: .25s linear;
               border: 2px solid #1c2d4c;
               margin: auto;
+            }
+
+            .clearIntended {
+              margin-top: 20px;
+              display: none;
+              text-align: center;
+              cursor: pointer;
+            }
+
+            .clearIntended.active {
+              display: block;
             }
           `}</style>
 
