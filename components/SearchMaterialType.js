@@ -22,9 +22,6 @@ class SearchMaterialType extends Component {
 
     const clear = document.getElementById("clearMaterialType")
     clear.classList.remove('active')
-
-    
-
   }
 
   handleMaterialActive = (e) => {
@@ -198,7 +195,6 @@ class SearchMaterialType extends Component {
               justify-content: space-evenly;
               align-items: center;
               flex-wrap: wrap;
-              display: none;
               text-align: center;
             }
 

@@ -134,6 +134,39 @@ export default class Search extends React.Component {
 
 				</div>
 
+				<style>{`
+						.mia {
+							display: block;
+						}
+
+
+						svg {
+							display: inline-block;
+							height: 200px;
+							stroke: #1c2d4c;
+							stroke-width: 7px;
+							fill: purple;
+							margin: 0 auto;
+						}
+
+						.tw {
+							stroke-dasharray: 300,0,3000;
+						}
+
+						.mia svg:hover .tw {
+							animation: twitter 2s;
+						}
+
+						@keyframes twitter {
+							10% {
+								stroke-dasharray: 0,500,2300
+							}
+							100% {
+								stroke-dasharray: 2900,500,2900
+							}
+						}
+				`}</style>
+
 			</Layout>
 		)
 	}

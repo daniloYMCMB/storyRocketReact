@@ -17,9 +17,11 @@ class SearchInput extends Component {
 				<style>{`
 					.searchInput {
 						background: white;
-						color: gray;
+						color: #bdbbc2;
 						position: relative;
 						margin: 0 0 10px 0;
+						border-radius: 4px;
+						overflow: hidden;
 					}
 
 					.searchInput input {
@@ -28,6 +30,7 @@ class SearchInput extends Component {
 						padding-left: 10px;
 						border: 1px solid #0000000f;
 						box-sizing: border-box;
+						font-size: 14px;
 					}
 
 					.searchInput button {
