@@ -469,7 +469,7 @@ class SearchMaterialType extends Component {
             }
 
             .clearMaterialType {
-              margin-bottom: 20px;
+              margin-bottom: 10px;
               display: none;
               text-align: center;
               cursor: pointer;
@@ -488,6 +488,21 @@ class SearchMaterialType extends Component {
 
             .clearMaterialType.active {
               display: inline-block;
+            }
+
+            @media screen and (max-width: 767px) {
+              .SearchMaterialType-item h4 {
+                font-size: 12px;
+              }
+              .icon {
+                width: 60px !important;
+                height: 55px !important;
+              }
+
+              .SearchMaterialType-item svg {
+                width: 35px !important;
+                height: 50px !important;
+              }
             }
 
           `}</style>

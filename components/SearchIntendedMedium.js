@@ -7,7 +7,7 @@ class SearchIntendedMedium extends Component {
     const materialTypeItem = document.getElementById("intended")
     materialTypeItem.classList.toggle('active')
 
-    const clear = document.getElementById("clearMaterialType")
+    const clear = document.getElementById("clearIntended")
 
     clear.classList.add('active')
   }
@@ -193,7 +193,7 @@ class SearchIntendedMedium extends Component {
               <li className="SearchIntendedMedium-item" id="intended2" onClick={this.handleMaterialActive2}>
                   <a>
                     <div className="icon mia">
-                      <svg style={{width: 43, height: 62}} height="480pt" viewBox="0 -16 480 480" width="480pt" xmlns="http://www.w3.org/2000/svg"><path d="m448 272h-416v-240h416zm-400-16h384v-208h-384zm0 0"/><path d="m120 296h312v16h-312zm0 0"/><path d="m96 288h16v32h-16zm0 0"/><path d="m48 296h40v16h-40zm0 0"/><path d="m184 228.945312v-153.890624l153.886719 76.945312zm16-128v102.109376l102.113281-51.054688zm0 0"/><path d="m456 0h-432c-13.253906 0-24 10.746094-24 24v304c0 13.253906 10.746094 24 24 24h144v48h-80v48h304v-48h-80v-48h144c13.253906 0 24-10.746094 24-24v-304c0-13.253906-10.746094-24-24-24zm-80 416v16h-272v-16zm-80-16h-112v-48h112zm168-72c0 4.417969-3.582031 8-8 8h-432c-4.417969 0-8-3.582031-8-8v-304c0-4.417969 3.582031-8 8-8h432c4.417969 0 8 3.582031 8 8zm0 0"/></svg>
+                      <svg className="webIcon" style={{width: 43, height: 62}} height="480pt" viewBox="0 -16 480 480" width="480pt" xmlns="http://www.w3.org/2000/svg"><path d="m448 272h-416v-240h416zm-400-16h384v-208h-384zm0 0"/><path d="m120 296h312v16h-312zm0 0"/><path d="m96 288h16v32h-16zm0 0"/><path d="m48 296h40v16h-40zm0 0"/><path d="m184 228.945312v-153.890624l153.886719 76.945312zm16-128v102.109376l102.113281-51.054688zm0 0"/><path d="m456 0h-432c-13.253906 0-24 10.746094-24 24v304c0 13.253906 10.746094 24 24 24h144v48h-80v48h304v-48h-80v-48h144c13.253906 0 24-10.746094 24-24v-304c0-13.253906-10.746094-24-24-24zm-80 416v16h-272v-16zm-80-16h-112v-48h112zm168-72c0 4.417969-3.582031 8-8 8h-432c-4.417969 0-8-3.582031-8-8v-304c0-4.417969 3.582031-8 8-8h432c4.417969 0 8 3.582031 8 8zm0 0"/></svg>
                     </div>
                     <h4>Web</h4>
                   </a>
@@ -201,7 +201,7 @@ class SearchIntendedMedium extends Component {
               <li className="SearchIntendedMedium-item" id="intended3" onClick={this.handleMaterialActive3}>
                   <a>
                     <div className="icon mia">
-                      <svg style={{width: 45, height: 62}} version="1.1" id="Capa_1" x="0px" y="0px"
+                      <svg className="televisionIcon" style={{width: 45, height: 62}} version="1.1" id="Capa_1" x="0px" y="0px"
                          viewBox="0 0 512 512">
                         <g>
                           <g>
@@ -266,7 +266,7 @@ class SearchIntendedMedium extends Component {
               <li className="SearchIntendedMedium-item" id="intended4" onClick={this.handleMaterialActive4}>
                   <a>
                     <div className="icon mia">
-                      <svg style={{width: 45, height: 62}} version="1.1" id="Capa_1" x="0px" y="0px"
+                      <svg className="stageIcon" style={{width: 45, height: 62}} version="1.1" id="Capa_1" x="0px" y="0px"
                          viewBox="0 0 512 512">
                         <g>
                           <g>
@@ -336,7 +336,7 @@ class SearchIntendedMedium extends Component {
               <li className="SearchIntendedMedium-item" id="intended5" onClick={this.handleMaterialActive5}>
                   <a>
                     <div className="icon mia">
-                      <svg style={{width: 45, height: 62}} height="480pt" viewBox="0 0 480 480" width="480pt" xmlns="http://www.w3.org/2000/svg">
+                      <svg className="literaryIcon" style={{width: 45, height: 62}} height="480pt" viewBox="0 0 480 480" width="480pt" xmlns="http://www.w3.org/2000/svg">
                         <path d="m40 304h168v8c0 13.253906 10.746094 24 24 24v-16c-4.417969 0-8-3.582031-8-8v-280h16v232h16v-248h160v240h16v-248c0-4.417969-3.582031-8-8-8h-176c-4.417969 0-8 3.582031-8 8v8h-16v-8c0-4.417969-3.582031-8-8-8h-176c-4.417969 0-8 3.582031-8 8v288c0 4.417969 3.582031 8 8 8zm8-288h160v272h-160zm0 0"/><path d="m192 312h-176v-287.769531h-16v295.769531c0 4.417969 3.582031 8 8 8h184zm0 0"/><path d="m64 48h16v16h-16zm0 0"/><path d="m96 48h96v16h-96zm0 0"/><path d="m64 96h128v16h-128zm0 0"/><path d="m64 144h128v16h-128zm0 0"/><path d="m64 192h128v16h-128zm0 0"/><path d="m448 24.230469h16v239.769531h-16zm0 0"/><path d="m336 48h64v16h-64zm0 0"/><path d="m272 48h48v16h-48zm0 0"/><path d="m272 96h128v16h-128zm0 0"/><path d="m272 144h128v16h-128zm0 0"/><path d="m64 240h128v16h-128zm0 0"/><path d="m424 272h-56v-64c0-17.671875-14.328125-32-32-32s-32 14.328125-32 32v93.785156l-9.28125-11.058594c-7.144531-9.367187-18.859375-14.054687-30.496094-12.195312-11.632812 1.859375-21.304687 9.960938-25.175781 21.09375-3.867187 11.128906-1.308594 23.484375 6.664063 32.160156l60.152343 71.75c3.363281 11.191406 11.449219 20.347656 22.136719 25.074219v43.390625c0 4.417969 3.582031 8 8 8h112c4.417969 0 8-3.582031 8-8v-43.390625c14.558594-6.355469 23.980469-20.722656 24-36.609375v-64c-.035156-30.914062-25.085938-55.964844-56-56zm-169.734375 37.839844c.363281-4.222656 2.40625-8.125 5.671875-10.832032 6.828125-5.4375 16.722656-4.566406 22.503906 1.976563l21.558594 25.6875v49.726563l-46.039062-54.910157c-2.742188-3.230469-4.074219-7.425781-3.695313-11.648437zm185.734375 154.160156h-96v-32h96zm24-72c0 13.253906-10.746094 24-24 24h-96c-13.253906 0-24-10.746094-24-24v-184c0-8.835938 7.164062-16 16-16s16 7.164062 16 16v104h16v-24h24v24h16v-24h16c2.6875-.003906 5.367188.265625 8 .800781v31.199219h16v-23.792969c10.035156 7.492188 15.964844 19.269531 16 31.792969zm0 0"/><path d="m176 400h16v16h-16zm0 0"/><path d="m208 400h16v16h-16zm0 0"/><path d="m240 400h16v16h-16zm0 0"/><path d="m120 416h40v-16h-40v-40h-16v40h-32v-56h-16v64c0 4.417969 3.582031 8 8 8h40v40c0 4.417969 3.582031 8 8 8h128v-16h-120zm0 0"/><path d="m256 448h16v16h-16zm0 0"/>
                         <path d="m288 448h16v16h-16zm0 0"/>
                       </svg>
@@ -398,7 +398,7 @@ class SearchIntendedMedium extends Component {
               </li>
           </ul>
 
-          <span className="clearIntended" id="clearIntended" onClick={this.handleClear}><i>X </i> Clear selection </span>
+          <span className="clearIntended" id="clearIntended" onClick={this.handleClear}><i>&#x2715; </i> Clear selection </span>
         </div>
 
         <style>{`
@@ -546,16 +546,48 @@ class SearchIntendedMedium extends Component {
               font-weight: 100;
             }
 
-              .clearIntended:hover {
-                background: #1c2d4c;
-                border-radius: 4px;
-                color: orange;
-                border: 1px solid orange;
-              }
+            .clearIntended:hover {
+              background: #1c2d4c;
+              border-radius: 4px;
+              color: orange;
+              border: 1px solid orange;
+            }
 
             .clearIntended.active {
               display: inline-block;
             }
+
+            @media screen and (max-width: 767px) {
+              
+              .SearchIntendedMedium-item svg {
+                width: 40px;
+                height: 50px;
+              }
+
+              .SearchIntendedMedium-items .webIcon {
+                width: 38px !important;
+                height: 52px !important;
+              }
+
+              .SearchIntendedMedium-items .televisionIcon {
+                width: 38px !important;
+                height: 52px !important;
+              }
+
+              .SearchIntendedMedium-items .stageIcon {
+                width: 38px !important;
+                height: 52px !important;
+              }
+
+              .SearchIntendedMedium-items .literaryIcon {
+                width: 38px !important;
+                height: 52px !important;
+              }
+
+              .SearchIntendedMedium-item h4 {
+                font-size: 12px;
+              }
+          }
           `}</style>
 
       </div>

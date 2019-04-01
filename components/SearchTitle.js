@@ -20,7 +20,6 @@ class SearchTitle extends Component {
 				position: relative;
 				padding: 10px;
 				cursor: pointer;
-				margin-bottom: 20px;
 			}
 
 			.SearchTitle:hover .searchGenresMenu,
@@ -49,6 +48,12 @@ class SearchTitle extends Component {
 
 			.searchGenresMenu img {
 			  width: 15px;
+			}
+
+			@media screen and (max-width: 800px) {
+				.SearchTitle {
+					padding: 10px 0;
+				}
 			}
 
 		`}</style>

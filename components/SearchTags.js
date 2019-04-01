@@ -81,11 +81,18 @@ class SearchTags extends Component {
 
   return (
     <div className="SearchTags">
-        <Title title="Tags"></Title>
 
-        <div onClick={this.handleTagMenu} className="searchTagMenu">
-          <img src="/static/img/arrowUp.svg" alt=""/>
-        </div>
+          <div className="titleSearchMenu" id="titleSearchGenre" onClick={this.handleTagMenu}>
+            <div className="SearchTitle" >
+              <h2 className="SearchTitle-text">
+                Tags
+              </h2>
+            </div>
+
+            <div className="searchTagMenu">
+              <img src="/static/img/arrowUp.svg" alt=""/>
+            </div>
+          </div>
 
           <div className="SearchTags-input" id="SearchTags-input">
             <ReactTags
@@ -96,15 +103,43 @@ class SearchTags extends Component {
               handleDrag={this.handleDrag}
               delimiters={delimiters} 
               placeholder="Search Tag"/>
+              <button>
+                <img className="SearchLocation-image" src="/static/img/search.svg" alt=""/>              
+              </button>
+
+            <span className="clearTag" id="clearTag" onClick={this.handleClear}><i>&#x2715;  </i> Clear selection </span>
           </div>
 
-          <span className="clearTag" id="clearTag" onClick={this.handleClear}><i>X </i> Clear selection </span>
 
 
           <style>{`
+            .titleSearchMenu {
+              cursor: pointer;
+            }
+
+            .titleSearchMenu:hover .searchTagMenu,
+            .titleSearchMenu.active .searchTagMenu{
+              transform: rotate(180deg);
+            }
+
+            .SearchTitle {
+              position: relative;
+              padding: 10px;
+              cursor: pointer;
+            }
+
+            .SearchTitle-text {
+              text-align: left;
+              font-size: 18px;
+              font-weight: bold;
+              margin-bottom: 15px;
+              margin-top: 10px;
+              margin-left: 10px;
+              text-align: left;
+            }
+
             .SearchTags {
               background: white;
-              padding: 10px;
               box-sizing: border-box;
               font-family: sans-serif;
               border-radius: 5px;
@@ -116,6 +151,7 @@ class SearchTags extends Component {
             .SearchTags-input {
               position: relative;
               display: none;
+              min-height: 10px;
             }
             .SearchTags-input.active {
               display: block;
@@ -126,6 +162,7 @@ class SearchTags extends Component {
               top: 23px;
               right: 20px;
               cursor: pointer;
+              transition: .25s linear;
             }
 
             .searchTagMenu img {
@@ -141,9 +178,9 @@ class SearchTags extends Component {
 
             .SearchTags-input .ReactTags__tagInput{
               position: absolute;
-              top: -45px;
+              top: -55px;
               left: 20px;
-              width: 80%;
+              width: 89%;
               margin: auto;
             }
 
@@ -152,7 +189,7 @@ class SearchTags extends Component {
               height: 40px;
               box-sizing: border-box;
               padding-left: 10px;
-              border: 1px solid #80808038;
+              border: 2px solid #d0d0d0;
               border-radius: 4px;
             }
 
@@ -161,7 +198,7 @@ class SearchTags extends Component {
             }
 
             .ReactTags__selected {
-              margin-top: 70px;
+              margin-top: 60px !important;
               text-align: left;
               padding-left: 17px;
             }
@@ -174,18 +211,39 @@ class SearchTags extends Component {
               font-size: 15px;
               border-radius: 4px !important;
               display: inline-block;
-              
+            }
+
+            .SearchTags button {
+              position: absolute;
+              top: -48px;
+              right: 23px;
+              width: 34px;
+              height: 34px;
+              background: transparent;
+              border: none;
             }
 
             .clearTag {
-              margin-top: 20px;
+              margin-top: 10px;
+              margin-bottom: 10px;
               display: none;
               text-align: center;
               cursor: pointer;
+              transition: .25s linear;
+              padding: 5px;
+              border: 1px solid transparent;
+              font-weight: 100;
+            }
+
+            .clearTag:hover {
+              background: #1c2d4c;
+              border-radius: 4px;
+              color: orange;
+              border: 1px solid orange;
             }
 
             .clearTag.active {
-              display: block;
+              display: inline-block;
             }
           `}</style>
 

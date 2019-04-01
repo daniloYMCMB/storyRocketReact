@@ -1,33 +1,24 @@
 import React, { Component } from 'react';
-import Title from './SearchTitle'
 
 class SearchLanguages extends Component {
 
+	handleLanguage = (e) => {
+		const language = document.getElementById("searchLanguages-list")
+		language.classList.toggle("active")
+	}
 
-  handleLanguage = (e) => {
-    const language = document.getElementById("searchLanguages-list")
-    language.classList.toggle("active")
-  }
-
-	
 	handleClear = e => {
-
 		const genre = document.getElementsByClassName("styled-checkboxLanguages")
-
 		for(var i=0; i<genre.length; i++) {
 			if(genre[i].checked) {
 				genre[i].checked = false 
 			}
 		}
-
 		const clear = document.getElementById("clearLanguage")
 		clear.classList.remove('active')
-
-
 	}
 
 	handleChangeGenre = e => {
-
 	    const clear = document.getElementById("clearLanguage")
 
 	  	if(e.target.value){
@@ -35,71 +26,103 @@ class SearchLanguages extends Component {
 	  	} else {
 			clear.classList.remove('active')
 	  	}
-
 	}
 
-  render() {
-
+  	render() {
 
 	return (
 		<div className="searchLanguages">
-	       
-        	<Title title="Languages"></Title>
 
-	        <div onClick={this.handleLanguage} className="searchLanguagesMenu">
-				<img src="/static/img/arrowUp.svg" alt=""/>
-	        </div>
+			<div className="titleSearchMenu" id="titleSearchGenre" onClick={this.handleLanguage}>
+				<div className="SearchTitle">
+					<h2 className="SearchTitle-text">
+						Languages
+					</h2>
+				</div>
 
-	        <div className="searchLanguages-list" id="searchLanguages-list">
-				<ul>
-					<li>
-						<input onChange={this.handleChangeGenre}  className="styled-checkboxLanguages" id="caja1" type="checkbox" value="value1"/>
-				    	<label for="caja1">English</label>
-					</li>
-					<li>
-						<input onChange={this.handleChangeGenre}  className="styled-checkboxLanguages" id="caja2" type="checkbox" value="value1"/>
-				    	<label for="caja2">Spanish</label>
-					</li>
-					<li>
-						<input onChange={this.handleChangeGenre}  className="styled-checkboxLanguages" id="caja3" type="checkbox" value="value1"/>
-				    	<label for="caja3">French</label>
-					</li>
-					<li>
-						<input onChange={this.handleChangeGenre}  className="styled-checkboxLanguages" id="caja8" type="checkbox" value="value1"/>
-				    	<label for="caja8">Arabic</label>
-					</li>
-				</ul>
-				<ul>
-					<li>
-						<input onChange={this.handleChangeGenre}  className="styled-checkboxLanguages" id="caja4" type="checkbox" value="value"/>
-				    	<label for="caja4">Icelandinc</label>
-					</li>
-					<li>
-						<input onChange={this.handleChangeGenre}  className="styled-checkboxLanguages" id="caja5" type="checkbox" value="value"/>
-				    	<label for="caja5">Portuguese</label>
-					</li>
-					<li>
-						<input onChange={this.handleChangeGenre}  className="styled-checkboxLanguages" id="caja6" type="checkbox" value="value1"/>
-				    	<label for="caja6">Chinese</label>
-					</li>
-					<li>
-						<input onChange={this.handleChangeGenre}  className="styled-checkboxLanguages" id="caja11" type="checkbox" value="value"/>
-				    	<label for="caja11">Dutch</label>
-					</li>
-				</ul>
+				<div className="searchLanguagesMenu">
+					<img src="/static/img/arrowUp.svg" alt=""/>
+				</div>
+			</div>
 
-	        </div>
+			<div className="searchLanguages-container" id="searchLanguages-list">
+				<div className="searchLanguages-list">
+					<ul>
+						<li>
+							<input onChange={this.handleChangeGenre}  className="styled-checkboxLanguages" id="caja1" type="checkbox" value="value1"/>
+					    	<label for="caja1">English</label>
+						</li>
+						<li>
+							<input onChange={this.handleChangeGenre}  className="styled-checkboxLanguages" id="caja2" type="checkbox" value="value1"/>
+					    	<label for="caja2">Spanish</label>
+						</li>
+						<li>
+							<input onChange={this.handleChangeGenre}  className="styled-checkboxLanguages" id="caja3" type="checkbox" value="value1"/>
+					    	<label for="caja3">French</label>
+						</li>
+						<li>
+							<input onChange={this.handleChangeGenre}  className="styled-checkboxLanguages" id="caja8" type="checkbox" value="value1"/>
+					    	<label for="caja8">Arabic</label>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<input onChange={this.handleChangeGenre}  className="styled-checkboxLanguages" id="caja4" type="checkbox" value="value"/>
+					    	<label for="caja4">Icelandinc</label>
+						</li>
+						<li>
+							<input onChange={this.handleChangeGenre}  className="styled-checkboxLanguages" id="caja5" type="checkbox" value="value"/>
+					    	<label for="caja5">Portuguese</label>
+						</li>
+						<li>
+							<input onChange={this.handleChangeGenre}  className="styled-checkboxLanguages" id="caja6" type="checkbox" value="value1"/>
+					    	<label for="caja6">Chinese</label>
+						</li>
+						<li>
+							<input onChange={this.handleChangeGenre}  className="styled-checkboxLanguages" id="caja11" type="checkbox" value="value"/>
+					    	<label for="caja11">Dutch</label>
+						</li>
+					</ul>
 
-			<span className="clearLanguage" id="clearLanguage" onClick={this.handleClear}><i>X </i> Clear selection </span>
+		        </div>
+
+				<span className="clearLanguage" id="clearLanguage" onClick={this.handleClear}><i>&#x2715; </i> Clear selection </span>
+
+			</div>
 
 	        <style>{`
+	        	.titleSearchGenre {
+					cursor: pointer;
+				}
+
+				.titleSearchMenu:hover .searchLanguagesMenu,
+				.titleSearchMenu.active .searchLanguagesMenu{
+					transform: rotate(180deg);
+				}
+
+				.SearchTitle {
+					position: relative;
+					padding: 10px;
+					cursor: pointer;
+				}
+
+				.SearchTitle-text {
+					text-align: left;
+					font-size: 18px;
+					font-weight: bold;
+					margin-bottom: 15px;
+					margin-top: 10px;
+					margin-left: 10px;
+					text-align: left;
+				}
+
 				.searchLanguages {
 					font-family: sans-serif;
 					background: white;
-					padding: 10px;
 					border-radius: 5px;
 					margin-bottom: 10px;
 					position: relative;
+					text-align: center;
 				}
 
 				.searchLanguages-title {
@@ -115,20 +138,26 @@ class SearchLanguages extends Component {
 				  top: 23px;
 				  right: 20px;
 				  cursor: pointer;
+				  transition: .25s linear;
 				}
 
 				.searchLanguagesMenu img {
 				  width: 15px;
 				}
 
-				.searchLanguages-list {
-				  display: none;
-				  justify-content: space-around;
-				  align-items: center;
+				.searchLanguages-container {
+					display: none;
 				}
 
-				.searchLanguages-list.active {
+				.searchLanguages-container.active {
+					display: block;
+				}
+	
+				.searchLanguages-list {
 				  display: flex;
+				  justify-content: space-between;
+				  align-items: center;
+				  padding: 10px 25px 15px 25px;
 				}
 				.searchLanguages-list ul{
 				  
@@ -189,14 +218,33 @@ class SearchLanguages extends Component {
 				}
 
 				.clearLanguage {
-				  margin-top: 20px;
+				  margin-bottom: 10px;
 				  display: none;
 				  text-align: center;
 				  cursor: pointer;
+				  transition: .25s linear;
+				  padding: 5px;
+				  border: 1px solid transparent;
+				  font-weight: 100;
 				}
 
+	          .clearLanguage:hover {
+	            background: #1c2d4c;
+	            border-radius: 4px;
+	            color: orange;
+	            border: 1px solid orange;
+	          }
+
 				.clearLanguage.active {
-				  display: block;
+				  display: inline-block;
+				}
+
+				@media screen and (max-width: 800px) {
+
+					.searchLanguages-list {
+						padding: 10px 10px 15px 10px;
+					}
+
 				}
 
 			`}</style>

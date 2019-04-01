@@ -35,10 +35,10 @@ class SearchInput extends Component {
 
 					.searchInput button {
 						position: absolute;
-						width: 30px;
-						height: 30px;
+						width: 34px;
+						height: 34px;
 						top: 0px;
-						right: 10px;
+						right: 7px;
 						bottom: 0;
 						margin: auto;
 						border: none;

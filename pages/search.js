@@ -76,13 +76,13 @@ export default class Search extends React.Component {
 
 						}
 
-						@media screen and (max-width: 1000px) {
+						@media screen and (max-width: 1100px) {
 							.searchSidebar {
-								width: 50%;
+								width: 64%;
 							}
 						}
 
-						@media screen and (max-width: 768px) {
+						@media screen and (max-width: 767px) {
 							.searchSidebar {
 								width: 290px;
 								position: absolute;
@@ -92,6 +92,8 @@ export default class Search extends React.Component {
 							}
 							.searchSidebar.active {
 								left: 0;
+								padding-right: 10px;
+								border-radius: 0 0 10px 0;
 							}
 
 							.searchContent {
@@ -101,13 +103,15 @@ export default class Search extends React.Component {
 
 							.btnMenu {
 								position: absolute;
-								top: 5px;
-								left: 304px;
+								top: 0px;
+								left: 290px;
 								background: #1b2d4c;
 								height: 30px;
 								width: 30px;
 								transition: .5s linear;
 								cursor: pointer;
+								padding: 5px;
+								border-radius: 0 0 5px 0;
 							}
 
 							.btnMenu:before {
@@ -116,8 +120,8 @@ export default class Search extends React.Component {
 								height: 3px;
 								background: #f3f3f3;
 								position: absolute;
-								top: 9px;
-								left: 5px;
+								top: 14px;
+								left: 9px;
 							}
 
 							.btnMenu:after {
@@ -126,8 +130,33 @@ export default class Search extends React.Component {
 								height: 3px;
 								background: #f3f3f3;
 								position: absolute;
-								top: 17px;
-								left: 5px;
+								top: 22px;
+								left: 9px;
+							}
+
+							.btnMenu.active {
+								left: 300px;
+							}
+
+							.searchGenres-list {
+								padding: 10px 10px 15px 10px;
+							}
+
+							.searchLanguages-list {
+								padding: 10px 10px 15px 10px;
+							}
+
+							.searchEraMenu-list {
+								padding: 10px 10px 15px 10px;
+							}
+
+							@media screen and (max-width: 600px) {
+								.searchSidebar {
+									left: -294px;
+								}
+								.searchSidebar.active {
+									left: 5px;
+								}
 							}
 						}
 					`}</style>

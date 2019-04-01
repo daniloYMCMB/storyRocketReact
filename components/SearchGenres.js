@@ -157,9 +157,9 @@ class SearchGenres extends Component {
 
 				.searchGenres-list {
 				  display: flex;
-				  justify-content: space-around;
+				  justify-content: space-between;
 				  align-items: center;
-				  padding: 10px;
+				  padding: 10px 25px 15px 25px;
 				}
 
 				.searchGenresMenu {
@@ -251,6 +251,17 @@ class SearchGenres extends Component {
 
 				.clearGenre.active {
 				  display: inline-block;
+				}
+
+				@media screen and (max-width: 800px) {
+					.searchGenres-list {
+						padding: 10px 10px 15px 10px;
+					}
+
+					.SearchTitle {
+						padding: 10px 0 !important;
+					}
+					
 				}
 			`}</style>
 
