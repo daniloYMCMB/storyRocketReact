@@ -149,13 +149,11 @@ export default class Search extends React.Component {
 							margin: 0 auto;
 						}
 
-						.tw {
+						svg path {
 							stroke-dasharray: 300,0,3000;
 						}
 
-						.mia svg:hover .tw {
-							animation: twitter 2s;
-						}
+						
 
 						@keyframes twitter {
 							10% {
