@@ -11,6 +11,8 @@ import SearchLanguages from '../components/SearchLanguages'
 import SearchLocation from '../components/SearchLocation'
 import SearchEra from '../components/SearchEra'
 
+import PopUpStory from '../components/PopUpStory'
+
 export default class Search extends React.Component {
 
 
@@ -43,7 +45,7 @@ export default class Search extends React.Component {
 					</div>
 
 					<div className="searchContent">
-						content
+						<PopUpStory></PopUpStory>
 					</div>
 
 					<style>{`
@@ -72,7 +74,8 @@ export default class Search extends React.Component {
 						.searchContent {
 							width: 70%;
 							background: orange;
-							height: 1000vh;
+							background: white;
+							height: 100vh;
 
 						}
 

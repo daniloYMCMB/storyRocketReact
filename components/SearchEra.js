@@ -22,9 +22,9 @@ class SearchEra extends Component {
       const clear = document.getElementById("clearEra")
 
       if(e.target.value){
-      clear.classList.add('active')
+        clear.classList.add('active')
       } else {
-      clear.classList.remove('active')
+        clear.classList.remove('active')
       }
   }
 
@@ -74,6 +74,15 @@ class SearchEra extends Component {
           </div>
 
           <style>{`
+            .titleSearchGenre {
+              cursor: pointer;
+            }
+
+            .titleSearchMenu:hover .searchEraMenu,
+            .titleSearchMenu.active .searchEraMenu{
+              transform: rotate(180deg);
+            }
+
             .SearchEra {
               background: white;
               box-sizing: border-box;
@@ -89,6 +98,7 @@ class SearchEra extends Component {
               top: 23px;
               right: 20px;
               cursor: pointer;
+              transition: .25s linear;
             }
 
             .searchEraMenu img {
