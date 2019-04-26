@@ -175,7 +175,7 @@ class SearchGenres extends Component {
 				}
 				
 				.searchGenres-list ul{
-				  
+					width: 50%;
 				}
 				.searchGenres-list li{
 				  text-align: left;
@@ -240,13 +240,13 @@ class SearchGenres extends Component {
 				  padding: 5px;
 				  border: 1px solid transparent;
 				  font-weight: 100;
+				  line-height: 1.3;
 				}
 
 		          .clearGenre:hover {
-		            background: #1c2d4c;
 		            border-radius: 4px;
-		            color: orange;
-		            border: 1px solid orange;
+		            color: #1c2d4c;
+		            border: 1px solid #1c2d4c;
 		          }
 
 				.clearGenre.active {

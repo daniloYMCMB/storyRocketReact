@@ -45,7 +45,7 @@ export default class Search extends React.Component {
 					</div>
 
 					<div className="searchContent">
-						<PopUpStory></PopUpStory>
+						
 					</div>
 
 					<style>{`
@@ -81,7 +81,19 @@ export default class Search extends React.Component {
 
 						@media screen and (max-width: 1100px) {
 							.searchSidebar {
-								width: 64%;
+								width: 45%;
+							}
+						}
+
+						@media screen and (max-width: 970px) {
+							.searchSidebar {
+								width: 55%;
+							}
+						}
+
+						@media screen and (max-width: 850px) {
+							.searchSidebar {
+								width: 65%;
 							}
 						}
 

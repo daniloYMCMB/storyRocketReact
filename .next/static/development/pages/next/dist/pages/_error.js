@@ -4564,7 +4564,7 @@ module.exports = (__webpack_require__(/*! dll-reference dll_bed7e68b081ee2342acd
 
 /***/ }),
 
-/***/ 2:
+/***/ 1:
 /*!**********************************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2F_error&absolutePagePath=%2FUsers%2Fdaniloviacavavizarreta%2Fwww%2Fstoryrocketreact%2Fnode_modules%2Fnext%2Fdist%2Fpages%2F_error.js ***!
   \**********************************************************************************************************************************************************************************/
@@ -4587,5 +4587,5 @@ module.exports = dll_bed7e68b081ee2342acd;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]));;
+},[[1,"static/runtime/webpack.js"]]]));;
 //# sourceMappingURL=_error.js.map

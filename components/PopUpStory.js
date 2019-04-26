@@ -34,8 +34,8 @@ class PopUpStory extends React.Component {
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore explicabo aliquam, quae voluptatem culpa? Magni cumque nostrum maiores saepe numquam repellendus architecto illum praesentium, reiciendis veritatis incidunt ipsa, impedit at.
 							</p>
 							<a className="close" href="#">&times;</a>
-							<form action="">
-								<input type="email" placeholder="email"/>
+							<form className="form">
+								<input className="" type="email" placeholder="email"/>
 								<button>Enviar</button>
 							</form>
 						</div>

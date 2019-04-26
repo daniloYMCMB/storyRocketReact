@@ -5,6 +5,9 @@ class SearchLanguages extends Component {
 	handleLanguage = (e) => {
 		const language = document.getElementById("searchLanguages-list")
 		language.classList.toggle("active")
+		
+		const titleSearchLanguage = document.getElementById("titleSearchLanguage")
+		titleSearchLanguage.classList.toggle("active")
 	}
 
 	handleClear = e => {
@@ -33,7 +36,7 @@ class SearchLanguages extends Component {
 	return (
 		<div className="searchLanguages">
 
-			<div className="titleSearchMenu" id="titleSearchGenre" onClick={this.handleLanguage}>
+			<div className="titleSearchMenu" id="titleSearchLanguage" onClick={this.handleLanguage}>
 				<div className="SearchTitle">
 					<h2 className="SearchTitle-text">
 						Languages
@@ -160,7 +163,7 @@ class SearchLanguages extends Component {
 				  padding: 10px 25px 15px 25px;
 				}
 				.searchLanguages-list ul{
-				  
+					width: 50%;
 				}
 				.searchLanguages-list li{
 				  text-align: left;
@@ -226,14 +229,14 @@ class SearchLanguages extends Component {
 				  padding: 5px;
 				  border: 1px solid transparent;
 				  font-weight: 100;
-				}
+		            line-height: 1.3;
+		          }
 
-	          .clearLanguage:hover {
-	            background: #1c2d4c;
-	            border-radius: 4px;
-	            color: orange;
-	            border: 1px solid orange;
-	          }
+		          .clearLanguage:hover {
+		            border-radius: 4px;
+		            color: #1c2d4c;
+		            border: 1px solid #1c2d4c;
+		          }
 
 				.clearLanguage.active {
 				  display: inline-block;

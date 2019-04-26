@@ -253,13 +253,13 @@ class SearchViews extends Component {
             padding: 5px;
             border: 1px solid transparent;
             font-weight: 100;
+            line-height: 1.3;
           }
 
           .clearSearchView:hover {
-            background: #1c2d4c;
             border-radius: 4px;
-            color: orange;
-            border: 1px solid orange;
+            color: #1c2d4c;
+            border: 1px solid #1c2d4c;
           }
 
           .clearSearchView.active {

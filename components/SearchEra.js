@@ -5,6 +5,9 @@ class SearchEra extends Component {
   handleMenuEra = (e) => {
     const era = document.getElementById("searchEraMenu-list")
     era.classList.toggle("active")
+    
+    const titleSearchEra = document.getElementById("titleSearchEra")
+    titleSearchEra.classList.toggle("active")
   }
 
   handleClear = e => {
@@ -33,7 +36,7 @@ class SearchEra extends Component {
   return (
     <div className="SearchEra">
 
-          <div className="titleSearchMenu" id="titleSearchGenre" onClick={this.handleMenuEra}>
+          <div className="titleSearchMenu" id="titleSearchEra" onClick={this.handleMenuEra}>
             <div className="SearchTitle" >
               <h2 className="SearchTitle-text">
                 Era
@@ -50,23 +53,34 @@ class SearchEra extends Component {
               <ul>
                 <li>
                   <input onChange={this.handleChangeEra}  className="styled-checkboxEra" id="era1" type="checkbox" value="value1"/>
-                    <label for="era1">Antiguo</label>
+                    <label for="era1">Present Day</label>
                 </li>
                 <li>
                   <input onChange={this.handleChangeEra}  className="styled-checkboxEra" id="era2" type="checkbox" value="value1"/>
-                    <label for="era2">Contemporáneo</label>
+                    <label for="era2">Recent Day</label>
+                </li>
+                <li>
+                  <input onChange={this.handleChangeEra}  className="styled-checkboxEra" id="era3" type="checkbox" value="value1"/>
+                    <label for="era3">Distant Past</label>
+                </li>
+                <li>
+                  <input onChange={this.handleChangeEra}  className="styled-checkboxEra" id="era4" type="checkbox" value="value1"/>
+                    <label for="era4">Near Future</label>
                 </li>
               </ul>
               <ul>
                 <li>
                   <input onChange={this.handleChangeEra}  className="styled-checkboxEra" id="era5" type="checkbox" value="value"/>
-                    <label for="era5">Actual</label>
+                    <label for="era5">Distant Future</label>
                 </li>
                 <li>
                   <input onChange={this.handleChangeEra}  className="styled-checkboxEra" id="era6" type="checkbox" value="value"/>
-                    <label for="era6">Tendencia</label>
+                    <label for="era6">Fictitious World</label>
                 </li>
-
+                <li>
+                  <input onChange={this.handleChangeEra}  className="styled-checkboxEra" id="era7" type="checkbox" value="value"/>
+                    <label for="era7">Other</label>
+                </li>
               </ul>
             </div>
 
@@ -116,11 +130,10 @@ class SearchEra extends Component {
             .searchEraMenu-list {
               display: flex;
               justify-content: space-between;
-              align-items: center;
               padding: 10px 25px 15px 25px;
             }
             .searchEraMenu-list ul{
-              
+              width: 50%;
             }
             .searchEraMenu-list li{
               text-align: left;
@@ -186,13 +199,13 @@ class SearchEra extends Component {
               padding: 5px;
               border: 1px solid transparent;
               font-weight: 100;
+              line-height: 1.3;
             }
 
             .clearEra:hover {
-              background: #1c2d4c;
               border-radius: 4px;
-              color: orange;
-              border: 1px solid orange;
+              color: #1c2d4c;
+              border: 1px solid #1c2d4c;
             }
 
             .clearEra.active {

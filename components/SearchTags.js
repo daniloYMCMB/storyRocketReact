@@ -61,6 +61,9 @@ class SearchTags extends Component {
     handleTagMenu = (e) => {
       const material = document.getElementById("SearchTags-input")
       material.classList.toggle("active")
+
+      const titleSearchGenre = document.getElementById("titleSearchTags")
+      titleSearchGenre.classList.toggle("active")
     }
 
     handleClear = e => {
@@ -82,7 +85,7 @@ class SearchTags extends Component {
   return (
     <div className="SearchTags">
 
-          <div className="titleSearchMenu" id="titleSearchGenre" onClick={this.handleTagMenu}>
+          <div className="titleSearchMenu" id="titleSearchTags" onClick={this.handleTagMenu}>
             <div className="SearchTitle" >
               <h2 className="SearchTitle-text">
                 Tags
@@ -103,8 +106,48 @@ class SearchTags extends Component {
               handleDrag={this.handleDrag}
               delimiters={delimiters} 
               placeholder="Search Tag"/>
-              <button>
-                <img className="SearchLocation-image" src="/static/img/search.svg" alt=""/>              
+
+              <button>  
+                <svg style={{width: 20, height: 20, fill: '#ffa603', stroke: '#ffa603', cursor: 'pointer'}} viewBox="0 0 250.313 250.313">
+                  <g id="Search">
+                    <path d="M244.186,214.604l-54.379-54.378c-0.289-0.289-0.628-0.491-0.93-0.76
+                      c10.7-16.231,16.945-35.66,16.945-56.554C205.822,46.075,159.747,0,102.911,0S0,46.075,0,102.911
+                      c0,56.835,46.074,102.911,102.91,102.911c20.895,0,40.323-6.245,56.554-16.945c0.269,0.301,0.47,0.64,0.759,0.929l54.38,54.38
+                      c8.169,8.168,21.413,8.168,29.583,0C252.354,236.017,252.354,222.773,244.186,214.604z M102.911,170.146
+                      c-37.134,0-67.236-30.102-67.236-67.235c0-37.134,30.103-67.236,67.236-67.236c37.132,0,67.235,30.103,67.235,67.236
+                      C170.146,140.044,140.043,170.146,102.911,170.146z"/>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                  <g>
+                  </g>
+                </svg>             
               </button>
 
             <span className="clearTag" id="clearTag" onClick={this.handleClear}><i>&#x2715;  </i> Clear selection </span>
@@ -191,6 +234,11 @@ class SearchTags extends Component {
               padding-left: 10px;
               border: 2px solid #d0d0d0;
               border-radius: 4px;
+              font-size: 14px;
+            }
+
+            .SearchTags-input .ReactTags__tagInput input:focus::placeholder {
+              color: white;
             }
 
             .SearchTags-input .ReactTags__remove {
@@ -215,7 +263,7 @@ class SearchTags extends Component {
 
             .SearchTags button {
               position: absolute;
-              top: -48px;
+              top: -52px;
               right: 23px;
               width: 34px;
               height: 34px;
@@ -233,13 +281,13 @@ class SearchTags extends Component {
               padding: 5px;
               border: 1px solid transparent;
               font-weight: 100;
+              line-height: 1.3;
             }
 
             .clearTag:hover {
-              background: #1c2d4c;
               border-radius: 4px;
-              color: orange;
-              border: 1px solid orange;
+              color: #1c2d4c;
+              border: 1px solid #1c2d4c;
             }
 
             .clearTag.active {

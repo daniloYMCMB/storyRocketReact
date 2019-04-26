@@ -273,6 +273,163 @@ function (_React$Component) {
 
 /***/ }),
 
+/***/ "./components/PopUpStory.js":
+/*!**********************************!*\
+  !*** ./components/PopUpStory.js ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! styled-jsx/style */ "./node_modules/styled-jsx/style.js");
+/* harmony import */ var styled_jsx_style__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_style__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_9__);
+
+
+
+
+
+
+
+var _jsxFileName = "/Users/daniloviacavavizarreta/www/storyrocketreact/components/PopUpStory.js";
+
+
+
+
+var PopUpStory =
+/*#__PURE__*/
+function (_React$Component) {
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_5__["default"])(PopUpStory, _React$Component);
+
+  function PopUpStory(props) {
+    var _this;
+
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_0__["default"])(this, PopUpStory);
+
+    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_3__["default"])(PopUpStory).call(this, props));
+
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "handleMenuHamburguesa", function (e) {
+      e.preventDefault();
+      var headerHamburguesa = document.getElementById('headerMenu-hamburguesa');
+      var headerMenuMmobile = document.getElementById('headerMenu-mobile');
+      headerHamburguesa.classList.toggle('active');
+      headerMenuMmobile.classList.toggle('active');
+    });
+
+    _this.state = {};
+    return _this;
+  }
+
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_1__["default"])(PopUpStory, [{
+    key: "render",
+    value: function render() {
+      return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        className: "jsx-13235758" + " " + "PopUpStory",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 24
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        className: "jsx-13235758" + " " + "box",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 26
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
+        href: "#popup1",
+        className: "jsx-13235758" + " " + "button",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 27
+        },
+        __self: this
+      }, "Let me Pop up")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        id: "popup1",
+        className: "jsx-13235758" + " " + "overlay",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 30
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
+        className: "jsx-13235758" + " " + "popup",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 31
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h2", {
+        className: "jsx-13235758",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 32
+        },
+        __self: this
+      }, "T\xEDtulo de Pop up"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("p", {
+        className: "jsx-13235758",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 33
+        },
+        __self: this
+      }, "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore explicabo aliquam, quae voluptatem culpa? Magni cumque nostrum maiores saepe numquam repellendus architecto illum praesentium, reiciendis veritatis incidunt ipsa, impedit at."), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("a", {
+        href: "#",
+        className: "jsx-13235758" + " " + "close",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 36
+        },
+        __self: this
+      }, "\xD7"), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("form", {
+        className: "jsx-13235758" + " " + "form",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 37
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("input", {
+        type: "email",
+        placeholder: "email",
+        className: "jsx-13235758" + " " + "",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 38
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("button", {
+        className: "jsx-13235758",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 39
+        },
+        __self: this
+      }, "Enviar")))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(styled_jsx_style__WEBPACK_IMPORTED_MODULE_7___default.a, {
+        id: "13235758",
+        __self: this
+      }, ".PopUpStory.jsx-13235758 .button.jsx-13235758{font-size:16px;padding:10px;border:2px solid #06D85F;cursor:pointer;-webkit-transition:all 0.3s ease-out;transition:all 0.3s ease-out;color:red;}.PopUpStory.jsx-13235758 .button.jsx-13235758:hover{background:#06D85F;}.PopUpStory.jsx-13235758 .overlay.jsx-13235758{position:fixed;top:0;bottom:0;left:0;right:0;background:rgba(0,0,0,0.7);-webkit-transition:opacity 500ms;transition:opacity 500ms;visibility:hidden;opacity:0;}.PopUpStory.jsx-13235758 .overlay.jsx-13235758:target{visibility:visible;opacity:1;}.PopUpStory.jsx-13235758 .popup.jsx-13235758{margin:23vh auto;padding:20px;background:#fff;border-radius:5px;width:50vw;height:50vh;position:relative;-webkit-transition:all .25s ease-in-out;transition:all .25s ease-in-out;color:red;}.PopUpStory.jsx-13235758 .popup.jsx-13235758 h2.jsx-13235758{margin-top:0;color:#333;font-family:Tahoma,Arial,sans-serif;}.PopUpStory.jsx-13235758 .popup.jsx-13235758 .close.jsx-13235758{position:absolute;top:20px;right:30px;-webkit-transition:all 200ms;transition:all 200ms;font-size:30px;font-weight:bold;-webkit-text-decoration:none;text-decoration:none;color:#333;}.PopUpStory.jsx-13235758 .popup.jsx-13235758 .close.jsx-13235758:hover{color:#06D85F;}.PopUpStory.jsx-13235758 .popup.jsx-13235758 .content.jsx-13235758{max-height:30%;overflow:auto;color:red;}@media screen and (max-width:700px){.PopUpStory.jsx-13235758 .box.jsx-13235758{width:70%;}.PopUpStory.jsx-13235758 .popup.jsx-13235758{width:70%;}}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9kYW5pbG92aWFjYXZhdml6YXJyZXRhL3d3dy9zdG9yeXJvY2tldHJlYWN0L2NvbXBvbmVudHMvUG9wVXBTdG9yeS5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUEyQ2lCLEFBTXdCLEFBUUksQUFJSixBQVdJLEFBS0YsQUFZSixBQUtLLEFBVUosQUFHQyxBQU9ILEFBR0EsVUFGWixBQUdBLEdBNUJXLENBZWIsQ0F2RGUsQUFZUCxBQThDUSxFQTlCRCxDQWlCSixDQXJDWCxBQWVZLEVBVkQsR0E0QjZCLEdBSzNCLENBN0NjLENBdUIzQixBQW1DWSxDQTdDSCxBQWVTLE9BZFIsQ0FnQ2EsQ0FhdkIsTUE1Q2dDLENBY1osT0E1QkgsT0F3Q2pCLElBWGEsSUE1QmtCLElBY0osR0FlYixZQUNNLENBZUgsZUFDRSxFQWZlLGVBZ0JYLFVBaENILElBZFIsVUFDWixJQWNZLFVBQ1osWUErQmEsT0FoQkQsSUFpQlosTUFoQkEiLCJmaWxlIjoiL1VzZXJzL2Rhbmlsb3ZpYWNhdmF2aXphcnJldGEvd3d3L3N0b3J5cm9ja2V0cmVhY3QvY29tcG9uZW50cy9Qb3BVcFN0b3J5LmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IFJlYWN0IGZyb20gJ3JlYWN0JztcbmltcG9ydCBMaW5rIGZyb20gJ25leHQvbGluaydcblxuY2xhc3MgUG9wVXBTdG9yeSBleHRlbmRzIFJlYWN0LkNvbXBvbmVudCB7XG5cblx0Y29uc3RydWN0b3IocHJvcHMpIHtcblx0XHRzdXBlcihwcm9wcyk7XG5cdFx0XHR0aGlzLnN0YXRlID0ge1xuXHRcdH07XG5cdH1cblxuXHRoYW5kbGVNZW51SGFtYnVyZ3Vlc2EgPSAoZSkgPT4ge1xuXHRcdGUucHJldmVudERlZmF1bHQoKVxuXG5cdFx0Y29uc3QgaGVhZGVySGFtYnVyZ3Vlc2EgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnaGVhZGVyTWVudS1oYW1idXJndWVzYScpXG5cdFx0Y29uc3QgaGVhZGVyTWVudU1tb2JpbGUgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnaGVhZGVyTWVudS1tb2JpbGUnKVxuXG5cdFx0aGVhZGVySGFtYnVyZ3Vlc2EuY2xhc3NMaXN0LnRvZ2dsZSgnYWN0aXZlJylcblx0XHRoZWFkZXJNZW51TW1vYmlsZS5jbGFzc0xpc3QudG9nZ2xlKCdhY3RpdmUnKVxuXHR9XG5cblx0cmVuZGVyICgpIHtcblxuXHRcdHJldHVybiBcdDxkaXYgY2xhc3NOYW1lPVwiUG9wVXBTdG9yeVwiPlxuXG5cdFx0XHRcdFx0PGRpdiBjbGFzc05hbWU9XCJib3hcIj5cblx0XHRcdFx0XHRcdDxhIGNsYXNzTmFtZT1cImJ1dHRvblwiIGhyZWY9XCIjcG9wdXAxXCI+TGV0IG1lIFBvcCB1cDwvYT5cblx0XHRcdFx0XHQ8L2Rpdj5cblxuXHRcdFx0XHRcdDxkaXYgaWQ9XCJwb3B1cDFcIiBjbGFzc05hbWU9XCJvdmVybGF5XCI+XG5cdFx0XHRcdFx0XHQ8ZGl2IGNsYXNzTmFtZT1cInBvcHVwXCI+XG5cdFx0XHRcdFx0XHRcdDxoMj5Uw610dWxvIGRlIFBvcCB1cDwvaDI+XG5cdFx0XHRcdFx0XHRcdDxwPlxuXHRcdFx0XHRcdFx0XHRcdExvcmVtIGlwc3VtIGRvbG9yIHNpdCBhbWV0LCBjb25zZWN0ZXR1ciBhZGlwaXNpY2luZyBlbGl0LiBJbnZlbnRvcmUgZXhwbGljYWJvIGFsaXF1YW0sIHF1YWUgdm9sdXB0YXRlbSBjdWxwYT8gTWFnbmkgY3VtcXVlIG5vc3RydW0gbWFpb3JlcyBzYWVwZSBudW1xdWFtIHJlcGVsbGVuZHVzIGFyY2hpdGVjdG8gaWxsdW0gcHJhZXNlbnRpdW0sIHJlaWNpZW5kaXMgdmVyaXRhdGlzIGluY2lkdW50IGlwc2EsIGltcGVkaXQgYXQuXG5cdFx0XHRcdFx0XHRcdDwvcD5cblx0XHRcdFx0XHRcdFx0PGEgY2xhc3NOYW1lPVwiY2xvc2VcIiBocmVmPVwiI1wiPiZ0aW1lczs8L2E+XG5cdFx0XHRcdFx0XHRcdDxmb3JtIGNsYXNzTmFtZT1cImZvcm1cIj5cblx0XHRcdFx0XHRcdFx0XHQ8aW5wdXQgY2xhc3NOYW1lPVwiXCIgdHlwZT1cImVtYWlsXCIgcGxhY2Vob2xkZXI9XCJlbWFpbFwiLz5cblx0XHRcdFx0XHRcdFx0XHQ8YnV0dG9uPkVudmlhcjwvYnV0dG9uPlxuXHRcdFx0XHRcdFx0XHQ8L2Zvcm0+XG5cdFx0XHRcdFx0XHQ8L2Rpdj5cblx0XHRcdFx0XHQ8L2Rpdj5cblxuXHRcdFx0XHRcdDxzdHlsZSBqc3g+e2Bcblx0XHRcdFx0XHRcdC5Qb3BVcFN0b3J5IC5ib3gge1xuXHRcdFx0XHRcdFx0fVxuXG5cdFx0XHRcdFx0XHQuUG9wVXBTdG9yeSAuYnV0dG9uIHtcblx0XHRcdFx0XHRcdCAgZm9udC1zaXplOiAxNnB4O1xuXHRcdFx0XHRcdFx0ICBwYWRkaW5nOiAxMHB4O1xuXHRcdFx0XHRcdFx0ICBib3JkZXI6IDJweCBzb2xpZCAjMDZEODVGO1xuXHRcdFx0XHRcdFx0ICBjdXJzb3I6IHBvaW50ZXI7XG5cdFx0XHRcdFx0XHQgIHRyYW5zaXRpb246IGFsbCAwLjNzIGVhc2Utb3V0O1xuXHRcdFx0XHRcdFx0ICBjb2xvcjogcmVkO1xuXHRcdFx0XHRcdFx0fVxuXHRcdFx0XHRcdFx0LlBvcFVwU3RvcnkgLmJ1dHRvbjpob3ZlciB7XG5cdFx0XHRcdFx0XHQgIGJhY2tncm91bmQ6ICMwNkQ4NUY7XG5cdFx0XHRcdFx0XHR9XG5cblx0XHRcdFx0XHRcdC5Qb3BVcFN0b3J5IC5vdmVybGF5IHtcblx0XHRcdFx0XHRcdCAgcG9zaXRpb246IGZpeGVkO1xuXHRcdFx0XHRcdFx0ICB0b3A6IDA7XG5cdFx0XHRcdFx0XHQgIGJvdHRvbTogMDtcblx0XHRcdFx0XHRcdCAgbGVmdDogMDtcblx0XHRcdFx0XHRcdCAgcmlnaHQ6IDA7XG5cdFx0XHRcdFx0XHQgIGJhY2tncm91bmQ6IHJnYmEoMCwgMCwgMCwgMC43KTtcblx0XHRcdFx0XHRcdCAgdHJhbnNpdGlvbjogb3BhY2l0eSA1MDBtcztcblx0XHRcdFx0XHRcdCAgdmlzaWJpbGl0eTogaGlkZGVuO1xuXHRcdFx0XHRcdFx0ICBvcGFjaXR5OiAwO1xuXHRcdFx0XHRcdFx0fVxuXHRcdFx0XHRcdFx0LlBvcFVwU3RvcnkgLm92ZXJsYXk6dGFyZ2V0IHtcblx0XHRcdFx0XHRcdCAgdmlzaWJpbGl0eTogdmlzaWJsZTtcblx0XHRcdFx0XHRcdCAgb3BhY2l0eTogMTtcblx0XHRcdFx0XHRcdH1cblxuXHRcdFx0XHRcdFx0LlBvcFVwU3RvcnkgLnBvcHVwIHtcblx0XHRcdFx0XHRcdCAgbWFyZ2luOiAyM3ZoIGF1dG87XG5cdFx0XHRcdFx0XHQgIHBhZGRpbmc6IDIwcHg7XG5cdFx0XHRcdFx0XHQgIGJhY2tncm91bmQ6ICNmZmY7XG5cdFx0XHRcdFx0XHQgIGJvcmRlci1yYWRpdXM6IDVweDtcblx0XHRcdFx0XHRcdCAgd2lkdGg6IDUwdnc7XG5cdFx0XHRcdFx0XHQgIGhlaWdodDogNTB2aDtcblx0XHRcdFx0XHRcdCAgcG9zaXRpb246IHJlbGF0aXZlO1xuXHRcdFx0XHRcdFx0ICB0cmFuc2l0aW9uOiBhbGwgLjI1cyBlYXNlLWluLW91dDtcblx0XHRcdFx0XHRcdCAgY29sb3I6IHJlZDtcblx0XHRcdFx0XHRcdH1cblxuXHRcdFx0XHRcdFx0LlBvcFVwU3RvcnkgLnBvcHVwIGgyIHtcblx0XHRcdFx0XHRcdCAgbWFyZ2luLXRvcDogMDtcblx0XHRcdFx0XHRcdCAgY29sb3I6ICMzMzM7XG5cdFx0XHRcdFx0XHQgIGZvbnQtZmFtaWx5OiBUYWhvbWEsIEFyaWFsLCBzYW5zLXNlcmlmO1xuXHRcdFx0XHRcdFx0fVxuXHRcdFx0XHRcdFx0LlBvcFVwU3RvcnkgLnBvcHVwIC5jbG9zZSB7XG5cdFx0XHRcdFx0XHQgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcblx0XHRcdFx0XHRcdCAgdG9wOiAyMHB4O1xuXHRcdFx0XHRcdFx0ICByaWdodDogMzBweDtcblx0XHRcdFx0XHRcdCAgdHJhbnNpdGlvbjogYWxsIDIwMG1zO1xuXHRcdFx0XHRcdFx0ICBmb250LXNpemU6IDMwcHg7XG5cdFx0XHRcdFx0XHQgIGZvbnQtd2VpZ2h0OiBib2xkO1xuXHRcdFx0XHRcdFx0ICB0ZXh0LWRlY29yYXRpb246IG5vbmU7XG5cdFx0XHRcdFx0XHQgIGNvbG9yOiAjMzMzO1xuXHRcdFx0XHRcdFx0fVxuXHRcdFx0XHRcdFx0LlBvcFVwU3RvcnkgLnBvcHVwIC5jbG9zZTpob3ZlciB7XG5cdFx0XHRcdFx0XHQgIGNvbG9yOiAjMDZEODVGO1xuXHRcdFx0XHRcdFx0fVxuXHRcdFx0XHRcdFx0LlBvcFVwU3RvcnkgLnBvcHVwIC5jb250ZW50IHtcblx0XHRcdFx0XHRcdCAgbWF4LWhlaWdodDogMzAlO1xuXHRcdFx0XHRcdFx0ICBvdmVyZmxvdzogYXV0bztcblx0XHRcdFx0XHRcdCAgY29sb3I6IHJlZDtcblx0XHRcdFx0XHRcdH1cblxuXHRcdFx0XHRcdFx0QG1lZGlhIHNjcmVlbiBhbmQgKG1heC13aWR0aDogNzAwcHgpe1xuXHRcdFx0XHRcdFx0ICAuUG9wVXBTdG9yeSAuYm94e1xuXHRcdFx0XHRcdFx0ICAgIHdpZHRoOiA3MCU7XG5cdFx0XHRcdFx0XHQgIH1cblx0XHRcdFx0XHRcdCAgLlBvcFVwU3RvcnkgLnBvcHVwe1xuXHRcdFx0XHRcdFx0ICAgIHdpZHRoOiA3MCU7XG5cdFx0XHRcdFx0XHQgIH1cblx0XHRcdFx0XHRcdH1cblx0XHRcdFx0XHRgfTwvc3R5bGU+XG5cdFx0XHRcdDwvZGl2PlxuXHR9XG59XG5cbmV4cG9ydCBkZWZhdWx0IFBvcFVwU3Rvcnk7Il19 */\n/*@ sourceURL=/Users/daniloviacavavizarreta/www/storyrocketreact/components/PopUpStory.js */"));
+    }
+  }]);
+
+  return PopUpStory;
+}(react__WEBPACK_IMPORTED_MODULE_8___default.a.Component);
+
+/* harmony default export */ __webpack_exports__["default"] = (PopUpStory);
+
+/***/ }),
+
 /***/ "./components/SearchEra.js":
 /*!*********************************!*\
   !*** ./components/SearchEra.js ***!
@@ -322,6 +479,8 @@ function (_Component) {
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "handleMenuEra", function (e) {
       var era = document.getElementById("searchEraMenu-list");
       era.classList.toggle("active");
+      var titleSearchEra = document.getElementById("titleSearchEra");
+      titleSearchEra.classList.toggle("active");
     });
 
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "handleClear", function (e) {
@@ -357,37 +516,37 @@ function (_Component) {
         className: "SearchEra",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 34
+          lineNumber: 37
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "titleSearchMenu",
-        id: "titleSearchGenre",
+        id: "titleSearchEra",
         onClick: this.handleMenuEra,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 36
+          lineNumber: 39
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "SearchTitle",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 37
+          lineNumber: 40
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("h2", {
         className: "SearchTitle-text",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 38
+          lineNumber: 41
         },
         __self: this
       }, "Era")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "searchEraMenu",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 43
+          lineNumber: 46
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
@@ -395,7 +554,7 @@ function (_Component) {
         alt: "",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 44
+          lineNumber: 47
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
@@ -403,26 +562,26 @@ function (_Component) {
         id: "searchEraMenu-list",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 48
+          lineNumber: 51
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "searchEraMenu-list",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 49
+          lineNumber: 52
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("ul", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 50
+          lineNumber: 53
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 51
+          lineNumber: 54
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("input", {
@@ -433,20 +592,20 @@ function (_Component) {
         value: "value1",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 52
+          lineNumber: 55
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("label", {
         for: "era1",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 53
+          lineNumber: 56
         },
         __self: this
-      }, "Antiguo")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
+      }, "Present Day")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 55
+          lineNumber: 58
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("input", {
@@ -457,26 +616,74 @@ function (_Component) {
         value: "value1",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 56
+          lineNumber: 59
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("label", {
         for: "era2",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 57
+          lineNumber: 60
         },
         __self: this
-      }, "Contempor\xE1neo"))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("ul", {
+      }, "Recent Day")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 60
+          lineNumber: 62
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("input", {
+        onChange: this.handleChangeEra,
+        className: "styled-checkboxEra",
+        id: "era3",
+        type: "checkbox",
+        value: "value1",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 63
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("label", {
+        for: "era3",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 64
+        },
+        __self: this
+      }, "Distant Past")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 66
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("input", {
+        onChange: this.handleChangeEra,
+        className: "styled-checkboxEra",
+        id: "era4",
+        type: "checkbox",
+        value: "value1",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 67
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("label", {
+        for: "era4",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 68
+        },
+        __self: this
+      }, "Near Future"))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("ul", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 71
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 61
+          lineNumber: 72
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("input", {
@@ -487,20 +694,20 @@ function (_Component) {
         value: "value",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 62
+          lineNumber: 73
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("label", {
         for: "era5",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 63
+          lineNumber: 74
         },
         __self: this
-      }, "Actual")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
+      }, "Distant Future")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 65
+          lineNumber: 76
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("input", {
@@ -511,38 +718,62 @@ function (_Component) {
         value: "value",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 66
+          lineNumber: 77
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("label", {
         for: "era6",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 67
+          lineNumber: 78
         },
         __self: this
-      }, "Tendencia")))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", {
+      }, "Fictitious World")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 80
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("input", {
+        onChange: this.handleChangeEra,
+        className: "styled-checkboxEra",
+        id: "era7",
+        type: "checkbox",
+        value: "value",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 81
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("label", {
+        for: "era7",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 82
+        },
+        __self: this
+      }, "Other")))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", {
         className: "clearEra",
         id: "clearEra",
         onClick: this.handleClear,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 73
+          lineNumber: 87
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("i", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 73
+          lineNumber: 87
         },
         __self: this
       }, "\u2715 "), " Clear selection ")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("style", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 76
+          lineNumber: 90
         },
         __self: this
-      }, "\n            .SearchEra {\n              background: white;\n              box-sizing: border-box;\n              font-family: sans-serif;\n              border-radius: 5px;\n              margin-bottom: 10px;\n              position: relative;\n              text-align: center;\n            }\n\n            .searchEraMenu {\n              position: absolute;\n              top: 23px;\n              right: 20px;\n              cursor: pointer;\n            }\n\n            .searchEraMenu img {\n              width: 15px;\n            }\n\n            .searchEraMenu-container {\n              display: none;\n            }\n\n            .searchEraMenu-container.active {\n              display: block;\n            }\n      \n            .searchEraMenu-list {\n              display: flex;\n              justify-content: space-between;\n              align-items: center;\n              padding: 10px 25px 15px 25px;\n            }\n            .searchEraMenu-list ul{\n              \n            }\n            .searchEraMenu-list li{\n              text-align: left;\n              margin-bottom: 10px;\n            }\n\n            .styled-checkboxEra {\n              position: absolute;\n              opacity: 0;\n            }\n            .styled-checkboxEra + label {\n              position: relative;\n              cursor: pointer;\n              padding: 0;\n            }\n            .styled-checkboxEra + label:before {\n              content: '';\n              margin-right: 10px;\n              display: inline-block;\n              vertical-align: text-top;\n              width: 15px;\n              height: 15px;\n              background: white;\n              border: 2px solid #160e26;\n              border-radius: 4px;\n            }\n            .styled-checkboxEra:hover + label:before {\n              background: white;\n            }\n            .styled-checkboxEra:focus + label:before {\n              box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);\n            }\n            .styled-checkboxEra:checked + label:before {\n              background: #1c2d4c;\n            }\n            .styled-checkboxEra:disabled + label {\n              color: #b8b8b8;\n              cursor: auto;\n            }\n            .styled-checkboxEra:disabled + label:before {\n              box-shadow: none;\n              background: #ddd;\n            }\n            .styled-checkboxEra:checked + label:after {\n              content: '';\n              position: absolute;\n              left: 4px;\n              top: 8px;\n              background: orange;\n              width: 2px;\n              height: 2px;\n              box-shadow: 2px 0 0 orange, 4px 0 0 orange, 4px -2px 0 orange, 4px -4px 0 orange, 4px -6px 0 orange, 4px -8px 0 orange;\n              -webkit-transform: rotate(45deg);\n                      transform: rotate(45deg);\n            }\n\n            .clearEra {\n              margin-bottom: 10px;\n              display: none;\n              text-align: center;\n              cursor: pointer;\n              transition: .25s linear;\n              padding: 5px;\n              border: 1px solid transparent;\n              font-weight: 100;\n            }\n\n            .clearEra:hover {\n              background: #1c2d4c;\n              border-radius: 4px;\n              color: orange;\n              border: 1px solid orange;\n            }\n\n            .clearEra.active {\n              display: inline-block;\n            }\n\n            @media screen and (max-width: 800px) {\n              .searchEraMenu-list {\n                padding: 10px 10px 15px 10px;\n              }\n            }\n\n          "));
+      }, "\n            .titleSearchGenre {\n              cursor: pointer;\n            }\n\n            .titleSearchMenu:hover .searchEraMenu,\n            .titleSearchMenu.active .searchEraMenu{\n              transform: rotate(180deg);\n            }\n\n            .SearchEra {\n              background: white;\n              box-sizing: border-box;\n              font-family: sans-serif;\n              border-radius: 5px;\n              margin-bottom: 10px;\n              position: relative;\n              text-align: center;\n            }\n\n            .searchEraMenu {\n              position: absolute;\n              top: 23px;\n              right: 20px;\n              cursor: pointer;\n              transition: .25s linear;\n            }\n\n            .searchEraMenu img {\n              width: 15px;\n            }\n\n            .searchEraMenu-container {\n              display: none;\n            }\n\n            .searchEraMenu-container.active {\n              display: block;\n            }\n      \n            .searchEraMenu-list {\n              display: flex;\n              justify-content: space-between;\n              padding: 10px 25px 15px 25px;\n            }\n            .searchEraMenu-list ul{\n              width: 50%;\n            }\n            .searchEraMenu-list li{\n              text-align: left;\n              margin-bottom: 10px;\n            }\n\n            .styled-checkboxEra {\n              position: absolute;\n              opacity: 0;\n            }\n            .styled-checkboxEra + label {\n              position: relative;\n              cursor: pointer;\n              padding: 0;\n            }\n            .styled-checkboxEra + label:before {\n              content: '';\n              margin-right: 10px;\n              display: inline-block;\n              vertical-align: text-top;\n              width: 15px;\n              height: 15px;\n              background: white;\n              border: 2px solid #160e26;\n              border-radius: 4px;\n            }\n            .styled-checkboxEra:hover + label:before {\n              background: white;\n            }\n            .styled-checkboxEra:focus + label:before {\n              box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);\n            }\n            .styled-checkboxEra:checked + label:before {\n              background: #1c2d4c;\n            }\n            .styled-checkboxEra:disabled + label {\n              color: #b8b8b8;\n              cursor: auto;\n            }\n            .styled-checkboxEra:disabled + label:before {\n              box-shadow: none;\n              background: #ddd;\n            }\n            .styled-checkboxEra:checked + label:after {\n              content: '';\n              position: absolute;\n              left: 4px;\n              top: 8px;\n              background: orange;\n              width: 2px;\n              height: 2px;\n              box-shadow: 2px 0 0 orange, 4px 0 0 orange, 4px -2px 0 orange, 4px -4px 0 orange, 4px -6px 0 orange, 4px -8px 0 orange;\n              -webkit-transform: rotate(45deg);\n                      transform: rotate(45deg);\n            }\n\n            .clearEra {\n              margin-bottom: 10px;\n              display: none;\n              text-align: center;\n              cursor: pointer;\n              transition: .25s linear;\n              padding: 5px;\n              border: 1px solid transparent;\n              font-weight: 100;\n              line-height: 1.3;\n            }\n\n            .clearEra:hover {\n              border-radius: 4px;\n              color: #1c2d4c;\n              border: 1px solid #1c2d4c;\n            }\n\n            .clearEra.active {\n              display: inline-block;\n            }\n\n            @media screen and (max-width: 800px) {\n              .searchEraMenu-list {\n                padding: 10px 10px 15px 10px;\n              }\n            }\n\n          "));
     }
   }]);
 
@@ -1018,7 +1249,7 @@ function (_Component) {
           lineNumber: 115
         },
         __self: this
-      }, "\n\t\t\t\t.titleSearchGenre {\n\t\t\t\t\tcursor: pointer;\n\t\t\t\t}\n\n\t\t\t\t.titleSearchMenu:hover .searchGenresMenu,\n\t\t\t\t.titleSearchMenu.active .searchGenresMenu{\n\t\t\t\t\ttransform: rotate(180deg);\n\t\t\t\t}\n\n\t\t\t\t.SearchTitle {\n\t\t\t\t\tposition: relative;\n\t\t\t\t\tpadding: 10px;\n\t\t\t\t\tcursor: pointer;\n\t\t\t\t}\n\n\t\t\t\t.SearchTitle-text {\n\t\t\t\t\ttext-align: left;\n\t\t\t\t\tfont-size: 18px;\n\t\t\t\t\tfont-weight: bold;\n\t\t\t\t\tmargin-bottom: 15px;\n\t\t\t\t\tmargin-top: 10px;\n\t\t\t\t\tmargin-left: 10px;\n\t\t\t\t\ttext-align: left;\n\t\t\t\t}\n\n\t\t\t\t.searchGenres {\n\t\t\t\t\tfont-family: sans-serif;\n\t\t\t\t\tbackground: white;\n\t\t\t\t\tborder-radius: 5px;\n\t\t\t\t  margin-bottom: 10px;\n\t\t\t\t  position: relative;\n\t\t\t\t  text-align: center;\n\t\t\t\t}\n\n\t\t\t\t.searchGenres-container {\n\t\t\t\t\tdisplay: none;\n\t\t\t\t}\n\n\t\t\t\t.searchGenres-container.active {\n\t\t\t\t\tdisplay: block;\n\t\t\t\t}\n\n\t\t\t\t.searchGenres-list {\n\t\t\t\t  display: flex;\n\t\t\t\t  justify-content: space-between;\n\t\t\t\t  align-items: center;\n\t\t\t\t  padding: 10px 25px 15px 25px;\n\t\t\t\t}\n\n\t\t\t\t.searchGenresMenu {\n\t\t\t\t  position: absolute;\n\t\t\t\t  top: 23px;\n\t\t\t\t  right: 20px;\n\t\t\t\t  cursor: pointer;\n\t\t\t\t  transition: .25s linear;\n\t\t\t\t}\n\n\t\t\t\t.searchGenresMenu img {\n\t\t\t\t  width: 15px;\n\t\t\t\t}\n\t\t\t\t\n\t\t\t\t.searchGenres-list ul{\n\t\t\t\t  \n\t\t\t\t}\n\t\t\t\t.searchGenres-list li{\n\t\t\t\t  text-align: left;\n\t\t\t\t  margin-bottom: 10px;\n\t\t\t\t}\n\n\t\t\t\t.styled-checkbox {\n\t\t\t\t  position: absolute;\n\t\t\t\t  opacity: 0;\n\t\t\t\t}\n\t\t\t\t.styled-checkbox + label {\n\t\t\t\t  position: relative;\n\t\t\t\t  cursor: pointer;\n\t\t\t\t  padding: 0;\n\t\t\t\t}\n\t\t\t\t.styled-checkbox + label:before {\n\t\t\t\t  content: '';\n\t\t\t\t  margin-right: 10px;\n\t\t\t\t  display: inline-block;\n\t\t\t\t  vertical-align: text-top;\n\t\t\t\t  width: 15px;\n\t\t\t\t  height: 15px;\n\t\t\t\t  background: white;\n\t\t\t\t  border: 2px solid #160e26;\n\t\t\t\t  border-radius: 4px;\n\t\t\t\t}\n\t\t\t\t.styled-checkbox:hover + label:before {\n\t\t\t\t  background: white;\n\t\t\t\t}\n\t\t\t\t.styled-checkbox:focus + label:before {\n\t\t\t\t  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);\n\t\t\t\t}\n\t\t\t\t.styled-checkbox:checked + label:before {\n\t\t\t\t  background: #1c2d4c;\n\t\t\t\t}\n\t\t\t\t.styled-checkbox:disabled + label {\n\t\t\t\t  color: #b8b8b8;\n\t\t\t\t  cursor: auto;\n\t\t\t\t}\n\t\t\t\t.styled-checkbox:disabled + label:before {\n\t\t\t\t  box-shadow: none;\n\t\t\t\t  background: #ddd;\n\t\t\t\t}\n\t\t\t\t.styled-checkbox:checked + label:after {\n\t\t\t\t  content: '';\n\t\t\t\t  position: absolute;\n\t\t\t\t  left: 4px;\n\t\t\t\t  top: 8px;\n\t\t\t\t  background: orange;\n\t\t\t\t  width: 2px;\n\t\t\t\t  height: 2px;\n\t\t\t\t  box-shadow: 2px 0 0 orange, 4px 0 0 orange, 4px -2px 0 orange, 4px -4px 0 orange, 4px -6px 0 orange, 4px -8px 0 orange;\n\t\t\t\t  transform: rotate(45deg);\n\t\t\t\t}\n\n\t\t\t\t.clearGenre {\n\t\t\t\t  margin-bottom: 10px;\n\t\t\t\t  display: none;\n\t\t\t\t  text-align: center;\n\t\t\t\t  cursor: pointer;\n\t\t\t\t  transition: .25s linear;\n\t\t\t\t  padding: 5px;\n\t\t\t\t  border: 1px solid transparent;\n\t\t\t\t  font-weight: 100;\n\t\t\t\t}\n\n\t\t          .clearGenre:hover {\n\t\t            background: #1c2d4c;\n\t\t            border-radius: 4px;\n\t\t            color: orange;\n\t\t            border: 1px solid orange;\n\t\t          }\n\n\t\t\t\t.clearGenre.active {\n\t\t\t\t  display: inline-block;\n\t\t\t\t}\n\n\t\t\t\t@media screen and (max-width: 800px) {\n\t\t\t\t\t.searchGenres-list {\n\t\t\t\t\t\tpadding: 10px 10px 15px 10px;\n\t\t\t\t\t}\n\n\t\t\t\t\t.SearchTitle {\n\t\t\t\t\t\tpadding: 10px 0 !important;\n\t\t\t\t\t}\n\t\t\t\t\t\n\t\t\t\t}\n\t\t\t"));
+      }, "\n\t\t\t\t.titleSearchGenre {\n\t\t\t\t\tcursor: pointer;\n\t\t\t\t}\n\n\t\t\t\t.titleSearchMenu:hover .searchGenresMenu,\n\t\t\t\t.titleSearchMenu.active .searchGenresMenu{\n\t\t\t\t\ttransform: rotate(180deg);\n\t\t\t\t}\n\n\t\t\t\t.SearchTitle {\n\t\t\t\t\tposition: relative;\n\t\t\t\t\tpadding: 10px;\n\t\t\t\t\tcursor: pointer;\n\t\t\t\t}\n\n\t\t\t\t.SearchTitle-text {\n\t\t\t\t\ttext-align: left;\n\t\t\t\t\tfont-size: 18px;\n\t\t\t\t\tfont-weight: bold;\n\t\t\t\t\tmargin-bottom: 15px;\n\t\t\t\t\tmargin-top: 10px;\n\t\t\t\t\tmargin-left: 10px;\n\t\t\t\t\ttext-align: left;\n\t\t\t\t}\n\n\t\t\t\t.searchGenres {\n\t\t\t\t\tfont-family: sans-serif;\n\t\t\t\t\tbackground: white;\n\t\t\t\t\tborder-radius: 5px;\n\t\t\t\t  margin-bottom: 10px;\n\t\t\t\t  position: relative;\n\t\t\t\t  text-align: center;\n\t\t\t\t}\n\n\t\t\t\t.searchGenres-container {\n\t\t\t\t\tdisplay: none;\n\t\t\t\t}\n\n\t\t\t\t.searchGenres-container.active {\n\t\t\t\t\tdisplay: block;\n\t\t\t\t}\n\n\t\t\t\t.searchGenres-list {\n\t\t\t\t  display: flex;\n\t\t\t\t  justify-content: space-between;\n\t\t\t\t  align-items: center;\n\t\t\t\t  padding: 10px 25px 15px 25px;\n\t\t\t\t}\n\n\t\t\t\t.searchGenresMenu {\n\t\t\t\t  position: absolute;\n\t\t\t\t  top: 23px;\n\t\t\t\t  right: 20px;\n\t\t\t\t  cursor: pointer;\n\t\t\t\t  transition: .25s linear;\n\t\t\t\t}\n\n\t\t\t\t.searchGenresMenu img {\n\t\t\t\t  width: 15px;\n\t\t\t\t}\n\t\t\t\t\n\t\t\t\t.searchGenres-list ul{\n\t\t\t\t\twidth: 50%;\n\t\t\t\t}\n\t\t\t\t.searchGenres-list li{\n\t\t\t\t  text-align: left;\n\t\t\t\t  margin-bottom: 10px;\n\t\t\t\t}\n\n\t\t\t\t.styled-checkbox {\n\t\t\t\t  position: absolute;\n\t\t\t\t  opacity: 0;\n\t\t\t\t}\n\t\t\t\t.styled-checkbox + label {\n\t\t\t\t  position: relative;\n\t\t\t\t  cursor: pointer;\n\t\t\t\t  padding: 0;\n\t\t\t\t}\n\t\t\t\t.styled-checkbox + label:before {\n\t\t\t\t  content: '';\n\t\t\t\t  margin-right: 10px;\n\t\t\t\t  display: inline-block;\n\t\t\t\t  vertical-align: text-top;\n\t\t\t\t  width: 15px;\n\t\t\t\t  height: 15px;\n\t\t\t\t  background: white;\n\t\t\t\t  border: 2px solid #160e26;\n\t\t\t\t  border-radius: 4px;\n\t\t\t\t}\n\t\t\t\t.styled-checkbox:hover + label:before {\n\t\t\t\t  background: white;\n\t\t\t\t}\n\t\t\t\t.styled-checkbox:focus + label:before {\n\t\t\t\t  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);\n\t\t\t\t}\n\t\t\t\t.styled-checkbox:checked + label:before {\n\t\t\t\t  background: #1c2d4c;\n\t\t\t\t}\n\t\t\t\t.styled-checkbox:disabled + label {\n\t\t\t\t  color: #b8b8b8;\n\t\t\t\t  cursor: auto;\n\t\t\t\t}\n\t\t\t\t.styled-checkbox:disabled + label:before {\n\t\t\t\t  box-shadow: none;\n\t\t\t\t  background: #ddd;\n\t\t\t\t}\n\t\t\t\t.styled-checkbox:checked + label:after {\n\t\t\t\t  content: '';\n\t\t\t\t  position: absolute;\n\t\t\t\t  left: 4px;\n\t\t\t\t  top: 8px;\n\t\t\t\t  background: orange;\n\t\t\t\t  width: 2px;\n\t\t\t\t  height: 2px;\n\t\t\t\t  box-shadow: 2px 0 0 orange, 4px 0 0 orange, 4px -2px 0 orange, 4px -4px 0 orange, 4px -6px 0 orange, 4px -8px 0 orange;\n\t\t\t\t  transform: rotate(45deg);\n\t\t\t\t}\n\n\t\t\t\t.clearGenre {\n\t\t\t\t  margin-bottom: 10px;\n\t\t\t\t  display: none;\n\t\t\t\t  text-align: center;\n\t\t\t\t  cursor: pointer;\n\t\t\t\t  transition: .25s linear;\n\t\t\t\t  padding: 5px;\n\t\t\t\t  border: 1px solid transparent;\n\t\t\t\t  font-weight: 100;\n\t\t\t\t  line-height: 1.3;\n\t\t\t\t}\n\n\t\t          .clearGenre:hover {\n\t\t            border-radius: 4px;\n\t\t            color: #1c2d4c;\n\t\t            border: 1px solid #1c2d4c;\n\t\t          }\n\n\t\t\t\t.clearGenre.active {\n\t\t\t\t  display: inline-block;\n\t\t\t\t}\n\n\t\t\t\t@media screen and (max-width: 800px) {\n\t\t\t\t\t.searchGenres-list {\n\t\t\t\t\t\tpadding: 10px 10px 15px 10px;\n\t\t\t\t\t}\n\n\t\t\t\t\t.SearchTitle {\n\t\t\t\t\t\tpadding: 10px 0 !important;\n\t\t\t\t\t}\n\t\t\t\t\t\n\t\t\t\t}\n\t\t\t"));
     }
   }]);
 
@@ -1095,21 +1326,131 @@ function (_Component) {
           lineNumber: 12
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("img", {
-        src: "/static/img/search.svg",
-        alt: "",
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("svg", {
+        style: {
+          width: 20,
+          height: 20,
+          fill: '#ffa603',
+          stroke: '#ffa603',
+          cursor: 'pointer'
+        },
+        viewBox: "0 0 250.313 250.313",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 13
         },
         __self: this
-      }))), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("style", {
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("g", {
+        id: "Search",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 17
+          lineNumber: 14
         },
         __self: this
-      }, "\n\t\t\t\t\t.searchInput {\n\t\t\t\t\t\tbackground: white;\n\t\t\t\t\t\tcolor: #bdbbc2;\n\t\t\t\t\t\tposition: relative;\n\t\t\t\t\t\tmargin: 0 0 10px 0;\n\t\t\t\t\t\tborder-radius: 4px;\n\t\t\t\t\t\toverflow: hidden;\n\t\t\t\t\t}\n\n\t\t\t\t\t.searchInput input {\n\t\t\t\t\t\twidth: 100%;\n\t\t\t\t\t\theight: 40px;\n\t\t\t\t\t\tpadding-left: 10px;\n\t\t\t\t\t\tborder: 1px solid #0000000f;\n\t\t\t\t\t\tbox-sizing: border-box;\n\t\t\t\t\t\tfont-size: 14px;\n\t\t\t\t\t}\n\n\t\t\t\t\t.searchInput button {\n\t\t\t\t\t\tposition: absolute;\n\t\t\t\t\t\twidth: 34px;\n\t\t\t\t\t\theight: 34px;\n\t\t\t\t\t\ttop: 0px;\n\t\t\t\t\t\tright: 7px;\n\t\t\t\t\t\tbottom: 0;\n\t\t\t\t\t\tmargin: auto;\n\t\t\t\t\t\tborder: none;\n\t\t\t\t\t\tbackground: transparent;\n\t\t\t\t\t}\n\n\t\t\t\t\t.searchInput img {\n\t\t\t\t\t\tmargin-top: 7px;\n\t\t\t\t\t\tdisplay: block;\n\t\t\t\t\t}\n\t\t\t\t"));
+      }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("path", {
+        d: "M244.186,214.604l-54.379-54.378c-0.289-0.289-0.628-0.491-0.93-0.76 c10.7-16.231,16.945-35.66,16.945-56.554C205.822,46.075,159.747,0,102.911,0S0,46.075,0,102.911 c0,56.835,46.074,102.911,102.91,102.911c20.895,0,40.323-6.245,56.554-16.945c0.269,0.301,0.47,0.64,0.759,0.929l54.38,54.38 c8.169,8.168,21.413,8.168,29.583,0C252.354,236.017,252.354,222.773,244.186,214.604z M102.911,170.146 c-37.134,0-67.236-30.102-67.236-67.235c0-37.134,30.103-67.236,67.236-67.236c37.132,0,67.235,30.103,67.235,67.236 C170.146,140.044,140.043,170.146,102.911,170.146z",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 15
+        },
+        __self: this
+      })), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("g", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 22
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("g", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 24
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("g", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 26
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("g", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 28
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("g", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 30
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("g", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 32
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("g", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 34
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("g", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 36
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("g", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 38
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("g", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 40
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("g", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 42
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("g", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 44
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("g", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 46
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("g", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 48
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("g", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 50
+        },
+        __self: this
+      })))), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("style", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 56
+        },
+        __self: this
+      }, "\n\t\t\t\t\t.searchInput {\n\t\t\t\t\t\tbackground: white;\n\t\t\t\t\t\tcolor: #bdbbc2;\n\t\t\t\t\t\tposition: relative;\n\t\t\t\t\t\tmargin: 0 0 10px 0;\n\t\t\t\t\t\tborder-radius: 4px;\n\t\t\t\t\t\toverflow: hidden;\n\t\t\t\t\t}\n\n\t\t\t\t\t.searchInput input {\n\t\t\t\t\t\twidth: 100%;\n\t\t\t\t\t\theight: 40px;\n\t\t\t\t\t\tpadding-left: 10px;\n\t\t\t\t\t\tborder: 1px solid #0000000f;\n\t\t\t\t\t\tbox-sizing: border-box;\n\t\t\t\t\t\tfont-size: 14px;\n\t\t\t\t\t}\n\n\t\t\t\t\t.searchInput input:focus::placeholder {\n\t\t\t\t\t\tcolor: white;\n\t\t\t\t\t}\n\n\t\t\t\t\t.searchInput button {\n\t\t\t\t\t\tposition: absolute;\n\t\t\t\t\t\twidth: 34px;\n\t\t\t\t\t\theight: 34px;\n\t\t\t\t\t\ttop: 4px;\n\t\t\t\t\t\tright: 7px;\n\t\t\t\t\t\tbottom: 0;\n\t\t\t\t\t\tmargin: auto;\n\t\t\t\t\t\tborder: none;\n\t\t\t\t\t\tbackground: transparent;\n\t\t\t\t\t}\n\n\t\t\t\t\t.searchInput img {\n\t\t\t\t\t\tmargin-top: 7px;\n\t\t\t\t\t\tdisplay: block;\n\t\t\t\t\t}\n\t\t\t\t"));
     }
   }]);
 
@@ -2339,7 +2680,7 @@ function (_Component) {
           lineNumber: 404
         },
         __self: this
-      }, "\n            .titleSearchMenu {\n              cursor: pointer;\n            }\n\n            .titleSearchMenu:hover .searchMaterialsMenu,\n            .titleSearchMenu.active .searchMaterialsMenu{\n              transform: rotate(180deg);\n            }\n            .SearchIntendedMedium {\n              background: white;\n              box-sizing: border-box;\n              font-family: sans-serif;\n              border-radius: 5px;\n              margin-bottom: 10px;\n              position: relative;\n            }\n\n            .searchIntendedMenu {\n              position: absolute;\n              top: 23px;\n              right: 20px;\n              cursor: pointer;\n            }\n\n            .searchIntendedMenu img {\n              width: 15px;\n            }\n\n            .SearchIntendedMedium-container {\n              display: none;\n              text-align: center;\n            }\n\n            .SearchIntendedMedium-container.active {\n              display: block;\n            }\n\n            .SearchIntendedMedium-items {\n              justify-content: space-evenly;\n              align-items: center;\n              flex-wrap: wrap;\n              display: flex;\n              text-align: center;\n              cursor: pointer;\n            }\n\n            .SearchIntendedMedium-item a {\n              text-decoration: none;\n            }\n\n            .SearchIntendedMedium-item {\n              margin: 10px 10px 20px 10px;\n            }\n\n            .SearchIntendedMedium-item:hover h4:before,\n            .SearchIntendedMedium-item.active h4:before{\n              width: 100%;\n            }\n\n            .SearchIntendedMedium-item:hover .icon,\n            .SearchIntendedMedium-item.active .icon{\n              border: 2px solid #ffa603;\n              background: #1c2d4c;\n            }\n\n            .SearchIntendedMedium-item:hover svg,\n            .SearchIntendedMedium-item.active svg{\n              fill: #ffa603;\n            }\n\n\n            .SearchIntendedMedium-item h4 {\n              margin-top: 10px;\n              color: #1c2d4c;\n              border-bottom: 2px solid transparent;\n              transition: .25s linear;\n              position: relative;\n              display: inline-block;\n            }\n\n            .SearchIntendedMedium-item h4:before {\n              content: \"\";\n              position: absolute;\n              bottom: -5px;\n              left: 0;\n              height: 2px;\n              width: 0;\n              background: #1c2d4c;\n              transition: .15s linear;\n            }\n\n            .SearchIntendedMedium-item svg{\n              fill: #1c2d4c;\n              margin: 0 auto;\n              width: 50px;\n              height: 60px;\n              background: transparent;\n              transition: .25s linear;\n            }\n\n            .icon {\n              width: 70px;\n              height: 65px;\n              background: transparent;\n              padding-top: 5px;\n              border-radius: 50%;\n              transition: .25s linear;\n              border: 2px solid #1c2d4c;\n              margin: auto;\n            }\n\n            .SearchIntendedMedium-item:hover svg,\n            .SearchIntendedMedium-item.active svg{\n              fill: #ffa603;\n            }\n\n            .SearchIntendedMedium-item path,\n            .SearchIntendedMedium-item circle{\n              stroke-dasharray: 300, 0, 3000;\n            }\n  \n            .SearchIntendedMedium-item:hover svg, \n            .SearchIntendedMedium-item.active svg {\n              fill: #ffa603;\n            }\n\n            .SearchIntendedMedium-item:hover path,\n            .SearchIntendedMedium-item.active path,\n            .SearchIntendedMedium-item:hover circle,\n            .SearchIntendedMedium-item.active circle{\n              animation: twitter 2s;\n            }\n\n            .clearIntended {\n              margin-bottom: 10px;\n              display: none;\n              text-align: center;\n              cursor: pointer;\n              transition: .25s linear;\n              padding: 5px;\n              border: 1px solid transparent;\n              font-weight: 100;\n            }\n\n            .clearIntended:hover {\n              background: #1c2d4c;\n              border-radius: 4px;\n              color: orange;\n              border: 1px solid orange;\n            }\n\n            .clearIntended.active {\n              display: inline-block;\n            }\n\n            @media screen and (max-width: 767px) {\n              \n              .SearchIntendedMedium-item svg {\n                width: 40px;\n                height: 50px;\n              }\n\n              .SearchIntendedMedium-items .webIcon {\n                width: 38px !important;\n                height: 52px !important;\n              }\n\n              .SearchIntendedMedium-items .televisionIcon {\n                width: 38px !important;\n                height: 52px !important;\n              }\n\n              .SearchIntendedMedium-items .stageIcon {\n                width: 38px !important;\n                height: 52px !important;\n              }\n\n              .SearchIntendedMedium-items .literaryIcon {\n                width: 38px !important;\n                height: 52px !important;\n              }\n\n              .SearchIntendedMedium-item h4 {\n                font-size: 12px;\n              }\n          }\n          "));
+      }, "\n            .titleSearchMenu {\n              cursor: pointer;\n            }\n\n            .titleSearchMenu:hover .searchMaterialsMenu,\n            .titleSearchMenu.active .searchMaterialsMenu{\n              transform: rotate(180deg);\n            }\n            .SearchIntendedMedium {\n              background: white;\n              box-sizing: border-box;\n              font-family: sans-serif;\n              border-radius: 5px;\n              margin-bottom: 10px;\n              position: relative;\n            }\n\n            .searchIntendedMenu {\n              position: absolute;\n              top: 23px;\n              right: 20px;\n              cursor: pointer;\n            }\n\n            .searchIntendedMenu img {\n              width: 15px;\n            }\n\n            .SearchIntendedMedium-container {\n              display: none;\n              text-align: center;\n            }\n\n            .SearchIntendedMedium-container.active {\n              display: block;\n            }\n\n            .SearchIntendedMedium-items {\n              justify-content: space-evenly;\n              align-items: center;\n              flex-wrap: wrap;\n              display: flex;\n              text-align: center;\n              cursor: pointer;\n            }\n\n            .SearchIntendedMedium-item a {\n              text-decoration: none;\n            }\n\n            .SearchIntendedMedium-item {\n              margin: 10px 10px 20px 10px;\n            }\n\n            .SearchIntendedMedium-item:hover h4:before,\n            .SearchIntendedMedium-item.active h4:before{\n              width: 100%;\n            }\n\n            .SearchIntendedMedium-item:hover .icon,\n            .SearchIntendedMedium-item.active .icon{\n              border: 2px solid #ffa603;\n              background: #1c2d4c;\n            }\n\n            .SearchIntendedMedium-item:hover svg,\n            .SearchIntendedMedium-item.active svg{\n              fill: #ffa603;\n            }\n\n\n            .SearchIntendedMedium-item h4 {\n              margin-top: 10px;\n              color: #1c2d4c;\n              border-bottom: 2px solid transparent;\n              transition: .25s linear;\n              position: relative;\n              display: inline-block;\n            }\n\n            .SearchIntendedMedium-item h4:before {\n              content: \"\";\n              position: absolute;\n              bottom: -5px;\n              left: 0;\n              height: 2px;\n              width: 0;\n              background: #1c2d4c;\n              transition: .15s linear;\n            }\n\n            .SearchIntendedMedium-item svg{\n              fill: #1c2d4c;\n              margin: 0 auto;\n              width: 50px;\n              height: 60px;\n              background: transparent;\n              transition: .25s linear;\n            }\n\n            .icon {\n              width: 70px;\n              height: 65px;\n              background: transparent;\n              padding-top: 5px;\n              border-radius: 50%;\n              transition: .25s linear;\n              border: 2px solid #1c2d4c;\n              margin: auto;\n            }\n\n            .SearchIntendedMedium-item:hover svg,\n            .SearchIntendedMedium-item.active svg{\n              fill: #ffa603;\n            }\n\n            .SearchIntendedMedium-item path,\n            .SearchIntendedMedium-item circle{\n              stroke-dasharray: 300, 0, 3000;\n            }\n  \n            .SearchIntendedMedium-item:hover svg, \n            .SearchIntendedMedium-item.active svg {\n              fill: #ffa603;\n            }\n\n            .SearchIntendedMedium-item:hover path,\n            .SearchIntendedMedium-item.active path,\n            .SearchIntendedMedium-item:hover circle,\n            .SearchIntendedMedium-item.active circle{\n              animation: twitter 2s;\n            }\n\n            .clearIntended {\n              margin-bottom: 10px;\n              display: none;\n              text-align: center;\n              cursor: pointer;\n              transition: .25s linear;\n              padding: 5px;\n              border: 1px solid transparent;\n              font-weight: 100;\n              line-height: 1.3;\n            }\n\n            .clearIntended:hover {\n              border-radius: 4px;\n              color: #1c2d4c;\n              border: 1px solid #1c2d4c;\n            }\n\n            .clearIntended.active {\n              display: inline-block;\n            }\n\n            @media screen and (max-width: 767px) {\n              \n              .SearchIntendedMedium-item svg {\n                width: 40px;\n                height: 50px;\n              }\n\n              .SearchIntendedMedium-items .webIcon {\n                width: 38px !important;\n                height: 52px !important;\n              }\n\n              .SearchIntendedMedium-items .televisionIcon {\n                width: 38px !important;\n                height: 52px !important;\n              }\n\n              .SearchIntendedMedium-items .stageIcon {\n                width: 38px !important;\n                height: 52px !important;\n              }\n\n              .SearchIntendedMedium-items .literaryIcon {\n                width: 38px !important;\n                height: 52px !important;\n              }\n\n              .SearchIntendedMedium-item h4 {\n                font-size: 12px;\n              }\n          }\n          "));
     }
   }]);
 
@@ -2399,6 +2740,8 @@ function (_Component) {
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "handleLanguage", function (e) {
       var language = document.getElementById("searchLanguages-list");
       language.classList.toggle("active");
+      var titleSearchLanguage = document.getElementById("titleSearchLanguage");
+      titleSearchLanguage.classList.toggle("active");
     });
 
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "handleClear", function (e) {
@@ -2434,37 +2777,37 @@ function (_Component) {
         className: "searchLanguages",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 34
+          lineNumber: 37
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "titleSearchMenu",
-        id: "titleSearchGenre",
+        id: "titleSearchLanguage",
         onClick: this.handleLanguage,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 36
+          lineNumber: 39
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "SearchTitle",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 37
+          lineNumber: 40
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("h2", {
         className: "SearchTitle-text",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 38
+          lineNumber: 41
         },
         __self: this
       }, "Languages")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "searchLanguagesMenu",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 43
+          lineNumber: 46
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
@@ -2472,7 +2815,7 @@ function (_Component) {
         alt: "",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 44
+          lineNumber: 47
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
@@ -2480,26 +2823,26 @@ function (_Component) {
         id: "searchLanguages-list",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 48
+          lineNumber: 51
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "searchLanguages-list",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 49
+          lineNumber: 52
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("ul", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 50
+          lineNumber: 53
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 51
+          lineNumber: 54
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("input", {
@@ -2510,20 +2853,20 @@ function (_Component) {
         value: "value1",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 52
+          lineNumber: 55
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("label", {
         for: "caja1",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 53
+          lineNumber: 56
         },
         __self: this
       }, "English")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 55
+          lineNumber: 58
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("input", {
@@ -2534,20 +2877,20 @@ function (_Component) {
         value: "value1",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 56
+          lineNumber: 59
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("label", {
         for: "caja2",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 57
+          lineNumber: 60
         },
         __self: this
       }, "Spanish")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 59
+          lineNumber: 62
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("input", {
@@ -2558,20 +2901,20 @@ function (_Component) {
         value: "value1",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 60
+          lineNumber: 63
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("label", {
         for: "caja3",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 61
+          lineNumber: 64
         },
         __self: this
       }, "French")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 63
+          lineNumber: 66
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("input", {
@@ -2582,26 +2925,26 @@ function (_Component) {
         value: "value1",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 64
+          lineNumber: 67
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("label", {
         for: "caja8",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 65
+          lineNumber: 68
         },
         __self: this
       }, "Arabic"))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("ul", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 68
+          lineNumber: 71
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 69
+          lineNumber: 72
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("input", {
@@ -2612,20 +2955,20 @@ function (_Component) {
         value: "value",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 70
+          lineNumber: 73
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("label", {
         for: "caja4",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 71
+          lineNumber: 74
         },
         __self: this
       }, "Icelandinc")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 73
+          lineNumber: 76
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("input", {
@@ -2636,20 +2979,20 @@ function (_Component) {
         value: "value",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 74
+          lineNumber: 77
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("label", {
         for: "caja5",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 75
+          lineNumber: 78
         },
         __self: this
       }, "Portuguese")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 77
+          lineNumber: 80
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("input", {
@@ -2660,20 +3003,20 @@ function (_Component) {
         value: "value1",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 78
+          lineNumber: 81
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("label", {
         for: "caja6",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 79
+          lineNumber: 82
         },
         __self: this
       }, "Chinese")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 81
+          lineNumber: 84
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("input", {
@@ -2684,14 +3027,14 @@ function (_Component) {
         value: "value",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 82
+          lineNumber: 85
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("label", {
         for: "caja11",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 83
+          lineNumber: 86
         },
         __self: this
       }, "Dutch")))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", {
@@ -2700,22 +3043,22 @@ function (_Component) {
         onClick: this.handleClear,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 89
+          lineNumber: 92
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("i", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 89
+          lineNumber: 92
         },
         __self: this
       }, "\u2715 "), " Clear selection ")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("style", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 93
+          lineNumber: 96
         },
         __self: this
-      }, "\n\t        \t.titleSearchGenre {\n\t\t\t\t\tcursor: pointer;\n\t\t\t\t}\n\n\t\t\t\t.titleSearchMenu:hover .searchLanguagesMenu,\n\t\t\t\t.titleSearchMenu.active .searchLanguagesMenu{\n\t\t\t\t\ttransform: rotate(180deg);\n\t\t\t\t}\n\n\t\t\t\t.SearchTitle {\n\t\t\t\t\tposition: relative;\n\t\t\t\t\tpadding: 10px;\n\t\t\t\t\tcursor: pointer;\n\t\t\t\t}\n\n\t\t\t\t.SearchTitle-text {\n\t\t\t\t\ttext-align: left;\n\t\t\t\t\tfont-size: 18px;\n\t\t\t\t\tfont-weight: bold;\n\t\t\t\t\tmargin-bottom: 15px;\n\t\t\t\t\tmargin-top: 10px;\n\t\t\t\t\tmargin-left: 10px;\n\t\t\t\t\ttext-align: left;\n\t\t\t\t}\n\n\t\t\t\t.searchLanguages {\n\t\t\t\t\tfont-family: sans-serif;\n\t\t\t\t\tbackground: white;\n\t\t\t\t\tborder-radius: 5px;\n\t\t\t\t\tmargin-bottom: 10px;\n\t\t\t\t\tposition: relative;\n\t\t\t\t\ttext-align: center;\n\t\t\t\t}\n\n\t\t\t\t.searchLanguages-title {\n\t\t\t\t\ttext-align: left;\n\t\t\t\t\tfont-size: 18px;\n\t\t\t\t\tfont-weight: bold;\n\t\t\t\t\tmargin-bottom: 25px;\n\t\t\t\t\tfont-family: sans-serif;\n\t\t\t\t}\n\n\t\t\t\t.searchLanguagesMenu {\n\t\t\t\t  position: absolute;\n\t\t\t\t  top: 23px;\n\t\t\t\t  right: 20px;\n\t\t\t\t  cursor: pointer;\n\t\t\t\t  transition: .25s linear;\n\t\t\t\t}\n\n\t\t\t\t.searchLanguagesMenu img {\n\t\t\t\t  width: 15px;\n\t\t\t\t}\n\n\t\t\t\t.searchLanguages-container {\n\t\t\t\t\tdisplay: none;\n\t\t\t\t}\n\n\t\t\t\t.searchLanguages-container.active {\n\t\t\t\t\tdisplay: block;\n\t\t\t\t}\n\t\n\t\t\t\t.searchLanguages-list {\n\t\t\t\t  display: flex;\n\t\t\t\t  justify-content: space-between;\n\t\t\t\t  align-items: center;\n\t\t\t\t  padding: 10px 25px 15px 25px;\n\t\t\t\t}\n\t\t\t\t.searchLanguages-list ul{\n\t\t\t\t  \n\t\t\t\t}\n\t\t\t\t.searchLanguages-list li{\n\t\t\t\t  text-align: left;\n\t\t\t\t  margin-bottom: 10px;\n\t\t\t\t}\n\n\t\t\t\t.styled-checkboxLanguages {\n\t\t\t\t  position: absolute;\n\t\t\t\t  opacity: 0;\n\t\t\t\t}\n\t\t\t\t.styled-checkboxLanguages + label {\n\t\t\t\t  position: relative;\n\t\t\t\t  cursor: pointer;\n\t\t\t\t  padding: 0;\n\t\t\t\t}\n\t\t\t\t.styled-checkboxLanguages + label:before {\n\t\t\t\t  content: '';\n\t\t\t\t  margin-right: 10px;\n\t\t\t\t  display: inline-block;\n\t\t\t\t  vertical-align: text-top;\n\t\t\t\t  width: 15px;\n\t\t\t\t  height: 15px;\n\t\t\t\t  background: white;\n\t\t\t\t  border: 2px solid #160e26;\n\t\t\t\t  border-radius: 4px;\n\t\t\t\t}\n\t\t\t\t.styled-checkboxLanguages:hover + label:before {\n\t\t\t\t  background: white;\n\t\t\t\t}\n\t\t\t\t.styled-checkboxLanguages:focus + label:before {\n\t\t\t\t  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);\n\t\t\t\t}\n\t\t\t\t.styled-checkboxLanguages:checked + label:before {\n\t\t\t\t  background: #1c2d4c;\n\t\t\t\t}\n\t\t\t\t.styled-checkboxLanguages:disabled + label {\n\t\t\t\t  color: #b8b8b8;\n\t\t\t\t  cursor: auto;\n\t\t\t\t}\n\t\t\t\t.styled-checkboxLanguages:disabled + label:before {\n\t\t\t\t  box-shadow: none;\n\t\t\t\t  background: #ddd;\n\t\t\t\t}\n\t\t\t\t.styled-checkboxLanguages:checked + label:after {\n\t\t\t\t  content: '';\n\t\t\t\t  position: absolute;\n\t\t\t\t  left: 4px;\n\t\t\t\t  top: 8px;\n\t\t\t\t  background: orange;\n\t\t\t\t  width: 2px;\n\t\t\t\t  height: 2px;\n\t\t\t\t  box-shadow: 2px 0 0 orange, 4px 0 0 orange, 4px -2px 0 orange, 4px -4px 0 orange, 4px -6px 0 orange, 4px -8px 0 orange;\n\t\t\t\t  -webkit-transform: rotate(45deg);\n\t\t\t\t          transform: rotate(45deg);\n\t\t\t\t}\n\n\t\t\t\t.clearLanguage {\n\t\t\t\t  margin-bottom: 10px;\n\t\t\t\t  display: none;\n\t\t\t\t  text-align: center;\n\t\t\t\t  cursor: pointer;\n\t\t\t\t  transition: .25s linear;\n\t\t\t\t  padding: 5px;\n\t\t\t\t  border: 1px solid transparent;\n\t\t\t\t  font-weight: 100;\n\t\t\t\t}\n\n\t          .clearLanguage:hover {\n\t            background: #1c2d4c;\n\t            border-radius: 4px;\n\t            color: orange;\n\t            border: 1px solid orange;\n\t          }\n\n\t\t\t\t.clearLanguage.active {\n\t\t\t\t  display: inline-block;\n\t\t\t\t}\n\n\t\t\t\t@media screen and (max-width: 800px) {\n\n\t\t\t\t\t.searchLanguages-list {\n\t\t\t\t\t\tpadding: 10px 10px 15px 10px;\n\t\t\t\t\t}\n\n\t\t\t\t}\n\n\t\t\t"));
+      }, "\n\t        \t.titleSearchGenre {\n\t\t\t\t\tcursor: pointer;\n\t\t\t\t}\n\n\t\t\t\t.titleSearchMenu:hover .searchLanguagesMenu,\n\t\t\t\t.titleSearchMenu.active .searchLanguagesMenu{\n\t\t\t\t\ttransform: rotate(180deg);\n\t\t\t\t}\n\n\t\t\t\t.SearchTitle {\n\t\t\t\t\tposition: relative;\n\t\t\t\t\tpadding: 10px;\n\t\t\t\t\tcursor: pointer;\n\t\t\t\t}\n\n\t\t\t\t.SearchTitle-text {\n\t\t\t\t\ttext-align: left;\n\t\t\t\t\tfont-size: 18px;\n\t\t\t\t\tfont-weight: bold;\n\t\t\t\t\tmargin-bottom: 15px;\n\t\t\t\t\tmargin-top: 10px;\n\t\t\t\t\tmargin-left: 10px;\n\t\t\t\t\ttext-align: left;\n\t\t\t\t}\n\n\t\t\t\t.searchLanguages {\n\t\t\t\t\tfont-family: sans-serif;\n\t\t\t\t\tbackground: white;\n\t\t\t\t\tborder-radius: 5px;\n\t\t\t\t\tmargin-bottom: 10px;\n\t\t\t\t\tposition: relative;\n\t\t\t\t\ttext-align: center;\n\t\t\t\t}\n\n\t\t\t\t.searchLanguages-title {\n\t\t\t\t\ttext-align: left;\n\t\t\t\t\tfont-size: 18px;\n\t\t\t\t\tfont-weight: bold;\n\t\t\t\t\tmargin-bottom: 25px;\n\t\t\t\t\tfont-family: sans-serif;\n\t\t\t\t}\n\n\t\t\t\t.searchLanguagesMenu {\n\t\t\t\t  position: absolute;\n\t\t\t\t  top: 23px;\n\t\t\t\t  right: 20px;\n\t\t\t\t  cursor: pointer;\n\t\t\t\t  transition: .25s linear;\n\t\t\t\t}\n\n\t\t\t\t.searchLanguagesMenu img {\n\t\t\t\t  width: 15px;\n\t\t\t\t}\n\n\t\t\t\t.searchLanguages-container {\n\t\t\t\t\tdisplay: none;\n\t\t\t\t}\n\n\t\t\t\t.searchLanguages-container.active {\n\t\t\t\t\tdisplay: block;\n\t\t\t\t}\n\t\n\t\t\t\t.searchLanguages-list {\n\t\t\t\t  display: flex;\n\t\t\t\t  justify-content: space-between;\n\t\t\t\t  align-items: center;\n\t\t\t\t  padding: 10px 25px 15px 25px;\n\t\t\t\t}\n\t\t\t\t.searchLanguages-list ul{\n\t\t\t\t\twidth: 50%;\n\t\t\t\t}\n\t\t\t\t.searchLanguages-list li{\n\t\t\t\t  text-align: left;\n\t\t\t\t  margin-bottom: 10px;\n\t\t\t\t}\n\n\t\t\t\t.styled-checkboxLanguages {\n\t\t\t\t  position: absolute;\n\t\t\t\t  opacity: 0;\n\t\t\t\t}\n\t\t\t\t.styled-checkboxLanguages + label {\n\t\t\t\t  position: relative;\n\t\t\t\t  cursor: pointer;\n\t\t\t\t  padding: 0;\n\t\t\t\t}\n\t\t\t\t.styled-checkboxLanguages + label:before {\n\t\t\t\t  content: '';\n\t\t\t\t  margin-right: 10px;\n\t\t\t\t  display: inline-block;\n\t\t\t\t  vertical-align: text-top;\n\t\t\t\t  width: 15px;\n\t\t\t\t  height: 15px;\n\t\t\t\t  background: white;\n\t\t\t\t  border: 2px solid #160e26;\n\t\t\t\t  border-radius: 4px;\n\t\t\t\t}\n\t\t\t\t.styled-checkboxLanguages:hover + label:before {\n\t\t\t\t  background: white;\n\t\t\t\t}\n\t\t\t\t.styled-checkboxLanguages:focus + label:before {\n\t\t\t\t  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);\n\t\t\t\t}\n\t\t\t\t.styled-checkboxLanguages:checked + label:before {\n\t\t\t\t  background: #1c2d4c;\n\t\t\t\t}\n\t\t\t\t.styled-checkboxLanguages:disabled + label {\n\t\t\t\t  color: #b8b8b8;\n\t\t\t\t  cursor: auto;\n\t\t\t\t}\n\t\t\t\t.styled-checkboxLanguages:disabled + label:before {\n\t\t\t\t  box-shadow: none;\n\t\t\t\t  background: #ddd;\n\t\t\t\t}\n\t\t\t\t.styled-checkboxLanguages:checked + label:after {\n\t\t\t\t  content: '';\n\t\t\t\t  position: absolute;\n\t\t\t\t  left: 4px;\n\t\t\t\t  top: 8px;\n\t\t\t\t  background: orange;\n\t\t\t\t  width: 2px;\n\t\t\t\t  height: 2px;\n\t\t\t\t  box-shadow: 2px 0 0 orange, 4px 0 0 orange, 4px -2px 0 orange, 4px -4px 0 orange, 4px -6px 0 orange, 4px -8px 0 orange;\n\t\t\t\t  -webkit-transform: rotate(45deg);\n\t\t\t\t          transform: rotate(45deg);\n\t\t\t\t}\n\n\t\t\t\t.clearLanguage {\n\t\t\t\t  margin-bottom: 10px;\n\t\t\t\t  display: none;\n\t\t\t\t  text-align: center;\n\t\t\t\t  cursor: pointer;\n\t\t\t\t  transition: .25s linear;\n\t\t\t\t  padding: 5px;\n\t\t\t\t  border: 1px solid transparent;\n\t\t\t\t  font-weight: 100;\n\t\t            line-height: 1.3;\n\t\t          }\n\n\t\t          .clearLanguage:hover {\n\t\t            border-radius: 4px;\n\t\t            color: #1c2d4c;\n\t\t            border: 1px solid #1c2d4c;\n\t\t          }\n\n\t\t\t\t.clearLanguage.active {\n\t\t\t\t  display: inline-block;\n\t\t\t\t}\n\n\t\t\t\t@media screen and (max-width: 800px) {\n\n\t\t\t\t\t.searchLanguages-list {\n\t\t\t\t\t\tpadding: 10px 10px 15px 10px;\n\t\t\t\t\t}\n\n\t\t\t\t}\n\n\t\t\t"));
     }
   }]);
 
@@ -2785,6 +3128,8 @@ function (_Component) {
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_6__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_4__["default"])(_this), "handleMenuLocation", function (e) {
       var material = document.getElementById("SearchLocation-input");
       material.classList.toggle("active");
+      var titleSearchLocation = document.getElementById("titleSearchLocation");
+      titleSearchLocation.classList.toggle("active");
     });
 
     return _this;
@@ -2797,37 +3142,37 @@ function (_Component) {
         className: "SearchLocation",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 23
+          lineNumber: 26
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "titleSearchMenu",
-        id: "titleSearchGenre",
+        id: "titleSearchLocation",
         onClick: this.handleMenuLocation,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 25
+          lineNumber: 28
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "SearchTitle",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 26
+          lineNumber: 29
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("h2", {
         className: "SearchTitle-text",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 27
+          lineNumber: 30
         },
         __self: this
       }, "Location")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
         className: "searchLocationMenu",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 32
+          lineNumber: 35
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
@@ -2835,7 +3180,7 @@ function (_Component) {
         alt: "",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 33
+          lineNumber: 36
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", {
@@ -2843,13 +3188,13 @@ function (_Component) {
         id: "SearchLocation-input",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 37
+          lineNumber: 40
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("form", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 38
+          lineNumber: 41
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("input", {
@@ -2857,31 +3202,140 @@ function (_Component) {
         placeholder: "Search Location",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 39
+          lineNumber: 42
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("button", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 40
+          lineNumber: 43
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
-        className: "SearchLocation-image",
-        src: "/static/img/search.svg",
-        alt: "",
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("svg", {
+        style: {
+          width: 20,
+          height: 20,
+          fill: '#ffa603',
+          stroke: '#ffa603',
+          cursor: 'pointer'
+        },
+        viewBox: "0 0 250.313 250.313",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 41
+          lineNumber: 44
         },
         __self: this
-      })))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("style", {
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("g", {
+        id: "Search",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 45
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("path", {
+        d: "M244.186,214.604l-54.379-54.378c-0.289-0.289-0.628-0.491-0.93-0.76 c10.7-16.231,16.945-35.66,16.945-56.554C205.822,46.075,159.747,0,102.911,0S0,46.075,0,102.911 c0,56.835,46.074,102.911,102.91,102.911c20.895,0,40.323-6.245,56.554-16.945c0.269,0.301,0.47,0.64,0.759,0.929l54.38,54.38 c8.169,8.168,21.413,8.168,29.583,0C252.354,236.017,252.354,222.773,244.186,214.604z M102.911,170.146 c-37.134,0-67.236-30.102-67.236-67.235c0-37.134,30.103-67.236,67.236-67.236c37.132,0,67.235,30.103,67.235,67.236 C170.146,140.044,140.043,170.146,102.911,170.146z",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 46
         },
         __self: this
-      }, "\n            .titleSearchGenre {\n              cursor: pointer;\n            }\n\n            .titleSearchMenu:hover .searchLocationMenu,\n            .titleSearchMenu.active .searchLocationMenu{\n              transform: rotate(180deg);\n            }\n\n            .SearchTitle {\n              position: relative;\n              padding: 10px;\n              cursor: pointer;\n            }\n\n            .SearchTitle-text {\n              text-align: left;\n              font-size: 18px;\n              font-weight: bold;\n              margin-bottom: 15px;\n              margin-top: 10px;\n              margin-left: 10px;\n              text-align: left;\n            }\n\n            .SearchLocation {\n              background: white;\n              box-sizing: border-box;\n              font-family: sans-serif;\n              border-radius: 5px;\n              margin-bottom: 10px;\n              position: relative;\n            }\n\n            .SearchLocation-title {\n              text-align: left;\n              font-size: 18px;\n              font-weight: bold;\n              margin-bottom: 15px;\n            }\n\n            .searchLocationMenu {\n              position: absolute;\n              top: 23px;\n              right: 20px;\n              cursor: pointer;\n              transition: .25s linear;\n            }\n\n            .searchLocationMenu img {\n              width: 15px;\n            }\n\n            .SearchLocation-input {\n              position: relative;\n              display: none;\n              padding: 10px 10px 20px 10px;\n              width: 89%;\n              margin: auto;\n            }\n\n            .SearchLocation-input.active {\n              display: block;\n            }\n\n            .SearchLocation-image {\n              // position: absolute;\n              // top: -37px;\n              // right: 27px;\n              // width: 20px;\n              // height: 20px;\n            }\n\n            .SearchLocation-input button {\n              position: absolute;\n              top: 17px;\n              right: 14px;\n              width: 34px;\n              height: 34px;\n              background: transparent;\n              border: none;\n            }\n\n            .SearchLocation-input input {\n              width: 100%;\n              height: 40px;\n              box-sizing: border-box;\n              padding-left: 10px;\n              border: 2px solid #d0d0d0;\n              border-radius: 4px;\n            }\n          "));
+      })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("g", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 53
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("g", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 55
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("g", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 57
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("g", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 59
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("g", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 61
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("g", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 63
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("g", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 65
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("g", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 67
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("g", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 69
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("g", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 71
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("g", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 73
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("g", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 75
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("g", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 77
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("g", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 79
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("g", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 81
+        },
+        __self: this
+      }))))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("style", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 88
+        },
+        __self: this
+      }, "\n            .titleSearchGenre {\n              cursor: pointer;\n            }\n\n            .titleSearchMenu:hover .searchLocationMenu,\n            .titleSearchMenu.active .searchLocationMenu{\n              transform: rotate(180deg);\n            }\n\n            .SearchTitle {\n              position: relative;\n              padding: 10px;\n              cursor: pointer;\n            }\n\n            .SearchTitle-text {\n              text-align: left;\n              font-size: 18px;\n              font-weight: bold;\n              margin-bottom: 15px;\n              margin-top: 10px;\n              margin-left: 10px;\n              text-align: left;\n            }\n\n            .SearchLocation {\n              background: white;\n              box-sizing: border-box;\n              font-family: sans-serif;\n              border-radius: 5px;\n              margin-bottom: 10px;\n              position: relative;\n            }\n\n            .SearchLocation-title {\n              text-align: left;\n              font-size: 18px;\n              font-weight: bold;\n              margin-bottom: 15px;\n            }\n\n            .searchLocationMenu {\n              position: absolute;\n              top: 23px;\n              right: 20px;\n              cursor: pointer;\n              transition: .25s linear;\n            }\n\n            .searchLocationMenu img {\n              width: 15px;\n            }\n\n            .SearchLocation-input {\n              position: relative;\n              display: none;\n              padding: 10px 10px 20px 10px;\n              width: 89%;\n              margin: auto;\n            }\n\n            .SearchLocation-input.active {\n              display: block;\n            }\n\n            .SearchLocation-image {\n              // position: absolute;\n              // top: -37px;\n              // right: 27px;\n              // width: 20px;\n              // height: 20px;\n            }\n\n            .SearchLocation-input button {\n              position: absolute;\n              top: 15px;\n              right: 14px;\n              width: 34px;\n              height: 34px;\n              background: transparent;\n              border: none;\n            }\n\n            .SearchLocation-input input {\n              width: 100%;\n              height: 40px;\n              box-sizing: border-box;\n              padding-left: 10px;\n              border: 2px solid #d0d0d0;\n              border-radius: 4px;\n              font-size: 14px;\n            }\n\n            .SearchLocation-input input:focus::placeholder {\n              color: white;\n            }\n          "));
     }
   }]);
 
@@ -3795,13 +4249,12 @@ function (_Component) {
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("svg", {
-        version: "1.1",
-        id: "Layer_1",
         x: "0px",
         y: "0px",
-        viewBox: "0 0 512.017 512.017",
-        width: "512",
-        height: "512",
+        viewBox: "0 0 496.941 496.941",
+        style: {
+          marginLeft: 5
+        },
         __source: {
           fileName: _jsxFileName,
           lineNumber: 320
@@ -3813,84 +4266,161 @@ function (_Component) {
           lineNumber: 321
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("path", {
-        d: "M490.033,21.984c-29.309-29.31-76.754-29.314-106.066,0L317,88.951l-66.967-66.967c-29.308-29.309-76.752-29.315-106.066,0   c-29.31,29.309-29.314,76.754,0,106.066l74.246,74.247L317,103.51l98.787,98.787l74.246-74.247   C519.342,98.741,519.348,51.298,490.033,21.984z M218.213,159.869l-53.033-53.033c-17.586-17.585-17.589-46.051,0-63.639   c17.586-17.586,46.051-17.588,63.64,0l53.033,53.033L218.213,159.869z M468.82,106.836l-53.033,53.033L352.147,96.23l53.033-53.033   c17.585-17.586,46.051-17.589,63.639,0C486.405,60.782,486.409,89.248,468.82,106.836z",
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("g", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 322
         },
         __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("rect", {
-        x: "302",
-        y: "150.017",
-        width: "30",
-        height: "30",
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("g", {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 323
         },
         __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("rect", {
-        x: "272",
-        y: "210.017",
-        width: "30",
-        height: "30",
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("path", {
+        d: "M475.299,106.918l-12.047-3.765c-3.012-0.753-6.024-1.506-9.788-1.506c-13.553,0-25.6,9.035-30.118,21.835l-6.776,20.329 v-15.059V128c0-2.259-1.506-4.518-3.012-6.024L290.076,2.259C288.57,0.753,286.311,0,284.805,0H43.111 c-4.518,0-7.529,3.012-7.529,7.529v23.341H7.723c-4.518,0-7.529,3.012-7.529,7.529v451.012c0,4.518,3.012,7.529,7.529,7.529 h365.929c4.518,0,7.529-3.012,7.529-7.529v-23.341h27.859c4.518,0,7.529-3.012,7.529-7.529V356.894l21.082-28.612l0.753-2.259 l56.471-179.953C500.899,129.506,491.864,112.188,475.299,106.918z M292.334,25.6l98.635,94.871h-98.635V25.6z M366.123,481.882 H15.252V45.929h20.329v412.612c0,4.518,3.012,7.529,7.529,7.529h323.012V481.882z M402.264,451.012h-0.753H50.64V15.059h226.635 V128c0,4.518,3.012,7.529,7.529,7.529h117.459V192l-35.388,111.435v2.259l1.506,95.624c0,3.012,2.259,6.024,5.271,6.776 c3.012,0.753,6.776,0,8.282-3.012l20.329-27.106V451.012z M382.687,377.976l-1.506-62.494l37.647,12.047L382.687,377.976z M481.323,141.553l-54.212,172.424l-43.671-14.306L437.652,128c3.012-8.282,12.047-13.553,20.329-10.541l12.047,3.765 C479.064,123.482,484.334,133.271,481.323,141.553z",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 324
         },
         __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("rect", {
-        x: "332",
-        y: "210.017",
-        width: "30",
-        height: "30",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 325
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("rect", {
-        x: "242",
-        y: "270.017",
-        width: "30",
-        height: "30",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 326
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("rect", {
-        x: "302",
-        y: "270.017",
-        width: "30",
-        height: "30",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 327
-        },
-        __self: this
-      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("rect", {
-        x: "362",
-        y: "270.017",
-        width: "30",
-        height: "30",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 328
-        },
-        __self: this
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("path", {
-        d: "M176.175,499.757c27.509,6.305,53.493,12.26,91.984,12.26c72.208,0,113.401-24.342,168.004-61.479l75.743-51.515   l-8.244-12.366c-22.964-34.445-69.592-43.394-103.675-19.901c-14.175,9.771-29.069,17.841-44.29,24.088   c-11.723-26.746-38.393-44.827-68.697-44.827l-52.853,0.009c-6.765,0-13.338-2.041-19.009-5.884   c-31.856-21.582-52.493-34.879-74.405-36.257c-22.295-1.408-42.637,10.196-68.26,27.132H0v151h15   C98.769,482.017,139.892,491.442,176.175,499.757z M30,361.017h51.542c15.162-9.542,39.494-28.306,57.309-27.191   c13.856,0.871,31.708,12.351,59.461,31.153c10.657,7.22,23.048,11.036,35.834,11.037L287,376.007   c17.207,0,32.46,9.717,40.008,24.345c-17.064,4.33-34.225,6.337-50.924,5.864c-22.542-0.646-44.818-4.589-66.212-11.72l-8.128-2.71   l-9.487,28.461l8.128,2.709c24.182,8.061,49.362,12.518,74.841,13.247c49.666,1.426,99.916-15.885,141.787-44.747   c16.29-11.228,36.961-9.81,51.34,0.907l-49.061,33.368c-56.255,38.26-89.502,56.286-151.133,56.286   c-35.098,0-58.354-5.33-85.283-11.501c-35.598-8.159-75.658-17.341-152.876-18.398V361.017z",
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 329
-        },
-        __self: this
-      })))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("h4", {
+        d: "M101.84,135.529h108.424c4.518,0,7.529-3.012,7.529-7.529V51.2c0-4.518-3.012-7.529-7.529-7.529H101.84 c-4.518,0-7.529,3.012-7.529,7.529V128C94.311,131.765,98.076,135.529,101.84,135.529z M109.37,58.729h93.365v61.741H109.37 V58.729z",
         __source: {
           fileName: _jsxFileName,
           lineNumber: 334
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("path", {
+        d: "M86.782,206.306h228.894c4.518,0,7.529-3.012,7.529-7.529c0-4.518-3.012-7.529-7.529-7.529H86.782 c-4.518,0-7.529,3.012-7.529,7.529C79.252,203.294,82.264,206.306,86.782,206.306z",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 337
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("path", {
+        d: "M86.782,261.271h228.894c4.518,0,7.529-3.012,7.529-7.529s-3.012-7.529-7.529-7.529H86.782 c-4.518,0-7.529,3.012-7.529,7.529S82.264,261.271,86.782,261.271z",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 339
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("path", {
+        d: "M86.782,316.235h228.894c4.518,0,7.529-3.012,7.529-7.529s-3.012-7.529-7.529-7.529H86.782 c-4.518,0-7.529,3.012-7.529,7.529S82.264,316.235,86.782,316.235z",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 341
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("path", {
+        d: "M322.452,363.671c0-4.518-3.012-7.529-7.529-7.529H86.782c-4.518,0-7.529,3.012-7.529,7.529s3.012,7.529,7.529,7.529 h228.894C319.44,371.2,322.452,367.435,322.452,363.671z",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 343
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("path", {
+        d: "M347.299,411.106H233.605c-4.518,0-7.529,3.012-7.529,7.529s3.012,7.529,7.529,7.529h112.941 c4.518,0,7.529-3.012,7.529-7.529S351.064,411.106,347.299,411.106z",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 345
+        },
+        __self: this
+      })))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("g", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 350
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("g", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 352
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("g", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 354
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("g", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 356
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("g", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 358
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("g", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 360
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("g", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 362
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("g", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 364
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("g", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 366
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("g", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 368
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("g", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 370
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("g", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 372
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("g", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 374
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("g", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 376
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("g", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 378
+        },
+        __self: this
+      }))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("h4", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 382
         },
         __self: this
       }, "Treatment")))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", {
@@ -3899,22 +4429,22 @@ function (_Component) {
         onClick: this.handleClear,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 339
+          lineNumber: 387
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("i", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 339
+          lineNumber: 387
         },
         __self: this
       }, "\u2715  "), " Clear selection ")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("style", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 343
+          lineNumber: 391
         },
         __self: this
-      }, "\n            .titleSearchMenu {\n              cursor: pointer;\n            }\n\n            .titleSearchMenu:hover .searchMaterialsMenu,\n            .titleSearchMenu.active .searchMaterialsMenu{\n              transform: rotate(180deg);\n            }\n\n            .SearchMaterialType {\n              background: #e1e2e4;\n              box-sizing: border-box;\n              font-family: sans-serif;\n              border-radius: 5px;\n              margin-bottom: 10px;\n              background: white;\n              position: relative;\n              text-align: center;\n            } \n\n            .searchMaterialsMenu {\n              position: absolute;\n              top: 23px;\n              right: 20px;\n              cursor: pointer;\n              transition: .25s linear;\n            }\n\n            .searchMaterialsMenu img {\n              width: 15px;\n            }\n\n            .SearchMaterialType-container {\n              display: none;\n            }\n            .SearchMaterialType-container.active {\n              display: block;\n            }\n\n            .SearchMaterialType-items {\n              justify-content: center;\n              align-items: center;\n              flex-wrap: wrap;\n              text-align: center;\n              display: flex;\n              padding: 10px;\n            }\n\n            .SearchMaterialType-item a {\n              text-decoration: none;\n            }\n\n            .SearchMaterialType-item {\n              margin: 10px 10px 20px 10px;\n              cursor: pointer;\n            }\n\n            .SearchMaterialType-item:hover h4:before,\n            .SearchMaterialType-item.active h4:before {\n              width: 100%;\n            }\n\n            .SearchMaterialType-item:hover .icon,\n            .SearchMaterialType-item.active .icon {\n              border: 2px solid #ffa603;\n              background: #1c2d4c;\n            }\n\n            .SearchMaterialType-item:hover svg,\n            .SearchMaterialType-item.active svg{\n              fill: #ffa603;\n            }\n\n            .SearchMaterialType-item path,\n            .SearchMaterialType-item path{\n              stroke-dasharray: 300, 0, 3000;\n          }\n\n            .SearchMaterialType-item:hover svg, \n            .SearchMaterialType-item.active svg {\n              fill: #ffa603;\n            }\n\n            .SearchMaterialType-item:hover path,\n            .SearchMaterialType-item.active path{\n              animation: twitter 2s;\n            }\n\n            .SearchMaterialType-item h4 {\n              margin-top: 10px;\n              color: #1c2d4c;\n              border-bottom: 2px solid transparent;\n              transition: .25s linear;\n              position: relative;\n              display: inline-block;\n            }\n\n            .SearchMaterialType-item h4:before {\n              content: \"\";\n              position: absolute;\n              bottom: -5px;\n              left: 0;\n              height: 2px;\n              width: 0;\n              background: #1c2d4c;\n              transition: .15s linear;\n            }\n\n            .SearchMaterialType-item svg{\n              fill: #1c2d4c;\n              margin: 0 auto;\n              width: 45px;\n              height: 60px;\n              background: transparent;\n              transition: .25s linear;\n            }\n\n            .icon {\n              width: 70px;\n              height: 65px;\n              background: transparent;\n              padding-top: 5px;\n              border-radius: 50%;\n              transition: .25s linear;\n              border: 2px solid #1c2d4c;\n            }\n\n            .clearMaterialType {\n              margin-bottom: 10px;\n              display: none;\n              text-align: center;\n              cursor: pointer;\n              transition: .25s linear;\n              padding: 5px;\n              border: 1px solid transparent;\n              font-weight: 100;\n            }\n\n              .clearMaterialType:hover {\n                background: #1c2d4c;\n                border-radius: 4px;\n                color: orange;\n                border: 1px solid orange;\n              }\n\n            .clearMaterialType.active {\n              display: inline-block;\n            }\n\n            @media screen and (max-width: 767px) {\n              .SearchMaterialType-item h4 {\n                font-size: 12px;\n              }\n              .icon {\n                width: 60px !important;\n                height: 55px !important;\n              }\n\n              .SearchMaterialType-item svg {\n                width: 35px !important;\n                height: 50px !important;\n              }\n            }\n\n          "));
+      }, "\n            .titleSearchMenu {\n              cursor: pointer;\n            }\n\n            .titleSearchMenu:hover .searchMaterialsMenu,\n            .titleSearchMenu.active .searchMaterialsMenu{\n              transform: rotate(180deg);\n            }\n\n            .SearchMaterialType {\n              background: #e1e2e4;\n              box-sizing: border-box;\n              font-family: sans-serif;\n              border-radius: 5px;\n              margin-bottom: 10px;\n              background: white;\n              position: relative;\n              text-align: center;\n            } \n\n            .searchMaterialsMenu {\n              position: absolute;\n              top: 23px;\n              right: 20px;\n              cursor: pointer;\n              transition: .25s linear;\n            }\n\n            .searchMaterialsMenu img {\n              width: 15px;\n            }\n\n            .SearchMaterialType-container {\n              display: none;\n            }\n            .SearchMaterialType-container.active {\n              display: block;\n            }\n\n            .SearchMaterialType-items {\n              justify-content: center;\n              align-items: center;\n              flex-wrap: wrap;\n              text-align: center;\n              display: flex;\n              padding: 10px;\n            }\n\n            .SearchMaterialType-item a {\n              text-decoration: none;\n            }\n\n            .SearchMaterialType-item {\n              margin: 10px 10px 20px 10px;\n              cursor: pointer;\n            }\n\n            .SearchMaterialType-item:hover h4:before,\n            .SearchMaterialType-item.active h4:before {\n              width: 100%;\n            }\n\n            .SearchMaterialType-item:hover .icon,\n            .SearchMaterialType-item.active .icon {\n              border: 2px solid #ffa603;\n              background: #1c2d4c;\n            }\n\n            .SearchMaterialType-item:hover svg,\n            .SearchMaterialType-item.active svg{\n              fill: #ffa603;\n            }\n\n            .SearchMaterialType-item path,\n            .SearchMaterialType-item path{\n              stroke-dasharray: 300, 0, 3000;\n          }\n\n            .SearchMaterialType-item:hover svg, \n            .SearchMaterialType-item.active svg {\n              fill: #ffa603;\n            }\n\n            .SearchMaterialType-item:hover path,\n            .SearchMaterialType-item.active path{\n              animation: twitter 2s;\n            }\n\n            .SearchMaterialType-item h4 {\n              margin-top: 10px;\n              color: #1c2d4c;\n              border-bottom: 2px solid transparent;\n              transition: .25s linear;\n              position: relative;\n              display: inline-block;\n            }\n\n            .SearchMaterialType-item h4:before {\n              content: \"\";\n              position: absolute;\n              bottom: -5px;\n              left: 0;\n              height: 2px;\n              width: 0;\n              background: #1c2d4c;\n              transition: .15s linear;\n            }\n\n            .SearchMaterialType-item svg{\n              fill: #1c2d4c;\n              margin: 0 auto;\n              width: 45px;\n              height: 60px;\n              background: transparent;\n              transition: .25s linear;\n            }\n\n            .icon {\n              width: 70px;\n              height: 65px;\n              background: transparent;\n              padding-top: 5px;\n              border-radius: 50%;\n              transition: .25s linear;\n              border: 2px solid #1c2d4c;\n            }\n\n            .clearMaterialType {\n              margin-bottom: 10px;\n              display: none;\n              text-align: center;\n              cursor: pointer;\n              transition: .25s linear;\n              padding: 5px;\n              border: 1px solid transparent;\n              font-weight: 100;\n              line-height: 1.3;\n            }\n\n            .clearMaterialType:hover {\n              border-radius: 4px;\n              color: #1c2d4c;\n              border: 1px solid #1c2d4c;\n            }\n\n            .clearMaterialType.active {\n              display: inline-block;\n            }\n\n            @media screen and (max-width: 767px) {\n              .SearchMaterialType-item h4 {\n                font-size: 12px;\n              }\n              .icon {\n                width: 60px !important;\n                height: 55px !important;\n              }\n\n              .SearchMaterialType-item svg {\n                width: 35px !important;\n                height: 50px !important;\n              }\n            }\n\n          "));
     }
   }]);
 
@@ -3980,6 +4510,8 @@ function (_Component) {
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "handleTagMenu", function (e) {
       var material = document.getElementById("SearchTags-input");
       material.classList.toggle("active");
+      var titleSearchGenre = document.getElementById("titleSearchTags");
+      titleSearchGenre.classList.toggle("active");
     });
 
     Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_7__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_5__["default"])(_this), "handleClear", function (e) {
@@ -4051,37 +4583,37 @@ function (_Component) {
         className: "SearchTags",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 83
+          lineNumber: 86
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "titleSearchMenu",
-        id: "titleSearchGenre",
+        id: "titleSearchTags",
         onClick: this.handleTagMenu,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 85
+          lineNumber: 88
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "SearchTitle",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 86
+          lineNumber: 89
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("h2", {
         className: "SearchTitle-text",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 87
+          lineNumber: 90
         },
         __self: this
       }, "Tags")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
         className: "searchTagMenu",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 92
+          lineNumber: 95
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("img", {
@@ -4089,7 +4621,7 @@ function (_Component) {
         alt: "",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 93
+          lineNumber: 96
         },
         __self: this
       }))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", {
@@ -4097,7 +4629,7 @@ function (_Component) {
         id: "SearchTags-input",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 97
+          lineNumber: 100
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(react_tag_input__WEBPACK_IMPORTED_MODULE_10__["WithContext"], {
@@ -4110,46 +4642,155 @@ function (_Component) {
         placeholder: "Search Tag",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 98
+          lineNumber: 101
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("button", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 106
+          lineNumber: 110
         },
         __self: this
-      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("img", {
-        className: "SearchLocation-image",
-        src: "/static/img/search.svg",
-        alt: "",
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("svg", {
+        style: {
+          width: 20,
+          height: 20,
+          fill: '#ffa603',
+          stroke: '#ffa603',
+          cursor: 'pointer'
+        },
+        viewBox: "0 0 250.313 250.313",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 107
+          lineNumber: 111
         },
         __self: this
-      })), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("g", {
+        id: "Search",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 112
+        },
+        __self: this
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("path", {
+        d: "M244.186,214.604l-54.379-54.378c-0.289-0.289-0.628-0.491-0.93-0.76 c10.7-16.231,16.945-35.66,16.945-56.554C205.822,46.075,159.747,0,102.911,0S0,46.075,0,102.911 c0,56.835,46.074,102.911,102.91,102.911c20.895,0,40.323-6.245,56.554-16.945c0.269,0.301,0.47,0.64,0.759,0.929l54.38,54.38 c8.169,8.168,21.413,8.168,29.583,0C252.354,236.017,252.354,222.773,244.186,214.604z M102.911,170.146 c-37.134,0-67.236-30.102-67.236-67.235c0-37.134,30.103-67.236,67.236-67.236c37.132,0,67.235,30.103,67.235,67.236 C170.146,140.044,140.043,170.146,102.911,170.146z",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 113
+        },
+        __self: this
+      })), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("g", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 120
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("g", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 122
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("g", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 124
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("g", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 126
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("g", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 128
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("g", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 130
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("g", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 132
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("g", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 134
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("g", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 136
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("g", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 138
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("g", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 140
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("g", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 142
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("g", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 144
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("g", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 146
+        },
+        __self: this
+      }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("g", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 148
+        },
+        __self: this
+      }))), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("span", {
         className: "clearTag",
         id: "clearTag",
         onClick: this.handleClear,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 110
+          lineNumber: 153
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("i", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 110
+          lineNumber: 153
         },
         __self: this
       }, "\u2715  "), " Clear selection ")), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("style", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 115
+          lineNumber: 158
         },
         __self: this
-      }, "\n            .titleSearchMenu {\n              cursor: pointer;\n            }\n\n            .titleSearchMenu:hover .searchTagMenu,\n            .titleSearchMenu.active .searchTagMenu{\n              transform: rotate(180deg);\n            }\n\n            .SearchTitle {\n              position: relative;\n              padding: 10px;\n              cursor: pointer;\n            }\n\n            .SearchTitle-text {\n              text-align: left;\n              font-size: 18px;\n              font-weight: bold;\n              margin-bottom: 15px;\n              margin-top: 10px;\n              margin-left: 10px;\n              text-align: left;\n            }\n\n            .SearchTags {\n              background: white;\n              box-sizing: border-box;\n              font-family: sans-serif;\n              border-radius: 5px;\n              margin-bottom: 10px;\n              position: relative;\n              text-align: center;\n            }\n\n            .SearchTags-input {\n              position: relative;\n              display: none;\n              min-height: 10px;\n            }\n            .SearchTags-input.active {\n              display: block;\n            }\n\n            .searchTagMenu {\n              position: absolute;\n              top: 23px;\n              right: 20px;\n              cursor: pointer;\n              transition: .25s linear;\n            }\n\n            .searchTagMenu img {\n              width: 15px;\n            }\n\n            .searchTagMenu {\n              position: absolute;\n              top: 23px;\n              right: 20px;\n              cursor: pointer;\n            }\n\n            .SearchTags-input .ReactTags__tagInput{\n              position: absolute;\n              top: -55px;\n              left: 20px;\n              width: 89%;\n              margin: auto;\n            }\n\n            .SearchTags-input .ReactTags__tagInput input{\n              width: 100%;\n              height: 40px;\n              box-sizing: border-box;\n              padding-left: 10px;\n              border: 2px solid #d0d0d0;\n              border-radius: 4px;\n            }\n\n            .SearchTags-input .ReactTags__remove {\n              margin-left: 10px;\n            }\n\n            .ReactTags__selected {\n              margin-top: 60px !important;\n              text-align: left;\n              padding-left: 17px;\n            }\n\n            .tag-wrapper {\n              background: #1c2d4c;\n              margin: 5px;\n              color: #ff8f17;\n              padding: 5px 10px;\n              font-size: 15px;\n              border-radius: 4px !important;\n              display: inline-block;\n            }\n\n            .SearchTags button {\n              position: absolute;\n              top: -48px;\n              right: 23px;\n              width: 34px;\n              height: 34px;\n              background: transparent;\n              border: none;\n            }\n\n            .clearTag {\n              margin-top: 10px;\n              margin-bottom: 10px;\n              display: none;\n              text-align: center;\n              cursor: pointer;\n              transition: .25s linear;\n              padding: 5px;\n              border: 1px solid transparent;\n              font-weight: 100;\n            }\n\n            .clearTag:hover {\n              background: #1c2d4c;\n              border-radius: 4px;\n              color: orange;\n              border: 1px solid orange;\n            }\n\n            .clearTag.active {\n              display: inline-block;\n            }\n          "));
+      }, "\n            .titleSearchMenu {\n              cursor: pointer;\n            }\n\n            .titleSearchMenu:hover .searchTagMenu,\n            .titleSearchMenu.active .searchTagMenu{\n              transform: rotate(180deg);\n            }\n\n            .SearchTitle {\n              position: relative;\n              padding: 10px;\n              cursor: pointer;\n            }\n\n            .SearchTitle-text {\n              text-align: left;\n              font-size: 18px;\n              font-weight: bold;\n              margin-bottom: 15px;\n              margin-top: 10px;\n              margin-left: 10px;\n              text-align: left;\n            }\n\n            .SearchTags {\n              background: white;\n              box-sizing: border-box;\n              font-family: sans-serif;\n              border-radius: 5px;\n              margin-bottom: 10px;\n              position: relative;\n              text-align: center;\n            }\n\n            .SearchTags-input {\n              position: relative;\n              display: none;\n              min-height: 10px;\n            }\n            .SearchTags-input.active {\n              display: block;\n            }\n\n            .searchTagMenu {\n              position: absolute;\n              top: 23px;\n              right: 20px;\n              cursor: pointer;\n              transition: .25s linear;\n            }\n\n            .searchTagMenu img {\n              width: 15px;\n            }\n\n            .searchTagMenu {\n              position: absolute;\n              top: 23px;\n              right: 20px;\n              cursor: pointer;\n            }\n\n            .SearchTags-input .ReactTags__tagInput{\n              position: absolute;\n              top: -55px;\n              left: 20px;\n              width: 89%;\n              margin: auto;\n            }\n\n            .SearchTags-input .ReactTags__tagInput input{\n              width: 100%;\n              height: 40px;\n              box-sizing: border-box;\n              padding-left: 10px;\n              border: 2px solid #d0d0d0;\n              border-radius: 4px;\n              font-size: 14px;\n            }\n\n            .SearchTags-input .ReactTags__tagInput input:focus::placeholder {\n              color: white;\n            }\n\n            .SearchTags-input .ReactTags__remove {\n              margin-left: 10px;\n            }\n\n            .ReactTags__selected {\n              margin-top: 60px !important;\n              text-align: left;\n              padding-left: 17px;\n            }\n\n            .tag-wrapper {\n              background: #1c2d4c;\n              margin: 5px;\n              color: #ff8f17;\n              padding: 5px 10px;\n              font-size: 15px;\n              border-radius: 4px !important;\n              display: inline-block;\n            }\n\n            .SearchTags button {\n              position: absolute;\n              top: -52px;\n              right: 23px;\n              width: 34px;\n              height: 34px;\n              background: transparent;\n              border: none;\n            }\n\n            .clearTag {\n              margin-top: 10px;\n              margin-bottom: 10px;\n              display: none;\n              text-align: center;\n              cursor: pointer;\n              transition: .25s linear;\n              padding: 5px;\n              border: 1px solid transparent;\n              font-weight: 100;\n              line-height: 1.3;\n            }\n\n            .clearTag:hover {\n              border-radius: 4px;\n              color: #1c2d4c;\n              border: 1px solid #1c2d4c;\n            }\n\n            .clearTag.active {\n              display: inline-block;\n            }\n          "));
     }
   }]);
 
@@ -4838,7 +5479,7 @@ function (_Component) {
           lineNumber: 154
         },
         __self: this
-      }, "\n          .searchViews {\n            background: #e1e2e4;\n            box-sizing: border-box;\n            font-family: sans-serif;\n            border-radius: 5px;\n            margin-bottom: 10px;\n            text-align: center;\n          }\n\n          .searchViews-items {\n            display: flex;\n            justify-content: space-around;\n            align-items: center;\n            flex-wrap: wrap;\n            text-align: center;\n          }\n\n          .searchViews-item a {\n            text-decoration: none;\n          }\n\n          .searchViews-item {\n            margin: 10px 10px 20px 10px;\n            cursor: pointer;\n          }\n\n          .searchViews-item:hover h4:before,\n          .searchViews-item.active h4:before{\n            width: 100%;\n          }\n\n          .searchViews-item:hover .icon,\n          .searchViews-item.active .icon{\n            border: 2px solid #ffa603;\n            background: #1c2d4c;\n          }\n\n          .searchViews-item:hover svg,\n          .searchViews-item.active svg{\n            fill: #ffa603;\n          }\n\n          .searchViews-item path,\n          .searchViews-item path{\n            stroke-dasharray: 300, 0, 3000;\n          }\n\n          .searchViews-item:hover path,\n          .searchViews-item.active path{\n            animation: twitter 2s;\n          }\n\n          .searchViews-item h4 {\n            margin-top: 10px;\n            color: #1c2d4c;\n            border-bottom: 2px solid transparent;\n            transition: .25s linear;\n            position: relative;\n            display: inline-block;\n          }\n\n          .searchViews-item h4:before {\n            content: \"\";\n            position: absolute;\n            bottom: -5px;\n            left: 0;\n            height: 2px;\n            width: 0;\n            background: #1c2d4c;\n            transition: .15s linear;\n          }\n\n          .searchViews-item svg{\n            fill: #1c2d4c;\n            margin: 0 auto;\n            width: 70px;\n            height: 70px;\n            background: transparent;\n            border-radius: 50%;\n            transition: .25s linear;\n          }\n\n          .icon {\n            width: 70px;\n            height: 65px;\n            background: transparent;\n            padding-top: 5px;\n            border-radius: 50%;\n            transition: .25s linear;\n            border: 2px solid #1c2d4c;\n          }\n\n          .clearSearchView {\n            margin: 10px auto;\n            display: none;\n            text-align: center;\n            cursor: pointer;\n            transition: .25s linear;\n            padding: 5px;\n            border: 1px solid transparent;\n            font-weight: 100;\n          }\n\n          .clearSearchView:hover {\n            background: #1c2d4c;\n            border-radius: 4px;\n            color: orange;\n            border: 1px solid orange;\n          }\n\n          .clearSearchView.active {\n            display: inline-block;\n          }\n\n          @media screen and (max-width: 767px) {\n            \n\n            .searchViews-item .trendingIcon {\n              height: 60px !important;\n            }\n\n            .searchViews-item .mostViewIcon {\n              height: 55px !important;\n            }\n\n            .searchViews-item .latestIcon {\n              height: 50px !important;\n            }\n          }\n\n        "));
+      }, "\n          .searchViews {\n            background: #e1e2e4;\n            box-sizing: border-box;\n            font-family: sans-serif;\n            border-radius: 5px;\n            margin-bottom: 10px;\n            text-align: center;\n          }\n\n          .searchViews-items {\n            display: flex;\n            justify-content: space-around;\n            align-items: center;\n            flex-wrap: wrap;\n            text-align: center;\n          }\n\n          .searchViews-item a {\n            text-decoration: none;\n          }\n\n          .searchViews-item {\n            margin: 10px 10px 20px 10px;\n            cursor: pointer;\n          }\n\n          .searchViews-item:hover h4:before,\n          .searchViews-item.active h4:before{\n            width: 100%;\n          }\n\n          .searchViews-item:hover .icon,\n          .searchViews-item.active .icon{\n            border: 2px solid #ffa603;\n            background: #1c2d4c;\n          }\n\n          .searchViews-item:hover svg,\n          .searchViews-item.active svg{\n            fill: #ffa603;\n          }\n\n          .searchViews-item path,\n          .searchViews-item path{\n            stroke-dasharray: 300, 0, 3000;\n          }\n\n          .searchViews-item:hover path,\n          .searchViews-item.active path{\n            animation: twitter 2s;\n          }\n\n          .searchViews-item h4 {\n            margin-top: 10px;\n            color: #1c2d4c;\n            border-bottom: 2px solid transparent;\n            transition: .25s linear;\n            position: relative;\n            display: inline-block;\n          }\n\n          .searchViews-item h4:before {\n            content: \"\";\n            position: absolute;\n            bottom: -5px;\n            left: 0;\n            height: 2px;\n            width: 0;\n            background: #1c2d4c;\n            transition: .15s linear;\n          }\n\n          .searchViews-item svg{\n            fill: #1c2d4c;\n            margin: 0 auto;\n            width: 70px;\n            height: 70px;\n            background: transparent;\n            border-radius: 50%;\n            transition: .25s linear;\n          }\n\n          .icon {\n            width: 70px;\n            height: 65px;\n            background: transparent;\n            padding-top: 5px;\n            border-radius: 50%;\n            transition: .25s linear;\n            border: 2px solid #1c2d4c;\n          }\n\n          .clearSearchView {\n            margin: 10px auto;\n            display: none;\n            text-align: center;\n            cursor: pointer;\n            transition: .25s linear;\n            padding: 5px;\n            border: 1px solid transparent;\n            font-weight: 100;\n            line-height: 1.3;\n          }\n\n          .clearSearchView:hover {\n            border-radius: 4px;\n            color: #1c2d4c;\n            border: 1px solid #1c2d4c;\n          }\n\n          .clearSearchView.active {\n            display: inline-block;\n          }\n\n          @media screen and (max-width: 767px) {\n            \n\n            .searchViews-item .trendingIcon {\n              height: 60px !important;\n            }\n\n            .searchViews-item .mostViewIcon {\n              height: 55px !important;\n            }\n\n            .searchViews-item .latestIcon {\n              height: 50px !important;\n            }\n          }\n\n        "));
     }
   }]);
 
@@ -30383,12 +31024,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_SearchLanguages__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../components/SearchLanguages */ "./components/SearchLanguages.js");
 /* harmony import */ var _components_SearchLocation__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../components/SearchLocation */ "./components/SearchLocation.js");
 /* harmony import */ var _components_SearchEra__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../components/SearchEra */ "./components/SearchEra.js");
+/* harmony import */ var _components_PopUpStory__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../components/PopUpStory */ "./components/PopUpStory.js");
 
 
 
 
 
 var _jsxFileName = "/Users/daniloviacavavizarreta/www/storyrocketreact/pages/search.js";
+
 
 
 
@@ -30427,14 +31070,14 @@ function (_React$Component) {
         title: "Search",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 28
+          lineNumber: 30
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
         className: "searchContainer df",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 30
+          lineNumber: 32
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
@@ -30442,7 +31085,7 @@ function (_React$Component) {
         id: "searchSidebar",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 31
+          lineNumber: 33
         },
         __self: this
       }, react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
@@ -30451,80 +31094,80 @@ function (_React$Component) {
         onClick: this.handleMenu,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 32
+          lineNumber: 34
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_components_SearchInput__WEBPACK_IMPORTED_MODULE_7__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 34
+          lineNumber: 36
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_components_SearchViews__WEBPACK_IMPORTED_MODULE_8__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 35
+          lineNumber: 37
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_components_SearchGenres__WEBPACK_IMPORTED_MODULE_9__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 36
+          lineNumber: 38
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_components_SearchMaterialType__WEBPACK_IMPORTED_MODULE_10__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 37
+          lineNumber: 39
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_components_SearchIntendedMedium__WEBPACK_IMPORTED_MODULE_11__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 38
+          lineNumber: 40
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_components_SearchTags__WEBPACK_IMPORTED_MODULE_12__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 39
+          lineNumber: 41
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_components_SearchLanguages__WEBPACK_IMPORTED_MODULE_13__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 40
+          lineNumber: 42
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_components_SearchLocation__WEBPACK_IMPORTED_MODULE_14__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 41
+          lineNumber: 43
         },
         __self: this
       }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement(_components_SearchEra__WEBPACK_IMPORTED_MODULE_15__["default"], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 42
+          lineNumber: 44
         },
         __self: this
       })), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("div", {
         className: "searchContent",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 45
+          lineNumber: 47
         },
         __self: this
-      }, "content"), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("style", {
+      }), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("style", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 49
+          lineNumber: 51
         },
         __self: this
-      }, "\n\t\t\t\t\t\t.searchContainer {\n\t\t\t\t\t\t\tpadding: 10px;\n\t\t\t\t\t\t\tcolor: white;\n\t\t\t\t\t\t\tmax-width: 1200px;\n\t\t\t\t\t\t\twidth: 95%;\n\t\t\t\t\t\t\tmargin: auto;\n\t\t\t\t\t\t\tposition: relative;\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\t.df {\n\t\t\t\t\t\t\tdisplay: flex;\n\t\t\t\t\t\t\tjustify-content: center;\n\t\t\t\t\t\t\talign-items: stretch;\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\t.searchSidebar {\n\t\t\t\t\t\t\twidth: 35%;\n\t\t\t\t\t\t\tmargin-right: 2%;\n\t\t\t\t\t\t\tcolor: #1c2d4c;\n\t\t\t\t\t\t\tbackground: #f3f3f3;\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\t.searchContent {\n\t\t\t\t\t\t\twidth: 70%;\n\t\t\t\t\t\t\tbackground: orange;\n\t\t\t\t\t\t\theight: 1000vh;\n\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\t@media screen and (max-width: 1100px) {\n\t\t\t\t\t\t\t.searchSidebar {\n\t\t\t\t\t\t\t\twidth: 64%;\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\t@media screen and (max-width: 767px) {\n\t\t\t\t\t\t\t.searchSidebar {\n\t\t\t\t\t\t\t\twidth: 290px;\n\t\t\t\t\t\t\t\tposition: absolute;\n\t\t\t\t\t\t\t\ttop: 0;\n\t\t\t\t\t\t\t\tleft: -300px;\n\t\t\t\t\t\t\t\ttransition: .5s linear;\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t.searchSidebar.active {\n\t\t\t\t\t\t\t\tleft: 0;\n\t\t\t\t\t\t\t\tpadding-right: 10px;\n\t\t\t\t\t\t\t\tborder-radius: 0 0 10px 0;\n\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t.searchContent {\n\t\t\t\t\t\t\t\twidth: 100%;\n\t\t\t\t\t\t\t\tbackground: orange;\n\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t.btnMenu {\n\t\t\t\t\t\t\t\tposition: absolute;\n\t\t\t\t\t\t\t\ttop: 0px;\n\t\t\t\t\t\t\t\tleft: 290px;\n\t\t\t\t\t\t\t\tbackground: #1b2d4c;\n\t\t\t\t\t\t\t\theight: 30px;\n\t\t\t\t\t\t\t\twidth: 30px;\n\t\t\t\t\t\t\t\ttransition: .5s linear;\n\t\t\t\t\t\t\t\tcursor: pointer;\n\t\t\t\t\t\t\t\tpadding: 5px;\n\t\t\t\t\t\t\t\tborder-radius: 0 0 5px 0;\n\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t.btnMenu:before {\n\t\t\t\t\t\t\t\tcontent: \"\";\n\t\t\t\t\t\t\t\twidth: 20px;\n\t\t\t\t\t\t\t\theight: 3px;\n\t\t\t\t\t\t\t\tbackground: #f3f3f3;\n\t\t\t\t\t\t\t\tposition: absolute;\n\t\t\t\t\t\t\t\ttop: 14px;\n\t\t\t\t\t\t\t\tleft: 9px;\n\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t.btnMenu:after {\n\t\t\t\t\t\t\t\tcontent: \"\";\n\t\t\t\t\t\t\t\twidth: 20px;\n\t\t\t\t\t\t\t\theight: 3px;\n\t\t\t\t\t\t\t\tbackground: #f3f3f3;\n\t\t\t\t\t\t\t\tposition: absolute;\n\t\t\t\t\t\t\t\ttop: 22px;\n\t\t\t\t\t\t\t\tleft: 9px;\n\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t.btnMenu.active {\n\t\t\t\t\t\t\t\tleft: 300px;\n\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t.searchGenres-list {\n\t\t\t\t\t\t\t\tpadding: 10px 10px 15px 10px;\n\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t.searchLanguages-list {\n\t\t\t\t\t\t\t\tpadding: 10px 10px 15px 10px;\n\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t.searchEraMenu-list {\n\t\t\t\t\t\t\t\tpadding: 10px 10px 15px 10px;\n\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t@media screen and (max-width: 600px) {\n\t\t\t\t\t\t\t\t.searchSidebar {\n\t\t\t\t\t\t\t\t\tleft: -294px;\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t.searchSidebar.active {\n\t\t\t\t\t\t\t\t\tleft: 5px;\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t")), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("style", {
+      }, "\n\t\t\t\t\t\t.searchContainer {\n\t\t\t\t\t\t\tpadding: 10px;\n\t\t\t\t\t\t\tcolor: white;\n\t\t\t\t\t\t\tmax-width: 1200px;\n\t\t\t\t\t\t\twidth: 95%;\n\t\t\t\t\t\t\tmargin: auto;\n\t\t\t\t\t\t\tposition: relative;\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\t.df {\n\t\t\t\t\t\t\tdisplay: flex;\n\t\t\t\t\t\t\tjustify-content: center;\n\t\t\t\t\t\t\talign-items: stretch;\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\t.searchSidebar {\n\t\t\t\t\t\t\twidth: 35%;\n\t\t\t\t\t\t\tmargin-right: 2%;\n\t\t\t\t\t\t\tcolor: #1c2d4c;\n\t\t\t\t\t\t\tbackground: #f3f3f3;\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\t.searchContent {\n\t\t\t\t\t\t\twidth: 70%;\n\t\t\t\t\t\t\tbackground: orange;\n\t\t\t\t\t\t\tbackground: white;\n\t\t\t\t\t\t\theight: 100vh;\n\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\t@media screen and (max-width: 1100px) {\n\t\t\t\t\t\t\t.searchSidebar {\n\t\t\t\t\t\t\t\twidth: 45%;\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\t@media screen and (max-width: 970px) {\n\t\t\t\t\t\t\t.searchSidebar {\n\t\t\t\t\t\t\t\twidth: 55%;\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\t@media screen and (max-width: 850px) {\n\t\t\t\t\t\t\t.searchSidebar {\n\t\t\t\t\t\t\t\twidth: 65%;\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\t@media screen and (max-width: 767px) {\n\t\t\t\t\t\t\t.searchSidebar {\n\t\t\t\t\t\t\t\twidth: 290px;\n\t\t\t\t\t\t\t\tposition: absolute;\n\t\t\t\t\t\t\t\ttop: 0;\n\t\t\t\t\t\t\t\tleft: -300px;\n\t\t\t\t\t\t\t\ttransition: .5s linear;\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t.searchSidebar.active {\n\t\t\t\t\t\t\t\tleft: 0;\n\t\t\t\t\t\t\t\tpadding-right: 10px;\n\t\t\t\t\t\t\t\tborder-radius: 0 0 10px 0;\n\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t.searchContent {\n\t\t\t\t\t\t\t\twidth: 100%;\n\t\t\t\t\t\t\t\tbackground: orange;\n\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t.btnMenu {\n\t\t\t\t\t\t\t\tposition: absolute;\n\t\t\t\t\t\t\t\ttop: 0px;\n\t\t\t\t\t\t\t\tleft: 290px;\n\t\t\t\t\t\t\t\tbackground: #1b2d4c;\n\t\t\t\t\t\t\t\theight: 30px;\n\t\t\t\t\t\t\t\twidth: 30px;\n\t\t\t\t\t\t\t\ttransition: .5s linear;\n\t\t\t\t\t\t\t\tcursor: pointer;\n\t\t\t\t\t\t\t\tpadding: 5px;\n\t\t\t\t\t\t\t\tborder-radius: 0 0 5px 0;\n\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t.btnMenu:before {\n\t\t\t\t\t\t\t\tcontent: \"\";\n\t\t\t\t\t\t\t\twidth: 20px;\n\t\t\t\t\t\t\t\theight: 3px;\n\t\t\t\t\t\t\t\tbackground: #f3f3f3;\n\t\t\t\t\t\t\t\tposition: absolute;\n\t\t\t\t\t\t\t\ttop: 14px;\n\t\t\t\t\t\t\t\tleft: 9px;\n\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t.btnMenu:after {\n\t\t\t\t\t\t\t\tcontent: \"\";\n\t\t\t\t\t\t\t\twidth: 20px;\n\t\t\t\t\t\t\t\theight: 3px;\n\t\t\t\t\t\t\t\tbackground: #f3f3f3;\n\t\t\t\t\t\t\t\tposition: absolute;\n\t\t\t\t\t\t\t\ttop: 22px;\n\t\t\t\t\t\t\t\tleft: 9px;\n\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t.btnMenu.active {\n\t\t\t\t\t\t\t\tleft: 300px;\n\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t.searchGenres-list {\n\t\t\t\t\t\t\t\tpadding: 10px 10px 15px 10px;\n\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t.searchLanguages-list {\n\t\t\t\t\t\t\t\tpadding: 10px 10px 15px 10px;\n\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t.searchEraMenu-list {\n\t\t\t\t\t\t\t\tpadding: 10px 10px 15px 10px;\n\t\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\t@media screen and (max-width: 600px) {\n\t\t\t\t\t\t\t\t.searchSidebar {\n\t\t\t\t\t\t\t\t\tleft: -294px;\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\t.searchSidebar.active {\n\t\t\t\t\t\t\t\t\tleft: 5px;\n\t\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t\t")), react__WEBPACK_IMPORTED_MODULE_5___default.a.createElement("style", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 166
+          lineNumber: 181
         },
         __self: this
       }, "\n\t\t\t\t\t\t.mia {\n\t\t\t\t\t\t\tdisplay: block;\n\t\t\t\t\t\t}\n\n\n\t\t\t\t\t\tsvg {\n\t\t\t\t\t\t\tdisplay: inline-block;\n\t\t\t\t\t\t\theight: 200px;\n\t\t\t\t\t\t\tstroke: #1c2d4c;\n\t\t\t\t\t\t\tstroke-width: 7px;\n\t\t\t\t\t\t\tfill: purple;\n\t\t\t\t\t\t\tmargin: 0 auto;\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\tsvg path {\n\t\t\t\t\t\t\tstroke-dasharray: 300,0,3000;\n\t\t\t\t\t\t}\n\n\t\t\t\t\t\t\n\n\t\t\t\t\t\t@keyframes twitter {\n\t\t\t\t\t\t\t10% {\n\t\t\t\t\t\t\t\tstroke-dasharray: 0,500,2300\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t100% {\n\t\t\t\t\t\t\t\tstroke-dasharray: 2900,500,2900\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t}\n\t\t\t\t"));

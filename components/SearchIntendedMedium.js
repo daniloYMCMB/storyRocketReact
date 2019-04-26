@@ -51,7 +51,6 @@ class SearchIntendedMedium extends Component {
 
     clear.classList.add('active')
   }
-
   handleClear = e => {
 
     const materialTypeItem = document.getElementsByClassName("SearchIntendedMedium-item")
@@ -64,12 +63,8 @@ class SearchIntendedMedium extends Component {
     }
 
     const clear = document.getElementById("clearIntended")
-    clear.classList.remove('active')
-
-    
+    clear.classList.remove('active')    
   }
-
-
   handleIntended = (e) => {
     const intended = document.getElementById("SearchIntendedMedium-items")
     intended.classList.toggle("active")
@@ -544,13 +539,13 @@ class SearchIntendedMedium extends Component {
               padding: 5px;
               border: 1px solid transparent;
               font-weight: 100;
+              line-height: 1.3;
             }
 
             .clearIntended:hover {
-              background: #1c2d4c;
               border-radius: 4px;
-              color: orange;
-              border: 1px solid orange;
+              color: #1c2d4c;
+              border: 1px solid #1c2d4c;
             }
 
             .clearIntended.active {
